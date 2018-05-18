@@ -5,6 +5,9 @@
 /ontology/public/catalog-v0001.xml
 settings.xml
 
+installer/local-settings.xml
+installer/local-vivouos-settings.xml
+
 rdf/auth/firsttime/test-user-model.owl
 utilities/solrtester/.work
 utilities/rdbmigration/.work

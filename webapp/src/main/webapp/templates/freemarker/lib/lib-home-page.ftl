@@ -121,27 +121,28 @@
     <h4>${i18n().research_capitalized}</h4>
     <ul>
         <#list classGroups as group>
-            <#if (group.individualCount > 0) && group.uri?contains("publications") >
+            <#if (group.individualCount > 0) && (group.uri?contains("publications") || group.uri?contains("activities")) >
                 <#assign foundClassGroup = true />
                 <#list group.classes as class>
-                    <#if (class.individualCount > 0) && (class.uri?contains("AcademicArticle") || class.uri?contains("Book") || class.uri?contains("Chapter") ||class.uri?contains("ConferencePaper") || class.uri?contains("Grant") || class.uri?contains("Report")) >
+                    <#if (class.individualCount > 0) && (class.uri?contains("Drittmittelprojekt") || class.uri?contains("Publikation") || class.uri?contains("AcademicArticle") || class.uri?contains("Book") || class.uri?contains("Chapter") ||class.uri?contains("ConferencePaper") || class.uri?contains("Grant") || class.uri?contains("Report")) >
                         <li role="listitem">
                             <span>${class.individualCount!}</span>&nbsp;
                             <a href='${urls.base}/individuallist?vclassId=${class.uri?replace("#","%23")!}'>
-                                <#if class.name?substring(class.name?length-1) == "s">
+                                <#-- <#if class.name?substring(class.name?length-1) == "s">
                                     ${class.name}
-                                <#else>
-                                    ${class.name}s
-                                </#if>
+                                <#else> -->
+                                    ${class.name} <#-- s für englischen Mehrzahl entfernt ToDo Mehrzahl für alle Sprachen implementieren -->
+                                <#--  </#if>  -->
                             </a>
                         </li>
                     </#if>
                 </#list>
-                <li><a href="${urls.base}/research" alt="${i18n().view_all_research}">${i18n().view_all}</a></li>
             </#if>
         </#list>
         <#if !foundClassGroup>
-            <p><li style="padding-left:1.2em">${i18n().no_research_content_found}</li></p>
+            <p><li style="padding-left:1.2em">${i18n().no_research_content_found}</li></p> 
+        <#else>
+            <li><a href="${urls.base}/research" alt="${i18n().view_all_research}">${i18n().view_all}</a></li>
         </#if>
     </ul>
 </section>
@@ -151,11 +152,41 @@
 <#-- Works in conjunction with the homePageUtils.js file -->
 <#macro academicDeptsHtml>
     <section id="home-academic-depts" class="home-sections">
-        <h4>${i18n().departments}</h4>
+        <h4>${i18n().project_result}</h4>
         <div id="academic-depts">
         </div>
     </section>
 </#macro>
+
+
+<#macro researchprojectsHtmlUos>
+    <section id="home-academic-depts" class="home-sections">
+        <h4>${i18n().projects_capitalized}</h4>
+        <div id="research-projects">
+        </div>
+    </section>
+</#macro>
+
+<#-- builds the "research projects" box on the home page -->
+<#macro listResearchProjects>
+<script>
+var researchProjects = [
+<#if researchProjectDG?has_content>
+    <#list researchProjectDG as resultRow>
+        <#assign uri = resultRow["theURI"] />
+        <#assign label = resultRow["name"] />
+        {'uri': '${uri?url}', 'name': '${label?html}'}<#if (resultRow_has_next)>,</#if>
+    </#list>        
+</#if>
+];
+var urlsBase = "${urls.base}";
+</script>
+</#macro>
+
+
+
+
+
 
 <#-- builds the "academic departments" box on the home page -->
 <#macro listAcademicDepartments>
@@ -164,9 +195,9 @@ var academicDepartments = [
 <#if academicDeptDG?has_content>
     <#list academicDeptDG as resultRow>
         <#assign uri = resultRow["theURI"] />
-        <#assign label = resultRow["name"] />
-        {"uri": "${uri?url}", "name": "${label}"}<#if (resultRow_has_next)>,</#if>
-    </#list>
+        <#assign label = resultRow["name"]?replace("\n", " ") />
+        {'uri': '${uri?url}', 'name': '${label?html}'}<#if (resultRow_has_next)>,</#if>
+    </#list>        
 </#if>
 ];
 var urlsBase = "${urls.base}";

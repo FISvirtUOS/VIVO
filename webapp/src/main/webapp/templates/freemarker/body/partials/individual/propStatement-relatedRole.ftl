@@ -45,7 +45,7 @@
         <#if statement.roleLabel??>
             ${statement.roleLabel?replace(" Role", "")?replace(" role","")}
         <#elseif !property.collatedBySubclass >
-            ${roleTypeLabel?replace(" Role", "")}
+            <#-- ${roleTypeLabel?replace(" Role", "")} -->
         </#if>
     </#local>
 

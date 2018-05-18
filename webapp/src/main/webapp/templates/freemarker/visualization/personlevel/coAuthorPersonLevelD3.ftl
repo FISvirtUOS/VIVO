@@ -289,8 +289,8 @@ $(document).ready(function(){
         <div id="incomplete-data-small">${i18n().incomplete_data_note1}<p></p><p></p>
             <#if user.loggedIn >
                 ${i18n().incomplete_data_note2}
-            <#else>
-                ${i18n().incomplete_data_note3}
+            <#-- <#else>
+                ${i18n().incomplete_data_note3} -->
             </#if>
         </div>
         <p></p>

@@ -1,0 +1,148 @@
+/* BROWSE CLASSES ------>  */
+ul#browse-classes {
+    border: 1px solid #dde4e3;
+    border-right: 0;
+    background-color: #f1f2ee;
+}
+ul#browse-classes li,
+ul#vgraph-classes li {
+    border-bottom: 1px solid #dde4e3;
+    font-size: 1em;
+}
+ul#browse-classes a:hover,
+ul#browse-classes a.selected {
+    background: url(../images/arrow.gif) 4px 5px no-repeat;
+    color: #333;
+    font-weight: bold;
+}
+ul#browse-classes .count-classes {
+    font-size: 12px;
+}
+/* ALPHA BROWSE------>  */
+nav#alpha-browse-container {
+    width: 739px;
+}
+ul#alpha-browse-individuals {
+    background-color: #fff;
+}
+ul#alpha-browse-individuals a:hover,
+ul#alpha-browse-individuals a.selected {
+    background: url(../images/arrowSmall.gif) -3px 7px no-repeat;
+    color: #333;
+    font-weight: bold;
+}
+ul#alpha-browse-individuals .count-classes,
+ul#vgraph-classes .count-classes {
+    font-size: .75em;
+}
+.alphaIndex,
+.pagination.menupage,
+tr.editformcell td select,
+ul#alpha-browse-individuals li {
+    font-size: .8em;
+}
+nav#alpha-browse-container {
+    width: 99%;
+    border: 1px solid #dde4e3;
+    background-color: #fff;
+    border-left: 1px solid #dde4e3;
+    border-bottom: none;
+}
+/* BROWSE INDIVIDUALS------>  */
+#individuals-in-class {
+    width: 99%;
+    border: 1px solid #dde4e3;
+    background-color: #fff;
+}
+#individuals-in-class li.individual {
+    border-bottom: 1px solid #dde4e3;
+}
+#individuals-in-class li img {
+    border: 2px solid #dde4e3;
+}
+#individuals-in-class li h1,
+#property-group-menu ul,
+article.property ul.property-list {
+    color: #5e6363;
+    font-size: 1em;
+}
+.pagination.menupage li a:hover {
+    background: #5e6363;
+}
+.pagination>li {
+    display: inline-block;
+    padding-right: 2px;
+}
+.pagination>li>a {
+    float: none;
+}
+
+.pagination>li.selectedNavPage {
+    padding-right: 7px;
+}
+
+nav#alpha-browse-container {
+    float: right;
+}
+#individuals-in-class {
+    margin-right: 0px;
+}
+.uos-select-style {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    font-size: 1em; 
+    background-color: #f1f2ee;
+    background-repeat: no-repeat;
+    background-image: url(../images/arrowDown.gif);
+    background-position: 98%;
+    padding-right: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.show-filter {
+    border-radius: 25px;
+    background: #f1f2ee;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url(../images/ajax-loader.gif) 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+.filter_button > button {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+

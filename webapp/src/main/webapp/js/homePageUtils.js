@@ -12,8 +12,10 @@ $(document).ready(function(){
     // to return to th ehome page from the search results
     $('input[name="classgroup"]').val("");
 
-    getFacultyMembers();
+    getFacultyMembers();  
+    buildResearchProjects();
     buildAcademicDepartments();
+    
 
     if ( $('section#home-geo-focus').length == 0 ) {
         $('section#home-stats').css("display","inline-block").css("margin-top","20px");
@@ -26,9 +28,9 @@ $(document).ready(function(){
             // determine the row at which to start the search query
             var rowStart = Math.floor((Math.random()*facultyMemberCount));
             var diff;
-            var pageSize = 4; // the number of faculty to display on the home page
-
-            // could have fewer than 4 in a test or dev environment
+            var pageSize = 7; // the number of faculty to display on the home page
+            
+            // could have fewer than 7 in a test or dev environment
             if ( facultyMemberCount < pageSize ) {
                 pageSize = facultyMemberCount;
             }
@@ -55,7 +57,7 @@ $(document).ready(function(){
             $.getJSON(url, function(results) {
 
                 if ( results == null || results.individuals.length == 0 ) {
-                    if ( retryCount < 5 ) {
+                    if ( retryCount < 8 ) {
                         retryCount = retryCount + 1;
                         getFacultyMembers();
                     }
@@ -113,6 +115,55 @@ $(document).ready(function(){
         }
     }
 
+    function buildResearchProjects() {
+        var deptNbr = researchProjects.length;
+        var html = "<ul>";
+        var index = Math.floor((Math.random()*deptNbr)+1)-1;
+        
+        if ( deptNbr == 0 ) {
+            html = "<ul style='list-style:none'><p><li style='padding-top:0.3em'>"
+                   + i18nStrings.noDepartmentsFound + "</li></p></ul>";
+        }
+        else if ( deptNbr > 6 ) {
+        	//if there are more than 6 departments, we want to choose a random subset and display
+        	//and also to make sure the same department is not repeated twice
+        	var indicesUsed = {};//utilizing a hash since easier
+        	var indicesCount = 0;
+        	while(indicesCount < 6) {
+                index = Math.floor((Math.random()*deptNbr)+1)-1;
+                //if the index has already been used, this will be true
+                var indexFound = (index in indicesUsed);
+                //Check to see if this index hasn't already been employed
+                if(!indexFound) {
+                	//if this index hasn't already been employed then utilize it
+                	 html += "<li><a href='" + urlsBase + "/individual?uri=" 
+                     + researchProjects[index].uri + "'>" 
+                     + researchProjects[index].name + "</a></li>";
+                	 //add this index to the set of already used indices
+                	 indicesUsed[index] = true;
+                	 //keep count
+                	 indicesCount++;
+                }
+            }
+        }
+        else {
+            for ( var i=0;i<deptNbr;i++) {
+                html += "<li><a href='" + urlsBase + "/individual?uri=" 
+                        + researchProjects[i].uri + "'>" 
+                        + researchProjects[i].name + "</a></li>";
+            }
+        }
+        if ( deptNbr > 0 ) {
+            html += "</ul><ul style='list-style:none'>"
+                    + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
+                    + urlsBase 
+                    + "/projects#http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt' alt='" 
+                    + i18nStrings.viewAllDepartments + "'>" 
+                    + i18nStrings.viewAllString + "</a></li></ul>";
+        }
+        $('div#research-projects').html(html);
+    }
+
     function buildAcademicDepartments() {
         var deptNbr = academicDepartments.length;
         var html = "<ul>";
@@ -153,13 +204,15 @@ $(document).ready(function(){
         }
         if ( deptNbr > 0 ) {
             html += "</ul><ul style='list-style:none'>"
-                    + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='"
-                    + urlsBase
-                    + "/organizations#http://vivoweb.org/ontology/core#AcademicDepartment' alt='"
-                    + i18nStrings.viewAllDepartments + "'>"
+                    + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
+                    + urlsBase 
+                    + "/researchresults' alt='" 
+                    + i18nStrings.viewAllDepartments + "'>" 
                     + i18nStrings.viewAllString + "</a></li></ul>";
         }
         $('div#academic-depts').html(html);
     }
 
-});
+    
+    
+}); 
