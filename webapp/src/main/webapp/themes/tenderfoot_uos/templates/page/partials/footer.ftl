@@ -16,6 +16,8 @@
                                 | <a class="terms" href="${urls.termsOfUse}" title="${i18n().menu_termuse}">${i18n().menu_termuse}</a></small> |
                         </#if>
                         ${i18n().menu_powered} <a class="powered-by-vivo" href="http://vivoweb.org" target="_blank" title="${i18n().menu_powered} VIVO"><strong>VIVO</strong></a>
+                        and
+                        <a class="powered-by-vivo" href="https://uni-osnabrueck.de" target="_blank" title="Universität Osnabrück"><strong>UOS</strong></a>
                         <#if user.hasRevisionInfoAccess>
                             | ${i18n().menu_version} <a href="${version.moreInfoUrl}" title="${i18n().menu_version}">${version.label}</a>
                         </#if>

@@ -87,7 +87,7 @@ body {
     height: 100%; /* IE6: treaded as min-height*/;
     min-height: 100%; /* real browsers */
     margin: 0 auto;
-    background: #f3f3f0 url(../images/header-background.png) center 0 no-repeat;
+    background: #f3f3f0 no-repeat;
 }
 
 #wrapper-content {
@@ -150,9 +150,9 @@ body {
 /* HEADER ------>  */
 #branding {
     position: relative;
-//    width: 970px;
     height: 90px;
     margin: 0 auto;
+    background: #AD1034; 
 }
 #branding .row {
     background-color:rgba(255, 255, 255, 0);
@@ -290,7 +290,6 @@ h1.vivo-logo {
     max-width: 442px;
     height: 59px;
     top: 15px;
-    left: 450px;
     background: url(../images/VIVO-logo.png) 0 0 no-repeat;
     background-size: 100% auto;
 }
@@ -319,6 +318,61 @@ h1.uos-logo a {
 .displace {
     left: -9999px;
     position: absolute;
+}
+.listimage {  
+    display: block;
+    padding: 90px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #ececec;
+    background-size: cover;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    transition: background-position 0.65s ease;
+  }
+.listimage span {
+    color: #fff;
+    font-size: 1.5em;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    vertical-align: middle;
+    font-weight: bold;
+    vertical-align: middle;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    height: 3em;
+    padding-top: 0.5em;
+    opacity: 0.7;
+    background: black;
+    margin-top: 5.0em;
+    width: 100%;    
+}
+.listimage#leli1 {
+    background-image: url(../images/leitlinie1.jpg);
+}
+.listimage#leli2 {
+    background-image: url(../images/leitlinie2.jpg);
+}
+.listimage#leli3 {
+    background-image: url(../images/leitlinie3.jpg);
+}
+.listimage#leli4 {
+    background-image: url(../images/leitlinie4.jpg);
+}
+.listimage#leli5 {
+    background-image: url(../images/leitlinie5.jpg);
+}
+.listimage#leli6 {
+    background-image: url(../images/leitlinie6.jpg);
 }
 h2 {
     padding: 5px 0 3px 0;
