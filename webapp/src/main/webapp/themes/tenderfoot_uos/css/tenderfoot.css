@@ -290,11 +290,30 @@ h1.vivo-logo {
     max-width: 442px;
     height: 59px;
     top: 30px;
-    left: 0;
+    left: 450px;
     background: url(../images/VIVO-logo.png) 0 0 no-repeat;
     background-size: 100% auto;
 }
 h1.vivo-logo a {
+    display: block;
+    width: 100%;
+    height: 59px;
+}
+.displace {
+    left: -9999px;
+    position: absolute;
+}
+h1.uos-logo {
+    position: absolute;
+    width: 100%;
+    max-width: 442px;
+    height: 59px;
+    top: 30px;
+    left: 0;
+    background: url(../images/uos_logo.gif) 0 0 no-repeat;
+    background-size: 100% auto;
+}
+h1.uos-logo a {
     display: block;
     width: 100%;
     height: 59px;
