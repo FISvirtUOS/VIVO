@@ -180,6 +180,10 @@ body {
 /* HEADER ------>  */
 #branding {
     position: relative;
+<<<<<<< HEAD
+=======
+//    width: 970px;
+>>>>>>> changed placement of the logo
     height: 90px;
     margin: 0 auto;
     background: #FFFFFF; 
@@ -526,7 +530,6 @@ img.add-individual {
     height: 15px;
     width: 15px;
 }
-<<<<<<< HEAD
 .jumbotron h1,
 .jumbotron .h1 {
     border-left: 12px solid rgb(251, 185, 0);
@@ -546,5 +549,3 @@ h1 > span {
     text-align: right;
     font-size: 12px;
 }
-=======
->>>>>>> Added settings and copy of tenderfoot for uos
