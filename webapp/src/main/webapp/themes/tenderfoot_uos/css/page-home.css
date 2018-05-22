@@ -10,7 +10,8 @@
 }
 
 .hero {
-    background: #283a4b url(../images/hero-background.jpg) repeat-x 0 0;
+    background: #283a4b url(../images/hero-background.jpg) no-repeat 0 0;
+    background-size: 100%;
 }
 
 .hero form input,
