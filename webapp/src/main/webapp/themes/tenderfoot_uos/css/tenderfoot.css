@@ -181,12 +181,18 @@ body {
 #branding {
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //    width: 970px;
 >>>>>>> changed placement of the logo
     height: 90px;
     margin: 0 auto;
     background: #FFFFFF; 
+=======
+    height: 90px;
+    margin: 0 auto;
+    background: #AD1034; 
+>>>>>>> Layout, images etzc
 }
 #branding .row {
     background-color:rgba(255, 255, 255, 0);
@@ -351,9 +357,15 @@ h1.vivo-logo {
     position: absolute;
     width: 60%;
     max-width: 442px;
+<<<<<<< HEAD
     height: 45px;
     top: 30px;
     background: url(../images/VIVO-logo.gif) 0 no-repeat;
+=======
+    height: 59px;
+    top: 15px;
+    background: url(../images/VIVO-logo.png) 0 0 no-repeat;
+>>>>>>> Layout, images etzc
     background-size: 100% auto;
 }
 h1.vivo-logo a {
@@ -404,7 +416,11 @@ h1.uos-logo a {
     font-size: 1.5em;
     vertical-align: middle;
     font-weight: bold;
+<<<<<<< HEAD
     color: #000000;
+=======
+    color: #fff;
+>>>>>>> Layout, images etzc
     font-size: 1.5em;
     vertical-align: middle;
     font-weight: bold;
@@ -417,7 +433,11 @@ h1.uos-logo a {
     height: 3em;
     padding-top: 0.5em;
     opacity: 0.7;
+<<<<<<< HEAD
     background: #F3F3F3;
+=======
+    background: black;
+>>>>>>> Layout, images etzc
     margin-top: 5.0em;
     width: 100%;    
 }
@@ -439,6 +459,7 @@ h1.uos-logo a {
 .listimage#leli6 {
     background-image: url(../images/leitlinie6.jpg);
 }
+<<<<<<< HEAD
 .listimage#frontpage {
     background-image: url(../images/hero-background.jpg);
     padding: 150px 0;
@@ -449,6 +470,8 @@ h1.uos-logo a {
     padding-right: 0px;
 }
 
+=======
+>>>>>>> Layout, images etzc
 h2 {
     padding: 5px 0 3px 0;
     margin: 0;
