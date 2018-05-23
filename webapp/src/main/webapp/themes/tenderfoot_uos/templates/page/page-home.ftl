@@ -137,19 +137,16 @@
                 </div>
             </div>
             <div class="container">
-                <div class="col-md-8">
+                <div class="col-md-4">
                     <a class="listimage" id="leli4" title="P4: Mathematische Strukturen und Modelle" href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/mathematische_strukturen_und_modelle.html"><span>${"P4: Mathematische Strukturen und Modelle"}</span></a>
                 </div>
                 <div class="col-md-4">
                         <a class="listimage" id="leli5" title="P5: Mensch-Umwelt-Netzwerke" href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/mensch_umwelt_netzwerke.html"><span>${"P5: Mensch-Umwelt-Netzwerke"}</span></a>
                 </div>
-            </div>
-            <div class="container">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <a class="listimage" id="leli6" title="P6: Migrationsgesellschaften" href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/migrationsgesellschaften.html"><span>${"P6: Migrationsgesellschaften"}</span></a>
                 </div>
             </div>
-        </div>
         </div>
 
 
