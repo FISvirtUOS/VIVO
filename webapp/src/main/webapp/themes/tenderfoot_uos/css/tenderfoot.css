@@ -231,16 +231,16 @@ footer {
     height: 88px;
     margin: 0 auto;
     font-size: .7em;
-    color: white;
-    background-color: black;
+    color: 000000;
+    background-color: #f3f3f3;
 }
 footer .row {
-    background-color: black;
+    background-color: #f3f3f3;
 }
 footer p.copyright {
     float: left;
     padding-top: 55px;
-    color: white;
+    color: #000000;
 }
 footer p.copyright small {
     font-size: 1em;
@@ -272,12 +272,12 @@ ul#individual-facultyMemberships li:last-child {
 #footer-nav a:hover,
 a.terms,
 a.powered-by-vivo {
-    color: white;
+    color: #000000;
     text-decoration: none;
 }
 #footer-nav  a.terms:hover,
 a.powered-by-vivo:hover {
-    color: white;
+    color: #000000;
     text-decoration: none;
 }
 #footer-nav p {
@@ -286,17 +286,17 @@ a.powered-by-vivo:hover {
 /* BRANDING ------>  */
 h1.vivo-logo {
     position: absolute;
-    width: 100%;
+    width: 60%;
     max-width: 442px;
-    height: 59px;
-    top: 15px;
-    background: url(../images/VIVO-logo.png) 0 0 no-repeat;
+    height: 45px;
+    top: 30px;
+    background: url(../images/VIVO-logo.png) 0 no-repeat;
     background-size: 100% auto;
 }
 h1.vivo-logo a {
     display: block;
     width: 100%;
-    height: 59px;
+    height: 45px;
 }
 .scaled {
     transform: scale()
@@ -339,7 +339,7 @@ h1.uos-logo a {
     font-size: 1.5em;
     vertical-align: middle;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     font-size: 1.5em;
     vertical-align: middle;
     font-weight: bold;
@@ -352,7 +352,7 @@ h1.uos-logo a {
     height: 3em;
     padding-top: 0.5em;
     opacity: 0.7;
-    background: black;
+    background: #F3F3F3;
     margin-top: 5.0em;
     width: 100%;    
 }

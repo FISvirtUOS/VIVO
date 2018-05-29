@@ -133,7 +133,7 @@
                     <a class="listimage" id="leli2" title='P2: Integrated Science: Vom Einzelmolekül zum System' href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/integrated_science.html"><span>${"P2: Integrated Science: Vom Einzelmolek&uuml;l zum System"}</span></a>
                 </div>
                 <div class="col-md-4">
-                    <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/kognition.html"><span>${"P3: Kognition: Mensch ? Technik ? Interaktion"}</span></a>
+                    <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://www.uni-osnabrueck.de/universitaet/profil/profillinien/kognition.html"><span>${"P3: Kognition: Mensch - Technik - Interaktion"}</span></a>
                 </div>
             </div>
             <div class="container">
