@@ -7,6 +7,8 @@ settings.xml
 
 installer/local-settings.xml
 
+installer/local-settings.xml
+
 rdf/auth/firsttime/test-user-model.owl
 utilities/solrtester/.work
 utilities/rdbmigration/.work
