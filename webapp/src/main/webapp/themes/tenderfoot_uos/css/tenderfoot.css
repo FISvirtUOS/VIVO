@@ -108,7 +108,7 @@ body {
 }
 
 .row.title {
-    background: #398AAC;
+    background: #AD1034;
     padding-top: 7px;
     padding-bottom: 3px;
 }
@@ -267,7 +267,7 @@ ul#individual-facultyMemberships li:last-child {
     border-right: none;
 }
 #footer-nav a {
-    color: white;
+    color: #000000;
 }
 #footer-nav a:hover,
 a.terms,
