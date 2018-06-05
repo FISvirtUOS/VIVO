@@ -5,10 +5,10 @@
 		<div class="col-xs-4 col-md-4">
 <h1 class="uos-logo"><a title="Homepage UOS" href="https://www.uni-osnabrueck.de"><span class="displace">${siteName}</span></a></h1>
 		</div>
-		<div class="col-xs-5 col-md-5">
+		<div class="col-xs-3 col-md-3">
 <h1 class="vivo-logo"><a title="${i18n().identity_title}" href="${urls.home}"><span class="displace">${siteName}</span></a></h1>
 		</div>
-		<div class="col-xs-3 col-md-3">
+		<div class="col-xs-5 col-md-5">
 <#-- Since we are using a graphic text for the tagline, we won't render ${siteTagline}
 <#if siteTagline?has_content>
 	<em>${siteTagline}</em>
