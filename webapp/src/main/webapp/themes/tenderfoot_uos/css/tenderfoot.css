@@ -89,7 +89,6 @@ body {
     min-height: 100%; /* real browsers */
     margin: 0 auto;
     background: #ffffff no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper-content {
@@ -470,5 +469,11 @@ img.add-individual {
     border-left: 12px solid rgb(251, 185, 0);
     padding-left: 10px;
     font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a, p, li, span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
