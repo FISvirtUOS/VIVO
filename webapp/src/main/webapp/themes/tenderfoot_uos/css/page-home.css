@@ -185,11 +185,14 @@ div.col-md-12 {
     padding-left: 0px;
     padding-right: 0px;
 }
-div.col-md-4 {
-    padding-left: 0px;
-}
 #search-homepage {
     padding-top: 25px;
+}
+#listsections {
+    padding-left: 0px;
+}
+#listrightsections {
+    padding-right: 0px;
 }
 .input-group {
     padding-right: 15px;

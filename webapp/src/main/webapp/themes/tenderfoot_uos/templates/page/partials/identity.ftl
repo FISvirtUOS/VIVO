@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-4 col-md-4">
+		<div class="col-xs-4 col-md-4" id="uoslogo">
 <h1 class="uos-logo"><a title="Homepage UOS" href="https://www.uni-osnabrueck.de"><span class="displace">${siteName}</span></a></h1>
 		</div>
 		<div class="col-xs-1 col-md-1">
