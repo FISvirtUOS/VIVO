@@ -33,13 +33,22 @@
         <#include "developer.ftl">
         <#include "menu.ftl">
         <#include "message.ftl">
+
+        <div class="container">
+            <div class="col-md-12" id="frontimage">
+                <a class="listimage" id="frontpage" title="Vivo UOS"></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>${i18n().intro_title + "@UOS"}</h1>
+            </div>
+        </div>
+
         <div class="row hero">
-            <div class="theme-showcase">
-                <div class="col-md-12">
-                    <div class="container" role="main">
-                        <div class="jumbotron">
-                            <h1>${i18n().intro_title + "@UOS"}</h1>
-                        </div>
+            <div class="container" role="main" id="theme-showcase">
+                    <div class="col-md-12">
                         <form id="search-homepage" action="${urls.search}" name="search-home" role="search" method="post" class="form-horizontal">
                             <fieldset>
                                 <div class="form-group pull-left" style="margin-right: 5px;">
@@ -65,15 +74,15 @@
                             </fieldset>
                         </form>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="container">
+                
+                    <div class="col-md-12">
+                
                         <div class="jumbotron">
                             <p>${i18n().intro_para1}</p>
                             <p>${i18n().intro_para2}</p>
                         </div>
+                    
                     </div>
-                </div>
             </div>
         </div>
 

@@ -7,7 +7,7 @@ legend {
 }
 
 #nav {
-    background: #f7f9f9;
+    background: #ffffff;
 }
 
 #nav.affix {
@@ -25,8 +25,8 @@ legend {
  */
 
 #nav .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-collapse.in #main-nav {
@@ -46,16 +46,14 @@ legend {
 }
 
 .navbar-default {
-    background-image: -webkit-linear-gradient(top, #F3F3F3 0%, #F3F3F3 100%);
-    background-image:      -o-linear-gradient(top, #F3F3F3 0%, #F3F3F3 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#F3F3F3), to(#F3F3F3));
-    background-image:         linear-gradient(to bottom, #F3F3F3 0%, #F3F3F3 100%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    background-image:      -o-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background-image:         linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, .075);
-            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, .075);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -63,8 +61,11 @@ legend {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
-    background-color: transparent;
+    color: #fff;
+    background-color: rgb(172, 6, 52);
+}
+.navbar-default .navbar-nav > li {
+    border-right: 1px solid #000000;
 }
 
 p.navbar-text {
@@ -82,12 +83,12 @@ button.navbar-toggle {
 body {
     padding: 0;
     height: 100%; /* needed for container min-height */
-    font-family: "Noto Sans", "Lucida Sans Unicode","Lucida Grande", Geneva, helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     height: auto !important; /* real browsers */
     height: 100%; /* IE6: treaded as min-height*/;
     min-height: 100%; /* real browsers */
     margin: 0 auto;
-    background: #f3f3f0 no-repeat;
+    background: #ffffff no-repeat;
 }
 
 #wrapper-content {
@@ -119,6 +120,7 @@ body {
 
 .row.title h1 {
     margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .row-eq-height {
@@ -152,7 +154,7 @@ body {
     position: relative;
     height: 90px;
     margin: 0 auto;
-    background: #AD1034; 
+    background: #FFFFFF; 
 }
 #branding .row {
     background-color:rgba(255, 255, 255, 0);
@@ -170,9 +172,9 @@ ul#header-nav li {
     display: block;
     padding-left: 10px;
     padding-right: 10px;
-    border-right: 1px solid #7c7d7f;
+    border-right: 1px solid #000000;
     font-size: .7em;
-    color: #fff;
+    color: #000000;
 }
 ul#header-nav li:last-child {
     padding-left: 1px;
@@ -180,12 +182,13 @@ ul#header-nav li:last-child {
     border-right: none;
 }
 ul#header-nav a {
-    color: #fff;
+    color: #000000;
 }
 ul#header-nav a:hover,
 ul#header-nav a:active {
     text-decoration: none;
-    color: #999;
+    color: #ffffff;
+    background-color: rgb(172, 6, 52);
 }
 ul#header-nav a.log-out {
     padding-left: 10px;
@@ -290,7 +293,7 @@ h1.vivo-logo {
     max-width: 442px;
     height: 45px;
     top: 30px;
-    background: url(../images/VIVO-logo.png) 0 no-repeat;
+    background: url(../images/VIVO-logo.gif) 0 no-repeat;
     background-size: 100% auto;
 }
 h1.vivo-logo a {
@@ -302,10 +305,8 @@ h1.vivo-logo a {
     transform: scale()
 }
 h1.uos-logo {
-    position: absolute;
-    width: 100%;
-    max-width: 442px;
-    height: 90px;
+    width: 295px;
+    height: 74px;
     left: 0;
     background: url(../images/uos_logo.jpg) 0 no-repeat;
     background-size: 100% auto;
@@ -374,6 +375,14 @@ h1.uos-logo a {
 .listimage#leli6 {
     background-image: url(../images/leitlinie6.jpg);
 }
+.listimage#frontpage {
+    background-image: url(../images/hero-background.jpg);
+}
+#frontimage {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 h2 {
     padding: 5px 0 3px 0;
     margin: 0;
@@ -454,4 +463,11 @@ section#container div {
 img.add-individual {
     height: 15px;
     width: 15px;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+    border-left: 12px solid rgb(251, 185, 0);
+    padding-left: 10px;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

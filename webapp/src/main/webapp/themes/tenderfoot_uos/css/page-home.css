@@ -1,17 +1,22 @@
 .jumbotron {
     background-color: transparent;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 1px 1px 4px #000;
+    color: #000000;
+    text-align: left;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 
 .jumbotron p {
-    color: #dddddd;
+    color: #000000;
 }
 
 .hero {
-    background: #283a4b url(../images/hero-background.jpg) no-repeat 0 0;
     background-size: 100%;
+    background-color: #f3f3f3;
+}
+
+.hero-image {
+    background: #ffffff url(../images/hero-background.jpg) no-repeat 0 0;
 }
 
 .hero form input,
@@ -31,9 +36,9 @@
     border-top: 1px solid rgba(220,228,227,.42); /* stroke */
     border-bottom: 1px solid rgba(220,228,227,.42); /* stroke */
     /* background-color: #395d7f; /* layer fill content */
-    background-color: #AD1034;
-    border-bottom: 2px solid #AD1034;
-    color: #fff;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    color: #000;
 }
 #home-stats {
     margin-top: 30px;
@@ -175,4 +180,17 @@ div.faculty-home {
 }
 .faculty-home a {
     font-size: 1.2em;
+}
+div.col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+div.col-md-4 {
+    padding-left: 0px;
+}
+#search-homepage {
+    padding-top: 25px;
+}
+.input-group {
+    padding-right: 15px;
 }
