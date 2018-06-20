@@ -10,7 +10,7 @@ legend {
   /* then for WOFF-capable browsers */
   @font-face {
     font-family: MetaWebPro-Normal;
-    src: url("../fonts/MetaWebPro/MetaWebPro-Normal.woff") format("woff");
+    src: url("../fonts/MetaWebPro-Normal.woff") format("woff");
   }
 
 .navbar {
@@ -485,13 +485,12 @@ img.add-individual {
     border-left: 12px solid rgb(251, 185, 0);
     padding-left: 38px;
     font-size: 45px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a, p, li, span {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1, h2, h3, h4 {
-    font-family: MetaWebPro-Normal, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: MetaWebPro-Normal, Arial, Helvetica, sans-serif;;
 }
 .citeimage {
     text-align: right;
