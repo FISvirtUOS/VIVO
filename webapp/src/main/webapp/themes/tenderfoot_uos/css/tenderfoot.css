@@ -54,6 +54,9 @@ legend {
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
     border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -467,7 +470,7 @@ img.add-individual {
 .jumbotron h1,
 .jumbotron .h1 {
     border-left: 12px solid rgb(251, 185, 0);
-    padding-left: 10px;
+    padding-left: 38px;
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -476,4 +479,8 @@ a, p, li, span {
 }
 h1, h2, h3, h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.citeimage {
+    text-align: right;
+    font-size: 12px;
 }
