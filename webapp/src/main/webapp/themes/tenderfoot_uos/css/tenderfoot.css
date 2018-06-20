@@ -380,6 +380,8 @@ h1.uos-logo a {
 }
 .listimage#frontpage {
     background-image: url(../images/hero-background.jpg);
+    padding: 210px 0;
+
 }
 #frontimage {
     padding-left: 0px;
