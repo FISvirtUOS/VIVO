@@ -4,13 +4,13 @@ legend {
 
 @font-face {
     font-family: MetaWebPro-Normal;
-    src: url("/usr/share/fonts/MetaWebPro/MetaWebPro-Normal.eot");
+    src: url("../fonts/MetaWebPro-Normal.eot");
   }
   
   /* then for WOFF-capable browsers */
   @font-face {
     font-family: MetaWebPro-Normal;
-    src: url("/usr/share/fonts/MetaWebPro/MetaWebPro-Normal.woff") format("woff");
+    src: url("../fonts/MetaWebPro/MetaWebPro-Normal.woff") format("woff");
   }
 
 .navbar {
