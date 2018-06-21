@@ -37,7 +37,7 @@
         <div class="container">
             <div class="col-md-12" id="frontimage">
                 <a class="listimage" id="frontpage" title="Vivo UOS"></a>
-                <p class="citeimage">Bild: Berndt Schnieders</p>
+                <p class="citeimage">Foto: Kathrin Schnieders</p>
             </div>
         </div>
 
