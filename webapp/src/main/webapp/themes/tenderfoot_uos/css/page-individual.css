@@ -70,7 +70,7 @@ article.property li h3 {
 #individual-intro #iconControlsRightSide {
     float: right;
     background-color: #fff;
-    margin-right: 10px;
+    margin-right: 35px;
     padding-top: 3px;
     padding-left: 3px;
     padding-right: 3px;
@@ -152,4 +152,19 @@ section#preferredTitle h2 {
     float: left;
     font-size: 1em;
     color: #ccc;
+}
+
+h3,h4,h5,li {
+
+    color: #000000;
+}
+#searchbutton {
+    width: 30px;
+    height: 25px;
+    border: 0;
+    font-size: 16px;
+    color: #5e6363;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 0;
 }
