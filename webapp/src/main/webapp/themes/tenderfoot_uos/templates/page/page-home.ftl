@@ -131,8 +131,8 @@
         <div class="row research-count">
             <div class="container">
                 <div class="col-md-12">
-                    <h2 class="h1">Explore our key research areas</h2>
-                    <p>Explore by Subject Area</p>
+                    <h2 class="h1">${i18n().explore_frontpage}</h2>
+                    <p>${i18n().explore_sup_frontpage}</p>
                 </div>
             </div>
             <div class="container">
