@@ -143,18 +143,18 @@
                     <a class="listimage" id="leli2" title='P2: Integrated Science: Vom Einzelmolekül zum System' href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp2"><span>${"P2: Integrated Science: Vom Einzelmolek&uuml;l zum System"}</span></a>
                 </div>
                 <div class="col-md-4" id="listrightsections">
-                    <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entityEdit?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp3"><span>${"P3: Kognition: Mensch - Technik - Interaktion"}</span></a>
+                    <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp3"><span>${"P3: Kognition: Mensch - Technik - Interaktion"}</span></a>
                 </div>
             </div>
             <div class="container" id="listsections">
                 <div class="col-md-4">
-                    <a class="listimage" id="leli4" title="P4: Mathematische Strukturen und Modelle" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entityEdit?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp4"><span>${"P4: Mathematische Strukturen und Modelle"}</span></a>
+                    <a class="listimage" id="leli4" title="P4: Mathematische Strukturen und Modelle" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp4"><span>${"P4: Mathematische Strukturen und Modelle"}</span></a>
                 </div>
                 <div class="col-md-4">
-                        <a class="listimage" id="leli5" title="P5: Mensch-Umwelt-Netzwerke" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entityEdit?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp5"><span>${"P5: Mensch-Umwelt-Netzwerke"}</span></a>
+                        <a class="listimage" id="leli5" title="P5: Mensch-Umwelt-Netzwerke" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp5"><span>${"P5: Mensch-Umwelt-Netzwerke"}</span></a>
                 </div>
                 <div class="col-md-4" id="listrightsections">
-                    <a class="listimage" id="leli6" title="P6: Migrationsgesellschaften" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entityEdit?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp6"><span>${"P6: Migrationsgesellschaften"}</span></a>
+                    <a class="listimage" id="leli6" title="P6: Migrationsgesellschaften" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http://fis.virtuos.uos.de/vivotest/profillinie/p6"><span>${"P6: Migrationsgesellschaften"}</span></a>
                 </div>
             </div>
         </div>
