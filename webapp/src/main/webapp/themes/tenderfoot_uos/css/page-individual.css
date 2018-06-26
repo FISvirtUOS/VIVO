@@ -46,8 +46,8 @@ article.property li h3 {
 #individual-hasResearchArea a {
     font-size: 13px;
     background: transparent;
-    border: 1px solid #337ab7;
-    color: #337ab7;
+    border: 1px solid #000000;
+    color: #000000;
     font-weight: 400;
     transition: all 0.5s;
     padding: .1em .4em .1em;
@@ -56,14 +56,14 @@ article.property li h3 {
 }
 
 #individual-hasResearchArea a:hover {
-    background: #337ab7;
+    background: rgb(172, 6, 52);
     color: #fff;
     text-decoration: none;
 }
 
 #individual-intro h1 {
     font-size: 1.375em;
-    color: #2485ae;
+    color: #000000;
     float: left;
 }
 

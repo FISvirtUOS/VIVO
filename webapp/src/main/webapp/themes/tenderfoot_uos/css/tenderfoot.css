@@ -204,6 +204,11 @@ ul#header-nav a:active {
     color: #ffffff;
     background-color: rgb(172, 6, 52);
 }
+.nav>li>a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(172, 6, 52);
+}
 ul#header-nav a.log-out {
     padding-left: 10px;
 }
@@ -305,15 +310,19 @@ ul#individual-facultyMemberships li:last-child {
 #footer-nav a {
     color: #000000;
 }
-#footer-nav a:hover,
 a.terms,
 a.powered-by-vivo {
     color: #000000;
     text-decoration: none;
 }
 #footer-nav  a.terms:hover,
-a.powered-by-vivo:hover {
-    color: #000000;
+a.powered-by-vivo:hover, 
+#footer-nav a:hover, a:hover {
+    color: rgb(172, 6, 52);
+    text-decoration: none;
+}
+a:active {
+    color: rgb(172, 6, 52);
     text-decoration: none;
 }
 #footer-nav p {
