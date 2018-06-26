@@ -21,6 +21,7 @@
 
 .hero form input,
 .hero form select {
+    border-radius: 0;
     margin-bottom: 0em;
     margin-top: 0em;
     margin-right: 0em;
@@ -53,6 +54,9 @@
     background: #5e6363 url(../images/stats-bg.png) repeat-x 0 0;
     color: #fff;
 }
+li > a {
+    text-align: left;
+}
 #stats li a:hover {
     opacity: .5;
 }
@@ -77,7 +81,7 @@
     font-size: 0.9em;
 }
 #home-research li:last-child {
-    text-align:right;
+    text-align: left;
     padding: 4px 16px 0 0;
 }
 #home-research li span {
@@ -110,6 +114,7 @@
     line-height: 1.25em;
     padding-top: 1.0em;
     padding-right: 4px;
+    text-align: left !important;
 }
 #home-faculty-mbrs  {
     width: 297px;
@@ -150,7 +155,7 @@ div#research-faculty-mbrs ul#viewMoreFac  {
     list-style:none;
 }
 div#research-faculty-mbrs ul#viewMoreFac li {
-    text-align:right;
+    text-align: left;
     padding: 0 16px 8px 0;
     clear:both;
 }

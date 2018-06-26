@@ -66,8 +66,10 @@
                                     <div class="input-group">
                                         <input type="text" name="querytext" class="form-control" value="" placeholder="${i18n().search_form}" autocapitalize="off" />
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default" type="submit">
-                                                <span class="icon-search">${i18n().search_button}</span>
+                                            <button id="search-field-box-button" class="btn btn-default" type="submit">
+                                                <svg id="search-icon" class="search-icon">
+                                                        <path d="m 4.8495 7.8226 c 0.82666 0 1.5262 -0.29146 2.0985 -0.87438 c 0.57232 -0.58292 0.86378 -1.2877 0.87438 -2.1144 c 0.010599 -0.82666 -0.28086 -1.5262 -0.87438 -2.0985 c -0.59352 -0.57232 -1.293 -0.86378 -2.0985 -0.87438 c -0.8055 -0.010599 -1.5103 0.28086 -2.1144 0.87438 c -0.60414 0.59352 -0.8956 1.293 -0.87438 2.0985 c 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 c 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438 Z m 4.4695 0.2115 l 3.681 3.6819 l -1.259 1.284 l -3.6817 -3.7 l 0.0019784 -0.69479 l -0.090043 -0.098846 c -0.87973 0.76087 -1.92 1.1413 -3.1207 1.1413 c -1.3553 0 -2.5025 -0.46363 -3.4417 -1.3909 s -1.4088 -2.0686 -1.4088 -3.4239 c 0 -1.3553 0.4696 -2.4966 1.4088 -3.4239 c 0.9392 -0.92727 2.0864 -1.3969 3.4417 -1.4088 c 1.3553 -0.011889 2.4906 0.45771 3.406 1.4088 c 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 c 0 1.2126 -0.38043 2.2588 -1.1413 3.1385 l 0.098834 0.090049 Z" />
+                                                </svg>
                                             </button>
                                         </span>
                                     </div>
@@ -131,7 +133,7 @@
         <div class="row research-count">
             <div class="container">
                 <div class="col-md-12">
-                    <h2 class="h1">${i18n().explore_frontpage}</h2>
+                    <h2>${i18n().explore_frontpage}</h2>
                     <p>${i18n().explore_sup_frontpage}</p>
                 </div>
             </div>
@@ -140,7 +142,7 @@
                     <a class="listimage" id="leli1" title="P1: Digitale Gesellschaft - Innovation - Regulierung" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp1"><span>${"P1: Digitale Gesellschaft - Innovation - Regulierung"}</span></a>
                 </div>
                 <div class="col-md-4">
-                    <a class="listimage" id="leli2" title='P2: Integrated Science: Vom Einzelmolek�l zum System' href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp2"><span>${"P2: Integrated Science: Vom Einzelmolek&uuml;l zum System"}</span></a>
+                    <a class="listimage" id="leli2" title='P2: Integrated Science: Vom Einzelmolekül zum System' href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp2"><span>${"P2: Integrated Science: Vom Einzelmolekül zum System"}</span></a>
                 </div>
                 <div class="col-md-4" id="listrightsections">
                     <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp3"><span>${"P3: Kognition: Mensch - Technik - Interaktion"}</span></a>

@@ -5,12 +5,23 @@ legend {
 @font-face {
     font-family: MetaWebPro-Normal;
     src: url("../fonts/MetaWebPro-Normal.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaWebPro-Normal;
+  src: url("../fonts/MetaWebPro-Normal.woff") format("woff");
+}
+
+@font-face {
+    font-family: MetaWebPro-Bold;
+    src: url("../fonts/MetaWebPro-Bold.eot");
   }
   
   /* then for WOFF-capable browsers */
   @font-face {
-    font-family: MetaWebPro-Normal;
-    src: url("../fonts/MetaWebPro-Normal.woff") format("woff");
+    font-family: MetaWebPro-Bold;
+    src: url("../fonts/MetaWebPro-Bold.woff") format("woff");
   }
 
 .navbar {
@@ -78,6 +89,9 @@ legend {
     color: #fff;
     background-color: rgb(172, 6, 52);
 }
+a:focus {
+    color: rgb(172, 6, 52);
+}
 .navbar-default .navbar-nav > li {
     border-right: 1px solid #000000;
 }
@@ -97,7 +111,7 @@ button.navbar-toggle {
 body {
     padding: 0;
     height: 100%; /* needed for container min-height */
-    font-family: MetaWebPro-Normal, Arial, Helvetica, sans-serif;
+    font-family: MetaWebPro-Bold, MetaWebPro-Normal, Arial, Helvetica, sans-serif;
     height: auto !important; /* real browsers */
     height: 100%; /* IE6: treaded as min-height*/;
     min-height: 100%; /* real browsers */
@@ -522,7 +536,10 @@ a, p, li, span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1, h2, h3, h4 {
-    font-family: MetaWebPro-Normal, Arial, Helvetica, sans-serif;;
+    font-family: MetaWebPro-Bold, MetaWebPro-Normal, Arial, Helvetica, sans-serif;;
+}
+h1 > span {
+    font-family: MetaWebPro-Bold, MetaWebPro-Normal, Arial, Helvetica, sans-serif;;
 }
 .citeimage {
     text-align: right;
