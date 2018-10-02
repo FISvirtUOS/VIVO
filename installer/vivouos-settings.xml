@@ -5,9 +5,9 @@
         <profile>
             <id>defaults</id>
             <properties>
-                <app-name>vivotest</app-name>
+                <app-name>vivouos</app-name>
 
-                <vivo-dir>/usr/share/tomcat/webapps/vivo_test_home_dir</vivo-dir>
+                <vivo-dir>/usr/share/tomcat/webapps/vivouos_home_dir</vivo-dir>
                 <tomcat-dir>/usr/share/tomcat</tomcat-dir>
 
                 <default-theme>tenderfoot_uos</default-theme>
