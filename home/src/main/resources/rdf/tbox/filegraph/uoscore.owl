@@ -26,7 +26,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
     xmlns:ocrer="http://purl.org/net/OCRe/research.owl#"
-    xmlns:uoscore="http://fis.virtuos.uos.de/vivo/ontology/uoscore/"
+    xmlns:uoscore="http://fis.virtuos.uos.de/vivouos/ontology/uoscore/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
     xmlns:bibo="http://purl.org/ontology/bibo/"
@@ -48,7 +48,7 @@
     <rdfs:label xml:lang="de-DE">Denomination</rdfs:label>
   </owl:Class>
   
-  <owl:ObjectProperty rdf:about="http://fis.virtuos.uos.de/vivo/ontology/uoscore/hatDenomination">
+  <owl:ObjectProperty rdf:about="http://fis.virtuos.uos.de/vivouos/ontology/uoscore/hatDenomination">
     <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
