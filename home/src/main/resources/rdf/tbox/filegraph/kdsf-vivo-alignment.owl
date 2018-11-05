@@ -615,7 +615,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     <owl:DatatypeProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#BezeichnungDerProfessur">
 		<rdfs:label xml:lang="de-DE">Bezeichnung der Professur</rdfs:label>
         <rdfs:label xml:lang="en-US">Labeling of the professorship</rdfs:label>
-        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professor"/>
+        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <Meta:inhaltlicheDefinition>Be41</Meta:inhaltlicheDefinition>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
