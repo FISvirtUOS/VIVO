@@ -39,23 +39,15 @@
     <rdfs:label xml:lang="de-DE">UOS Core</rdfs:label>
   </owl:Ontology>
 
-  <owl:Class rdf:about="http://fis.virtuos.uos.de/vivouos/ontology/uoscore/Denomination">
+  <owl:DatatypeProperty rdf:about="https://fis.virtuos.uos.de/vivouos/ontology/uoscore/Denomination">
+		<rdfs:label xml:lang="de-DE">Denomination</rdfs:label>
+    <rdfs:label xml:lang="en-US">Denomination</rdfs:label>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professor"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <Meta:inhaltlicheDefinition>Be41</Meta:inhaltlicheDefinition>
     <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
-    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
-    <rdfs:label xml:lang="de-DE">Denomination</rdfs:label>
-  </owl:Class>
-  
-  <owl:ObjectProperty rdf:about="http://fis.virtuos.uos.de/vivouos/ontology/uoscore/hatDenomination">
-    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
-    <rdfs:range rdf:resource="http://fis.virtuos.uos.de/vivouos/ontology/uoscore/Denomination"/>
-    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
-    <rdfs:label xml:lang="de-DE">Denomination</rdfs:label>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
 
 </rdf:RDF>
