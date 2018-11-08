@@ -50,4 +50,47 @@
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupaffiliation"/>
   </owl:DatatypeProperty>
 
+  <owl:ObjectProperty rdf:about="https://fis.virtuos.uos.de/vivouos/ontology/uoscore/academicdepartment">
+    <rdfs:label xml:lang="de-DE">Fachbereich</rdfs:label>
+    <rdfs:label xml:lang="en-US">Academic Department</rdfs:label>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+    <rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Fach"/>
+					<owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute"/>
+				</owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://fis.virtuos.uos.de/vivouos/ontology/uoscore/field">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Fach"/>
+    <rdfs:label xml:lang="de-DE">Fach</rdfs:label>
+    <rdfs:label xml:lang="de-DE">Field</rdfs:label>
+    <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupidentifiers"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:publicDescriptionAnnot>Für die Beziehung zwischen Fachbereich und Fach</vitro:publicDescriptionAnnot>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://fis.virtuos.uos.de/vivouos/ontology/uoscore/institute">
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+    <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Institute"/>
+    <rdfs:label xml:lang="de-DE">Institut</rdfs:label>
+    <rdfs:label xml:lang="en-US">Institute</rdfs:label>
+    <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupidentifiers"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:publicDescriptionAnnot>Für die Beziehung zwischen Fachbereich und Institut</vitro:publicDescriptionAnnot>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+  </owl:ObjectProperty>
+
 </rdf:RDF>
