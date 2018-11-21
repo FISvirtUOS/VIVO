@@ -136,8 +136,8 @@
                     <a class="listimage" id="leli3" title="P3: Kognition: Mensch - Technik - Interaktion" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp3"><span>${"P3: Kognition: Mensch - Technik - Interaktion"}</span></a>
                 </div>
             </div>
-            <div class="container" id="listsections">
-                <div class="col-md-4">
+            <div class="container">
+                <div class="col-md-4" id="listsections">
                     <a class="listimage" id="leli4" title="P4: Mathematische Strukturen und Modelle" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp4"><span>${"P4: Mathematische Strukturen und Modelle"}</span></a>
                 </div>
                 <div class="col-md-4">
