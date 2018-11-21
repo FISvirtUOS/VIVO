@@ -117,18 +117,6 @@
             </div>
         </#if>
 
-        <!-- List of research classes: e.g., articles, books, collections, conference papers -->
-        <div class="row research-count">
-            <div class="container">
-                <!-- div class="col-md-6">
-                </div -->
-                <div class="col-md-12">
-                    <!-- Statistical information relating to property groups and their classes; displayed horizontally, not vertically-->
-                    <@lh.allClassGroups vClassGroups! />
-                </div>
-            </div>
-        </div>
-
         <!-- Profillinien UOS -->
         <div class="row research-count">
             <div class="container">
