@@ -129,7 +129,7 @@
                 <div class="col-md-4" id="listsections">
                     <a class="listimage" id="leli1" title="P1: Digitale Gesellschaft - Innovation - Regulierung" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp1"><span>${"P1: Digitale Gesellschaft - Innovation - Regulierung"}</span></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" id="listsections">
                     <a class="listimage" id="leli2" title='P2: Integrated Science: Vom Einzelmolekül zum System' href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp2"><span>${"P2: Integrated Science: Vom Einzelmolekül zum System"}</span></a>
                 </div>
                 <div class="col-md-4" id="listrightsections">
@@ -140,7 +140,7 @@
                 <div class="col-md-4" id="listsections">
                     <a class="listimage" id="leli4" title="P4: Mathematische Strukturen und Modelle" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp4"><span>${"P4: Mathematische Strukturen und Modelle"}</span></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" id="listsections">
                         <a class="listimage" id="leli5" title="P5: Mensch-Umwelt-Netzwerke" href="https://fis.virtuos.uni-osnabrueck.de/vivotest/entity?uri=http%3A%2F%2Ffis.virtuos.uos.de%2Fvivotest%2Fprofillinie%2Fp5"><span>${"P5: Mensch-Umwelt-Netzwerke"}</span></a>
                 </div>
                 <div class="col-md-4" id="listrightsections">
