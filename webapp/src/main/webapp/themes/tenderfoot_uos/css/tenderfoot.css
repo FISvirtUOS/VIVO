@@ -533,9 +533,17 @@ img.add-individual {
 }
 .jumbotron h1,
 .jumbotron .h1 {
-    border-left: 12px solid rgb(251, 185, 0);
-    padding-left: 38px;
+    border-left: 20px solid rgb(251, 185, 0);
+    padding-left: 30px;
     font-size: 45px;
+}
+@media(max-width:991px){
+	.jumbotron h1,
+	.jumbotron .h1 {
+		border-left: 15px solid rgb(251, 185, 0);
+		padding-left: 18px;
+		font-size: 45px;
+	}
 }
 a, p, li, span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
