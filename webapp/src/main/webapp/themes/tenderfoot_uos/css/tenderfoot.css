@@ -385,7 +385,7 @@ h1.uos-logo a {
     left: -9999px;
     position: absolute;
 }
-.listimage {  
+.listimage {
     display: block;
     padding: 90px 0;
     text-align: center;
@@ -397,9 +397,8 @@ h1.uos-logo a {
     background-color: #ececec;
     background-size: cover;
     border: 1px solid #c9c9c9;
-    border-radius: 3px;
     transition: background-position 0.65s ease;
-  }
+}
 .listimage span {
     color: #fff;
     font-size: 1.5em;
@@ -420,7 +419,7 @@ h1.uos-logo a {
     opacity: 0.7;
     background: #F3F3F3;
     margin-top: 5.0em;
-    width: 100%;    
+    width: 100%;
 }
 .listimage#leli1 {
     background-image: url(../images/leitlinie1.jpg);
