@@ -196,7 +196,15 @@
 				</owl:unionOf>
 			</owl:Class>
 		</rdfs:domain>
-        <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit"/>
+        <rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit"/>
+					<owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+                    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute"/>
+				</owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <Meta:inhaltlicheDefinition>Be75</Meta:inhaltlicheDefinition>
         <Meta:inhaltlicheDefinition>Dr121</Meta:inhaltlicheDefinition>
         <Meta:inhaltlicheDefinition>Na92</Meta:inhaltlicheDefinition>
@@ -602,7 +610,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <rdfs:label xml:lang="en-US">Grants awarded</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <Meta:inhaltlicheDefinition>Dr88</Meta:inhaltlicheDefinition>
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
