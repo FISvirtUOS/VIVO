@@ -128,7 +128,7 @@
                         <li role="listitem">
                             <span>${class.individualCount!}</span>&nbsp;
                             <a href='${urls.base}/individuallist?vclassId=${class.uri?replace("#","%23")!}'>
-                                <#if class.name?substring(class.name?length-1) == "s">
+                                <#-- <#if class.name?substring(class.name?length-1) == "s">
                                     ${class.name}
                                 <#else>
                                     ${class.name}s
