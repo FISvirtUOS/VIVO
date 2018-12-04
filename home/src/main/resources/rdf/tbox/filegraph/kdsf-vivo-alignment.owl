@@ -723,6 +723,19 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Verlagsort">
+		<rdfs:label xml:lang="de-DE">Verlagsort</rdfs:label>
+        <rdfs:label xml:lang="en-US">place of publication</rdfs:label>
+        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Verlag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <Meta:inhaltlicheDefinition>Pu153</Meta:inhaltlicheDefinition>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -1849,7 +1862,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlicheOderKuenstlerischeHilfskraefte">
 		<rdfs:label xml:lang="de-DE">Wissenschaftliche oder künstlerische Hilfskräfte</rdfs:label>
-        <rdfs:label xml:lang="en-US">Scientific or artistic staff</rdfs:label>
+        <rdfs:label xml:lang="en-US">Scientific or artistic helpers</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlichesUndKuenstlerischesPersonal"/>
         <Meta:inhaltlicheDefinition>Be18</Meta:inhaltlicheDefinition>
 		<vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouppeople"/>
@@ -1911,7 +1924,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlichesUndKuenstlerischesPersonal">
 		<rdfs:label xml:lang="de-DE">Wissenschaftliches und künstlerisches Personal</rdfs:label>
-        <rdfs:label xml:lang="en-US">Science supporting staff</rdfs:label>
+        <rdfs:label xml:lang="en-US">scientific and artistic staff</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter"/>
         <Meta:inhaltlicheDefinition>Be68</Meta:inhaltlicheDefinition>
 		<vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
