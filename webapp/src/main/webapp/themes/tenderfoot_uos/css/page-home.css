@@ -45,9 +45,9 @@
     margin-top: 30px;
 }
 #stats li {
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px; /* border radius */
+    /* -moz-border-radius: 6px; */
+    /* -webkit-border-radius: 6px; */
+    /* border-radius: 6px; border radius */
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box; /* prevents bg color from leaking outside the border */

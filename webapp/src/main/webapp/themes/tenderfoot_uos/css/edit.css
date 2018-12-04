@@ -9,9 +9,9 @@ input[type="password"] {
     padding: .5em;
     background: #fff;
     border: 1px solid #e0dfdf;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    /* border-radius: 5px; */
+    /* -moz-border-radius: 5px; */
+    /* -webkit-border-radius: 5px; */
     margin-bottom: .8em;
 }
 input.block {
@@ -44,9 +44,9 @@ input.form-button:visited {
     padding: 5px 18px 7px;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    /* border-radius: 4px; */
+    /* -moz-border-radius: 4px; */
+    /* -webkit-border-radius: 4px; */
     position: relative;
     border: 0;
     margin: 0;
@@ -79,9 +79,9 @@ input#delete:visited {
     padding: 5px 18px 7px;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    /* border-radius: 4px; */
+    /* -moz-border-radius: 4px; */
+    /* -webkit-border-radius: 4px; */
     position: relative;
     cursor: pointer;
     border: 0;
@@ -122,9 +122,9 @@ section.accounts input.delete:active {
 }
 form textarea {
     border: 1px solid #e0dfdf;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    /* border-radius: 4px; */
+    /* -moz-border-radius: 4px; */
+    /* -webkit-border-radius: 4px; */
 }
 .maxWidth {
     margin-top: 20px;
@@ -294,9 +294,9 @@ form select {
     padding: .5em;
     background: #fff;
     border: 1px solid #e0dfdf;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    /* border-radius: 5px; */
+    /* -moz-border-radius: 5px; */
+    /* -webkit-border-radius: 5px; */
     margin-bottom: .8em;
     margin-top: .7em;
     margin-right: .5em;
