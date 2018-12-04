@@ -132,8 +132,14 @@ body {
     */
 }
 
+.col-md-5 {
+    margin-right: -15px;
+}
+
 .row {
     background: #ffffff;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .row.title {
@@ -369,6 +375,7 @@ h1.uos-logo {
     width: 295px;
     max-width: 100%;
     height: 74px;
+    margin-left: -15px;
     max-height: 100%;
     left: 0;
     background: url(../images/uos_logo.jpg) 0 no-repeat;
