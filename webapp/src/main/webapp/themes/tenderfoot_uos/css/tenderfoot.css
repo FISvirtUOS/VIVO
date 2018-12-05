@@ -136,6 +136,10 @@ body {
     margin-right: -15px;
 }
 
+.col-md-8 {
+    padding-left: 0px;
+}
+
 .row {
     background: #ffffff;
     margin-left: 0px;
