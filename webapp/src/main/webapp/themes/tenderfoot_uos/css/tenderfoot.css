@@ -92,6 +92,20 @@ legend {
 a:focus {
     color: rgb(172, 6, 52);
 }
+
+/* "Alle anzeigen ..." auf der Startseite in Uni-rot (corporate design) */
+#home-research li:last-child a, 
+#academic-depts ul:last-child a, 
+#viewMoreFac a {
+    font-weight: bold;
+    color: rgb(172, 6, 52);
+}
+#home-research li:last-child a:hover, 
+#academic-depts ul:last-child a:hover, 
+#viewMoreFac a:hover {
+    text-decoration: underline;
+}
+
 .navbar-default .navbar-nav > li {
     border-right: 1px solid #000000;
 }
