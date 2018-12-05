@@ -81,7 +81,28 @@ legend {
     box-shadow: none;
 }
 
+/* Replace "Home" text with the corporate home symbol */
+@media(min-width:1201px) {
+    #main-nav li:first-child a {
+        font-size: 0;
+        color: transparent;
+        background: white url(../images/home.gif) no-repeat center;
+    }
+    #main-nav li:first-child a:hover {
+        font-size: 0;
+        color: transparent;
+        background: #ac1035 url(../images/home_active.gif) no-repeat center;
+    }
+}
+
+.navbar-nav {
+    margin-top: 7.5px;
+}
+
 .navbar-default .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 30px;
     color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -564,7 +585,7 @@ img.add-individual {
     padding-left: 30px;
     font-size: 45px;
 }
-@media(max-width:991px){
+@media(max-width:991px) {
 	.jumbotron h1,
 	.jumbotron .h1 {
 		border-left: 15px solid rgb(251, 185, 0);
