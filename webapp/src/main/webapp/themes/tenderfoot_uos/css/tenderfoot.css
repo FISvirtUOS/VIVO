@@ -327,11 +327,12 @@ input.search-vivo {
     border-radius: 0;
 }
 #search-field-box-button {
+    padding: 16px;
+    background:#333333 url(../images/button_search.gif) no-repeat center;
     border-radius: 0;
     border-color: #000000;
-    background-color: #000000;
-    background-image: none;
     filter: none;
+
 }
 
 /* FOOTER------>  */
