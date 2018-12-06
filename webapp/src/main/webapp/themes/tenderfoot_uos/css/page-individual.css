@@ -42,22 +42,18 @@ article.property li h3 {
 .pastPosition {
     display: none;
 }
-
 #individual-hasResearchArea a {
     font-size: 13px;
-    background: transparent;
-    border: 1px solid #000000;
-    color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(172, 6, 52);
     font-weight: 400;
-    transition: all 0.5s;
     padding: .1em .4em .1em;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 #individual-hasResearchArea a:hover {
-    background: rgb(172, 6, 52);
     color: #fff;
+    background-color: #333;
     text-decoration: none;
 }
 
