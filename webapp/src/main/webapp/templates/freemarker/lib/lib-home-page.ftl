@@ -137,7 +137,6 @@
                         </li>
                     </#if>
                 </#list>
-                <li><a href="${urls.base}/research" alt="${i18n().view_all_research}">${i18n().view_all}</a></li>
             </#if>
         </#list>
         <#if !foundClassGroup>
