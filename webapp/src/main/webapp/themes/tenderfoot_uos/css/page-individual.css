@@ -60,7 +60,6 @@ article.property li h3 {
 #individual-intro h1 {
     font-size: 1.375em;
     color: #000000;
-    float: left;
 }
 
 #individual-intro #iconControlsRightSide {
@@ -86,7 +85,6 @@ article.property li h3 {
 }
 
 #individual-intro h2 {
-    clear: both;
     margin-left: 10px;
 }
 

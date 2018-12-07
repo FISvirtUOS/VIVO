@@ -217,6 +217,16 @@ body {
     object-fit: contain;
 }
 
+/* fix formatting with the Altmetric score donut */
+#individual-info{
+    float:none;
+    width:inherit;
+
+}
+#individual-info.withThumb {
+    width:inherit;
+}
+
 .person-details {
     background: #f3f3f0;
     padding-bottom: 5px;
