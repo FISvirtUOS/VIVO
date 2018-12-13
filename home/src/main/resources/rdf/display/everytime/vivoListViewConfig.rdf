@@ -130,14 +130,18 @@
         <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-doi.xml</display:listViewConfigFile>
     </rdf:Description>
 
-<<<<<<< HEAD
-=======
-    <rdf:Description rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite">
-        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-url.xml</display:listViewConfigFile>
-    </rdf:Description>   
-        
-    <rdf:Description rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneurl">
-        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-url.xml</display:listViewConfigFile>
+
+    <rdf:Description rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatFach">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-uosremoveclasses.xml</display:listViewConfigFile>
     </rdf:Description>
->>>>>>> added listView for urls, now clickable, resolves #31
+
+    <rdf:Description rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-uosremoveclasses.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Koordinationsrolle">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-uoskoordinationsrolle.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+
 </rdf:RDF>
