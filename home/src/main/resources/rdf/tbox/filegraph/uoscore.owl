@@ -138,6 +138,17 @@
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupbibobscure"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneurl">
+    <rdfs:label xml:lang="de-DE">Externe URL</rdfs:label>
+    <rdfs:label xml:lang="en-US">External URL</rdfs:label>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Publikation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupbibobscure"/>
+  </owl:DatatypeProperty>
+
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/schlagwoerter">
     <rdfs:label xml:lang="de-DE">Schlagwörter</rdfs:label>
     <rdfs:label xml:lang="en-US">keywords</rdfs:label>
