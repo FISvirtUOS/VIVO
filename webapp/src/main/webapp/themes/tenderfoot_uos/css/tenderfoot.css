@@ -618,20 +618,39 @@ h1 > span {
     font-size: 12px;
 }
 
-#imprint > p, h2 {
+.uos_style > p, h2 {
     margin-bottom: 10px;
     margin-block-end: 10px; 
 }
 
-#imprint strong {
+.uos_style strong {
     color: #000000;
 }
 
-#imprint a {
+.impruos_styleint a {
     color: rgb(172, 6, 52);
 }
 
-#imprint h5 {
+.uos_style h5 {
     font-size: 100%;
 }
 
+.uos_style a:link, .uos_style a:visited {
+    background-image: url('../images/icons_link.gif');
+    background-position: -264px -303px;
+    background-repeat: no-repeat;
+    color: #ac1035;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.uos_style a.mail:link, .uos_style a.mail:visited {
+    background-position: -161px -409px;
+    padding-left: 22px;
+}
+
+.uos_style a:hover {
+    text-decoration: underline;
+}
