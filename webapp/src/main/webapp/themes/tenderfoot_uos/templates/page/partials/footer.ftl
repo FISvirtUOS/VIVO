@@ -16,7 +16,7 @@
                                 | <a class="terms" href="${urls.termsOfUse}" title="${i18n().menu_termuse}">${i18n().menu_termuse}</a></small> |
                         </#if>
 
-                        <a href="${urls.dataprotection}" title="${i18n().menu_data_protection}">${i18n().menu_data_protection}</a></small>
+                        <a href="${urls.privacypolicy}" title="${i18n().menu_privacy_policy}">${i18n().menu_privacy_policy}</a></small>
 
                         | <a href="${urls.imprint}" title="${i18n().menu_imprint}">${i18n().menu_imprint}</a></small> |
 
