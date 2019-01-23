@@ -39,6 +39,30 @@
     <rdfs:label xml:lang="de-DE">UOS Core</rdfs:label>
   </owl:Ontology>
 
+  <owl:Class rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/EhemaligeProfessoren">
+    <rdfs:label xml:lang="de-DE">Ehemalige Professoren</rdfs:label>
+    <rdfs:label xml:lang="en-US">former professors</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+    <vitro:descriptionAnnot>Nicht mehr an der Universität Osnabrück beschäftigte Professoren (im Ruhestand, Ruf angenommen, ausgeschieden)</vitro:descriptionAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouppeople"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/EhemaligeMitarbeiter">
+    <rdfs:label xml:lang="de-DE">Ehemalige Mitarbeiter</rdfs:label>
+    <rdfs:label xml:lang="en-US">former employees</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+    <vitro:descriptionAnnot>Nicht mehr an der Universität Osnabrück beschäftigte Mitarbeiter (im Ruhestand, ausgeschieden)</vitro:descriptionAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouppeople"/>
+  </owl:Class>
+
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/Denomination">
 		<rdfs:label xml:lang="de-DE">Denomination</rdfs:label>
     <rdfs:label xml:lang="en-US">Denomination</rdfs:label>
