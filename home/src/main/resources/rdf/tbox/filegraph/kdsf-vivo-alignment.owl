@@ -95,9 +95,32 @@
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatFachinv"/>
+        </owl:inverseOf>
     </owl:ObjectProperty>
 	
 	
+    <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatFachinv">
+        <owl:inverseOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#hatFach"/>
+        <rdfs:label xml:lang="de-DE">Fachzugehörigkeit</rdfs:label>
+        <rdfs:label xml:lang="en-US">Field of Research</rdfs:label>
+        <rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter"/>
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Publikation"/>
+					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Fach"/>
+        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#curator"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#curator"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#curator"/>
+    </owl:ObjectProperty>
+
 	
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatFinanzierungsform -->
 
