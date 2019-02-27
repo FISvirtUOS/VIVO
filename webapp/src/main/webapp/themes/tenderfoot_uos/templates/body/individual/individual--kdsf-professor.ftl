@@ -67,7 +67,7 @@
 							<#-- Label -->
 								<#if !user.loggedIn>
 									<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
-									<#if usertitle?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
+									<#if title?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
 										<#if (title.statements?size < 1) >
 											<@p.addLinkWithLabel title editable />
 										<#elseif editable>
