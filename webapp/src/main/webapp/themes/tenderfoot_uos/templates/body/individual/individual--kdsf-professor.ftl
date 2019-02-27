@@ -65,18 +65,20 @@
 					<section class="vcard person">
 						<h1 class="foaf-person">
 							<#-- Label -->
-								<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
-								<#if title?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
-									<#if (title.statements?size < 1) >
-										<@p.addLinkWithLabel title editable />
-									<#elseif editable>
-										<h2>${title.name?capitalize!}</h2>
-										<@p.verboseDisplay title />
+								<#if !user.loggedIn>
+									<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
+									<#if usertitle?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
+										<#if (title.statements?size < 1) >
+											<@p.addLinkWithLabel title editable />
+										<#elseif editable>
+											<h2>${title.name?capitalize!}</h2>
+											<@p.verboseDisplay title />
+										</#if>
+										<#list title.statements as statement>
+											<span itemprop="jobTitle">${statement.preferredTitle}</span>
+											<@p.editingLinks "${title.localName}" "${title.name}" statement editable title.rangeUri />
+										</#list>
 									</#if>
-									<#list title.statements as statement>
-										<span itemprop="jobTitle">${statement.preferredTitle}</span>
-										<@p.editingLinks "${title.localName}" "${title.name}" statement editable title.rangeUri />
-									</#list>
 								</#if>
 								<span itemprop="name" class="fn"><@p.label individual editable labelCount localesCount/></span>
 						</h1>
@@ -102,28 +104,30 @@
 						<#--</section> -->
 					</section>
 				</div>
-				<div class="col-md-12">
-					<section id="preferredTitle">
-						<#--  Display preferredTitle if it exists; otherwise mostSpecificTypes -->
-						<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
-						<#if title?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
-							<#if (title.statements?size < 1) >
-								<@p.addLinkWithLabel title editable />
-							<#elseif editable>
-								<h2>${title.name?capitalize!}</h2>
-								<@p.verboseDisplay title />
+				<#if user.loggedIn>
+					<div class="col-md-12">
+						<section id="preferredTitle">
+							<#--  Display preferredTitle if it exists; otherwise mostSpecificTypes -->
+							<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
+							<#if title?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
+								<#if (title.statements?size < 1) >
+									<@p.addLinkWithLabel title editable />
+								<#elseif editable>
+									<h2>${title.name?capitalize!}</h2>
+									<@p.verboseDisplay title />
+								</#if>
+								<#list title.statements as statement>
+									<span itemprop="jobTitle" class="display-title<#if editable>-editable</#if>">${statement.preferredTitle}</span>
+									<@p.editingLinks "${title.localName}" "${title.name}" statement editable title.rangeUri />
+								</#list>
 							</#if>
-							<#list title.statements as statement>
-								<span itemprop="jobTitle" class="display-title<#if editable>-editable</#if>">${statement.preferredTitle}</span>
-								<@p.editingLinks "${title.localName}" "${title.name}" statement editable title.rangeUri />
-							</#list>
-						</#if>
-						<#-- If preferredTitle is unpopulated, display mostSpecificTypes -->
-						<#--  <#if ! (title.statements)?has_content>
-							<@p.mostSpecificTypes individual />
-						</#if>  -->
-					</section>
-				</div>
+							<#--  If preferredTitle is unpopulated, display mostSpecificTypes -->
+							<#if ! (title.statements)?has_content>
+								<@p.mostSpecificTypes individual />
+							</#if>
+						</section>
+					</div>
+				</#if>
 			</div>
 			<div class="row person-details">
 				<div class="col-md-12">
