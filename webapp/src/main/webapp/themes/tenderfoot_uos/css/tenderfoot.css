@@ -654,3 +654,11 @@ h1 > span {
 .uos_style a:hover {
     text-decoration: underline;
 }
+
+.property-list-uos, .property-list-uos-inline {
+    margin-left: 10px;
+}
+
+.property-list-uos-inline li {
+    display: inline;
+}
