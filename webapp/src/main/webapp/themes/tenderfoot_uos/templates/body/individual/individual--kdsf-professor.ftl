@@ -130,20 +130,17 @@
 				</#if>
 			</div>
 			<div class="row person-details">
-				<#if user.loggedIn>
-					<div class="col-md-12">
-				<#else> 
+				<#if !user.loggedIn>
 					<div class="col-md-12 uos_info_table">
-				</#if>
-					<!-- TODO add additional information -->
-					<#if !user.loggedIn>
 						<#include "individual-uos-info.ftl">
-					</#if>
-					<!-- Positions -->
-					<#include "individual-positions.ftl">
-					<!-- Research Areas -->
-					<#include "individual-researchAreas.ftl">
-				</div>
+				<#else> 
+					<div class="col-md-12">
+						<!-- Positions -->
+						<#include "individual-positions.ftl">
+						<!-- Research Areas -->
+						<#include "individual-researchAreas.ftl">
+				</#if>
+					</div>
 			</div>
 		</div>
 	</div>

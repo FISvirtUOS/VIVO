@@ -36,6 +36,10 @@
             <@p.dataPropertyList keywords editable />
         </ul>
     </#if>
+    <!-- Positions -->
+	<#include "individual-positions.ftl">
+	<!-- Research Areas -->
+	<#include "individual-researchAreas.ftl">
 </div>
 <div class="col-md-4 uos_info_table_cell">
     <!-- Contact Info -->
