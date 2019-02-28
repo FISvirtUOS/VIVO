@@ -130,7 +130,11 @@
 				</#if>
 			</div>
 			<div class="row person-details">
-				<div class="col-md-12">
+				<#if user.loggedIn>
+					<div class="col-md-12">
+				<#else> 
+					<div class="col-md-12 uos_info_table">
+				</#if>
 					<!-- TODO add additional information -->
 					<#if !user.loggedIn>
 						<#include "individual-uos-info.ftl">

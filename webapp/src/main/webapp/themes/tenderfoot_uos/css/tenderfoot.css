@@ -662,3 +662,13 @@ h1 > span {
 .property-list-uos-inline li {
     display: inline;
 }
+
+.uos_info_table {
+    display: table;
+}
+
+.uos_info_table_cell {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}
