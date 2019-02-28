@@ -671,4 +671,5 @@ h1 > span {
     float: none;
     display: table-cell;
     vertical-align: bottom;
+    word-break: break-word;
 }

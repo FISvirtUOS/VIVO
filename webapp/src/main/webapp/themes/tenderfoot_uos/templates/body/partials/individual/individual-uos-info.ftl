@@ -42,8 +42,10 @@
 	<#include "individual-researchAreas.ftl">
 </div>
 <div class="col-md-4 uos_info_table_cell">
-    <!-- Contact Info -->
-	<#include "individual-contactInfo.ftl">
-    <!-- Websites -->
-	<#include "individual-webpage.ftl">
+    <div>
+        <!-- Contact Info -->
+    	<#include "individual-contactInfo.ftl">
+        <!-- Websites -->
+    	<#include "individual-webpage.ftl">
+    </div>
 </div>
