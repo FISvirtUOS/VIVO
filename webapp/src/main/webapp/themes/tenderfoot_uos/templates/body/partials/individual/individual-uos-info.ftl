@@ -45,6 +45,9 @@
     <div>
         <!-- Contact Info -->
     	<#include "individual-contactInfo.ftl">
+    </div>
+    <div id="uos_info_table_cell_links">
+        
         <!-- Websites -->
     	<#include "individual-webpage.ftl">
     </div>

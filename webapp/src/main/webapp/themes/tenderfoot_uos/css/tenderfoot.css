@@ -673,3 +673,29 @@ h1 > span {
     vertical-align: bottom;
     word-break: break-word;
 }
+
+ul.individual-urls-uos > ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.individual-urls-uos a {
+    background-image: url('../images/icons_link.gif');
+    background-position: -264px -303px;
+    background-repeat: no-repeat;
+    color: #ac1035;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .uos_info_table {
+        display: block;
+    }
+    .uos_info_table_cell {
+        width: 90%;
+        display: block;
+    }
+}
