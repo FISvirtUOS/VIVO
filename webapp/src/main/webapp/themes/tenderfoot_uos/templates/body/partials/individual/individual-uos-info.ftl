@@ -10,7 +10,9 @@
 <div class="col-md-8 uos_info_table_cell">
     <#if denominationen?has_content>
         <ul class="property-list-uos-inline" role="list" id="${denominationen.localName}">
-            <@p.dataPropertyList professur editable /> für
+            <#if professur?has_content>
+                <@p.dataPropertyList professur editable /> für
+            </#if>
             <@p.dataPropertyList denominationen editable />
         </ul>
     </#if>
