@@ -127,7 +127,7 @@ a:focus {
     text-decoration: underline;
 }
 
-.navbar-default .navbar-nav > li {
+.navbar-default .navbar-nav > li:not(:last-child) {
     border-right: 1px solid #000000;
 }
 
