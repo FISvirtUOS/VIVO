@@ -50,31 +50,6 @@
         <div class="row hero">
             <div class="container" role="main" id="theme-showcase">
                     <div class="col-md-12">
-                        <form id="search-homepage" action="${urls.search}" name="search-home" role="search" method="post" class="form-horizontal">
-                            <fieldset>
-                                <div class="form-group pull-left" style="margin-right: 5px;">
-                                    <select class="form-control" id="classgroup" name="classgroup">
-                                        <option value="">${i18n().all_capitalized}</option>
-                                        <#list vClassGroups as group>
-                                            <#if (group.individualCount > 0)>
-                                                <option value="${group.uri}">${group.displayName?capitalize}</option>
-                                            </#if>
-                                        </#list>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="text" name="querytext" class="form-control" value="" placeholder="${i18n().search_form}" autocapitalize="off" />
-                                        <span class="input-group-btn">
-                                            <button id="search-field-box-button" class="btn btn-default" type="submit"></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                
-                    <div class="col-md-12">
                 
                         <div class="jumbotron">
                             <p>${i18n().intro_para1}</p>
