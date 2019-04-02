@@ -481,24 +481,6 @@ h1.uos-logo a {
     margin-top: 5.0em;
     width: 100%;
 }
-.listimage#leli1 {
-    background-image: url(../images/leitlinie1.jpg);
-}
-.listimage#leli2 {
-    background-image: url(../images/leitlinie2.jpg);
-}
-.listimage#leli3 {
-    background-image: url(../images/leitlinie3.jpg);
-}
-.listimage#leli4 {
-    background-image: url(../images/leitlinie4.jpg);
-}
-.listimage#leli5 {
-    background-image: url(../images/leitlinie5.jpg);
-}
-.listimage#leli6 {
-    background-image: url(../images/leitlinie6.jpg);
-}
 .listimage#frontpage {
     background-image: url(../images/hero-background.jpg);
     padding: 150px 0;
