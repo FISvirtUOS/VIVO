@@ -156,6 +156,30 @@
     </section>
 </#macro>
 
+
+<#macro researchprojectsHtmlUos>
+    <section id="home-academic-depts" class="home-sections">
+        <h4>${i18n().research_capitalized}</h4>
+        <div id="research-projects">
+        </div>
+    </section>
+</#macro>
+
+<#-- builds the "research projects" box on the home page -->
+<#macro listResearchProjects>
+<script>
+var researchProjects = [
+<#if researchProjectDG?has_content>
+    <#list researchProjectDG as resultRow>
+        <#assign uri = resultRow["theURI"] />
+        <#assign label = resultRow["name"] />
+        {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
+    </#list>        
+</#if>
+];
+</script>
+</#macro>
+
 <#-- builds the "academic departments" box on the home page -->
 <#macro listAcademicDepartments>
 <script>
@@ -164,8 +188,8 @@ var academicDepartments = [
     <#list academicDeptDG as resultRow>
         <#assign uri = resultRow["theURI"] />
         <#assign label = resultRow["name"] />
-        {"uri": "${uri?url}", "name": "${label}"}<#if (resultRow_has_next)>,</#if>
-    </#list>
+        {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
+    </#list>        
 </#if>
 ];
 var urlsBase = "${urls.base}";

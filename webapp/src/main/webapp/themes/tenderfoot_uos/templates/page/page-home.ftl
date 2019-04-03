@@ -63,12 +63,12 @@
         <div class="row faculty-home">
             <div class="container">
                 <div class="col-md-4" id="listsections">
-                    <!-- List of research classes: e.g., articles, books, collections, conference papers -->
-                    <@lh.researchClasses />
-                </div>
-                <div class="col-md-4" id="listsections">
                     <!-- List of four randomly selected faculty members -->
                     <@lh.facultyMbrHtml />
+                </div>
+                <div class="col-md-4" id="listsections">
+                    <!-- List of research classes: e.g., articles, books, collections, conference papers -->
+                    <@lh.researchprojectsHtmlUos />
                 </div>
                 <div class="col-md-4" id="listsections">
                     <!-- List of randomly selected academic departments -->
@@ -91,6 +91,7 @@
         <#include "footer.ftl">
         <#-- builds a json object that is used by js to render the academic departments section -->
         <@lh.listAcademicDepartments />
+        <@lh.listResearchProjects />
     <script>       
         var i18nStrings = {
             researcherString: '${i18n().researcher}',
