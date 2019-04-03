@@ -28,9 +28,15 @@ $(document).ready(function(){
             // determine the row at which to start the search query
             var rowStart = Math.floor((Math.random()*facultyMemberCount));
             var diff;
+<<<<<<< HEAD
             var pageSize = 4; // the number of faculty to display on the home page
 
             // could have fewer than 4 in a test or dev environment
+=======
+            var pageSize = 7; // the number of faculty to display on the home page
+            
+            // could have fewer than 7 in a test or dev environment
+>>>>>>> Changed list faculty to list publications, re #50
             if ( facultyMemberCount < pageSize ) {
                 pageSize = facultyMemberCount;
             }
@@ -57,7 +63,7 @@ $(document).ready(function(){
             $.getJSON(url, function(results) {
 
                 if ( results == null || results.individuals.length == 0 ) {
-                    if ( retryCount < 5 ) {
+                    if ( retryCount < 8 ) {
                         retryCount = retryCount + 1;
                         getFacultyMembers();
                     }
@@ -204,10 +210,10 @@ $(document).ready(function(){
         }
         if ( deptNbr > 0 ) {
             html += "</ul><ul style='list-style:none'>"
-                    + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='"
-                    + urlsBase
-                    + "/organizations#http://vivoweb.org/ontology/core#AcademicDepartment' alt='"
-                    + i18nStrings.viewAllDepartments + "'>"
+                    + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
+                    + urlsBase 
+                    + "/publications#http://kerndatensatz-forschung.de/owl/Basis#Publikation' alt='" 
+                    + i18nStrings.viewAllDepartments + "'>" 
                     + i18nStrings.viewAllString + "</a></li></ul>";
         }
         $('div#academic-depts').html(html);

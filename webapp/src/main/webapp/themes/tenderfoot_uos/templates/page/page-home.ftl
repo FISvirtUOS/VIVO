@@ -52,8 +52,8 @@
                     <div class="col-md-12">
                 
                         <div class="jumbotron">
-                            <p>${i18n().intro_para1}</p>
-                            <p>${i18n().intro_para2}</p>
+                            <p>${i18n().intro_para1_mini_uos}</p>
+                            <p>${i18n().intro_para2_mini_uos}</p>
                         </div>
                     
                     </div>

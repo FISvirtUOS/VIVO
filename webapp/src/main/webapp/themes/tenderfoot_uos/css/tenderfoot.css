@@ -116,12 +116,14 @@ a:focus {
 
 /* "Alle anzeigen ..." auf der Startseite in Uni-rot (corporate design) */
 #home-research li:last-child a, 
+#research-projects ul:last-child a,
 #academic-depts ul:last-child a, 
 #viewMoreFac a {
     font-weight: bold;
     color: rgb(172, 6, 52);
 }
-#home-research li:last-child a:hover, 
+#home-research li:last-child a:hover,
+#research-projects ul:last-child a:hover,
 #academic-depts ul:last-child a:hover, 
 #viewMoreFac a:hover {
     text-decoration: underline;
