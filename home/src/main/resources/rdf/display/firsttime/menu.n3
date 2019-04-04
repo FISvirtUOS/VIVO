@@ -20,7 +20,10 @@ display:DefaultMenu
     display:hasElement display:OrganizationsMenuItem ;
     display:hasElement display:PeopleMenuItem ;
     display:hasElement display:ResearchMenuItem ;
-    display:hasElement display:CapabilityMapMenuItem .
+    display:hasElement display:CapabilityMapMenuItem ;
+    display:hasElement display:LeitlinieMenuItem ;
+    display:hasElement display:PorjectsMenuItem ;
+    display:hasElement display:ResearchResultsMenuItem .
 
 #### Menu Items for Default Menu ####
 
@@ -59,6 +62,24 @@ display:CapabilityMapMenuItem
     display:menuPosition 6;
     display:linkText "Capability Map";
     display:toPage display:CapabilityMap .
+
+display:LeitlinieMenuItem
+    a display:NavigationElement ;
+    display:menuPosition 7;
+    display:linkText "Leitlinien";
+    display:toPage display:Leitlinien .
+
+display:PorjectsMenuItem
+    a display:NavigationElement ;
+    display:menuPosition 8;
+    display:linkText "Drittmittelfinanzierte Projekte";
+    display:toPage display:Projects .
+
+display:ResearchResultsMenuItem
+    a display:NavigationElement ;
+    display:menuPosition 9;
+    display:linkText "Forschungsergebnisse";
+    display:toPage display:ResearchResults .
 
 display:Home
     a display:HomePage ;
@@ -106,7 +127,35 @@ display:CapabilityMap
     display:urlMapping "/vis/capabilitymap" ;
     display:hasDataGetter display:capabilityMapDataGetter .
 
+display:Leitlinien
+    a display:Page ;
+    display:title "Leitlinien" ;
+    display:urlMapping "/leitlinien" .
+
+display:ResearchResults
+    a display:Page ;
+    display:title "Drittmittelfinanzierte Projekte" ;
+    display:urlMapping "/projects" ;
+    display:hasDataGetter display:ProjectsDataGetter .
+
+display:Projects
+    a display:Page ;
+    display:title "Forschungsergebnisse" ;
+    display:urlMapping "/researchresults" ;
+    display:hasDataGetter display:ResearchResultsDataGetter .
+
+
 #The data getter objects used above
+display:ProjectsDataGetter
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
+    display:forClassGroup
+            vivoweb:vitroClassGroupactivities .
+
+display:ResearchResultsDataGetter
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
+    display:forClassGroup
+            vivoweb:vitroClassGrouppublications .
+
 display:peopleDataGetter
       a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
       display:forClassGroup
