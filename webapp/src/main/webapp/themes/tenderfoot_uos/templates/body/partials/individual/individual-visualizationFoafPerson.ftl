@@ -39,7 +39,7 @@
                     var chartHeight = chartWidth * (2/3);
 
                     d3.select("#publicationsChart").selectAll("*").remove();
-                    d3.select("#publicationsChart").style("height", chartHeight);
+                    d3.select("#publicationsChart").style("height", chartHeight + "px");
 
                     var svg = d3.select("#publicationsChart"),
                             margin = {top: 30, right: 20, bottom: 30, left: 40},
