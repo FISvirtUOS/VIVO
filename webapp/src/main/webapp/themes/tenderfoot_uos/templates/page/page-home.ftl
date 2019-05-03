@@ -43,7 +43,7 @@
 
         <div class="container">
             <div class="jumbotron">
-                <h1>${i18n().intro_title + "@UOS"}</h1>
+                <h1>${i18n().intro_title}</h1>
             </div>
         </div>
 
