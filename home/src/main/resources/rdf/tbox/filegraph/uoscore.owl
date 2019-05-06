@@ -105,29 +105,15 @@
     <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatpartnerorganisation">
+  <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatpartnerorganisation">
+    <rdfs:label xml:lang="de-DE">Verbund/Partnerorganisation </rdfs:label>
+    <rdfs:label xml:lang="en-US">Association/partner organisation</rdfs:label>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
-    <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
-    <rdfs:label xml:lang="de-DE">Verbund/Partnerorganisation</rdfs:label>
-    <rdfs:label xml:lang="en-US">Association/partner organisation</rdfs:label>
-    <owl:inverseOf rdf:resource="https://fis.uos.de/vivouos/ontology/uoscore/hatverbundprojekt"/>
-    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
-    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
-    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatverbundprojekt">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatpartnerorganisation"/>
-    </owl:inverseOf>
-    <rdfs:label xml:lang="de-DE">Verbundprojekt</rdfs:label>
-    <rdfs:label xml:lang="en-US">collaborative project</rdfs:label>
-    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
-    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit"/>
-    <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayLimitAnnot>
-  </owl:ObjectProperty>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
+  </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/ergebniszusammenfassung">
     <rdfs:label xml:lang="de-DE">Ergebniszusammenfassung </rdfs:label>
