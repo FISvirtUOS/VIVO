@@ -133,14 +133,14 @@ display:Leitlinien
     display:urlMapping "/leitlinien" ;
     display:hasDataGetter display:leitlinienDataGetter .
 
-display:ResearchResults
+display:Projects
     a display:Page ;
     display:requiresBodyTemplate "page-classgroup-projects.ftl" ;
     display:title "Drittmittelfinanzierte Projekte" ;
     display:urlMapping "/projects" ;
     display:hasDataGetter display:ProjectsDataGetter .
 
-display:Projects
+display:ResearchResults
     a display:Page ;
     display:requiresBodyTemplate "page-classgroup-publications.ftl" ;
     display:title "Forschungsergebnisse" ;
