@@ -683,3 +683,6 @@ ul.individual-urls-uos > ul {
         display: block;
     }
 }
+.tab-content > .tab-pane {
+    word-break: break-all;
+}
