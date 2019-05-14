@@ -684,5 +684,5 @@ ul.individual-urls-uos > ul {
     }
 }
 .tab-content > .tab-pane {
-    word-break: break-all;
+    word-break: break-word;
 }
