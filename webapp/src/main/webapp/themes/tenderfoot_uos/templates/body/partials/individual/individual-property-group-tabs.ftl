@@ -10,12 +10,12 @@
 <div class="row">
     <div class="col-md-12">
         <ul class="nav nav-tabs">
-		<#list propertyGroups.all as groupTabs>
+		<#--  <#list propertyGroups.all as groupTabs>
 			<#if ( groupTabs.properties?size > 0 ) >
 				<#assign groupName = groupTabs.getName(nameForOtherGroup)>
 				<#if groupName?has_content>
 					<#--the function replaces spaces in the name with underscores, also called for the property group menu-->
-					<#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
+					<#-- <#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
 				<#else>
 					<#assign groupName = "${i18n().properties_capitalized}">
 					<#assign groupNameHtmlId = "${i18n().properties}" >
@@ -27,8 +27,8 @@
                     <li data-toggle="tab" groupName="${groupNameHtmlId?replace("/","-")}" href="#${groupNameHtmlId?replace("/","-")}Group"><a href="#">${groupName?capitalize}</a></li>
 				</#if>
 			</#if>
-		</#list>
-		<#if (propertyGroups.all?size > 1) >
+		</#list>  -->
+		<#if (propertyGroups.all?size >= 1) >
             <li id="viewAllTab" data-toggle="tab" groupName="viewAll" href="#viewAll"><a href="#">${i18n().view_all_capitalized}</a></li>
 		</#if>
         </ul>
