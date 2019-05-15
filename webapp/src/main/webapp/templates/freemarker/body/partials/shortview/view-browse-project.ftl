@@ -24,9 +24,9 @@
     <span class="title">
     <#list staff as item>
         <#if item?has_next>
-            ${item.stafflabel}; 
+            <a href="${profileUrl(item.staffuri)}" title="${i18n().view_profile_page_for} ${item.stafflabel}">${item.stafflabel}</a>;
         <#else>
-            ${item.stafflabel}
+            <a href="${profileUrl(item.staffuri)}" title="${i18n().view_profile_page_for} ${item.stafflabel}">${item.stafflabel}</a>
         </#if>
     </#list>
     </span>
