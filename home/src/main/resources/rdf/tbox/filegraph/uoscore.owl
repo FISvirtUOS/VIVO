@@ -49,6 +49,7 @@
     <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouppeople"/>
+    <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--kdsf-professor.ftl</vitro:customDisplayViewAnnot>
   </owl:Class>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/Denomination">
@@ -106,7 +107,7 @@
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatpartnerorganisation">
-    <rdfs:label xml:lang="de-DE">Verbund/Partnerorganisation </rdfs:label>
+    <rdfs:label xml:lang="de-DE">Verbund/Partnerorganisation</rdfs:label>
     <rdfs:label xml:lang="en-US">Association/partner organisation</rdfs:label>
     <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -114,6 +115,7 @@
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</vitro:displayRankAnnot>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/ergebniszusammenfassung">
@@ -124,6 +126,7 @@
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</vitro:displayRankAnnot>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite">
@@ -135,6 +138,7 @@
     <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupbibobscure"/>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</vitro:displayRankAnnot>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneurl">

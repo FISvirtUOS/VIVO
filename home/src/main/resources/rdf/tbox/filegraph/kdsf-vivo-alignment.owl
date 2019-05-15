@@ -98,6 +98,7 @@
         <owl:inverseOf>
             <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatFachinv"/>
         </owl:inverseOf>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</vitro:displayRankAnnot>
     </owl:ObjectProperty>
 	
 	
@@ -199,6 +200,7 @@
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
     </owl:ObjectProperty>
 	
 	
@@ -239,6 +241,7 @@
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
 		<vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</vitro:displayRankAnnot>
     </owl:ObjectProperty>
 	
 	
@@ -639,6 +642,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</vitro:displayRankAnnot>
     </owl:DatatypeProperty>
     
 
@@ -1072,6 +1076,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouppeople"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <rdfs:comment>Personen, die in einem Beschäftigungsverhältnis sind.</rdfs:comment>
+        <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--kdsf-professor.ftl</vitro:customDisplayViewAnnot>
     </owl:Class>
     
 
@@ -1879,6 +1884,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 		<vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
 		<vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--kdsf-professor.ftl</vitro:customDisplayViewAnnot>
     </owl:Class>
     
 
@@ -1910,6 +1916,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
 		<vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</vitro:displayRankAnnot>
+        <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--kdsf-professor.ftl</vitro:customDisplayViewAnnot>
     </owl:Class>
     
 
