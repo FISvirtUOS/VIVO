@@ -34,6 +34,7 @@
         <#include "menu.ftl">
         <#include "message.ftl">
 
+        
         <div class="container">
             <div class="col-md-12" id="frontimage">
                 <a class="listimage" id="frontpage" title="Vivo UOS"></a>
@@ -43,20 +44,22 @@
 
         <div class="container">
             <div class="jumbotron">
-                <h1>${i18n().intro_title}</h1>
+                <div class="intro_text uos_style">
+                    <h1>${i18n().intro_title}</h1>
+                    <p>${i18n().intro_para1_mini_uos}</p>
+                    <a href="${urls.base}/leitlinien" title="MEHR LESEN" target="_top">MEHR LESEN</a>
+                </div>
             </div>
         </div>
 
+
         <div class="row hero">
             <div class="container" role="main" id="theme-showcase">
-                    <div class="col-md-12">
-                
-                        <div class="jumbotron">
-                            <p>${i18n().intro_para1_mini_uos}</p>
-                            <p>${i18n().intro_para2_mini_uos}</p>
-                        </div>
-                    
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <p>${i18n().intro_para2_mini_uos}</p>
                     </div>
+                </div>
             </div>
         </div>
 

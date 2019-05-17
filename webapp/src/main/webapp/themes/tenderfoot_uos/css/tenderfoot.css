@@ -574,19 +574,19 @@ img.add-individual {
     height: 15px;
     width: 15px;
 }
-.jumbotron h1,
-.jumbotron .h1 {
-    border-left: 20px solid rgb(251, 185, 0);
-    padding-left: 30px;
+.jumbotron h1 {
     font-size: 45px;
 }
 @media(max-width:991px) {
-	.jumbotron h1,
-	.jumbotron .h1 {
-		border-left: 15px solid rgb(251, 185, 0);
-		padding-left: 18px;
-		font-size: 45px;
-	}
+    .intro_text {
+        border-left: 20px solid rgb(251, 185, 0);
+        padding: 10px 0 0 18px;
+    }
+}
+.intro_text {
+    border-left: 20px solid rgb(251, 185, 0);
+    padding: 10px 0 0 30px;
+    color: #000000;
 }
 a, p, li, span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
