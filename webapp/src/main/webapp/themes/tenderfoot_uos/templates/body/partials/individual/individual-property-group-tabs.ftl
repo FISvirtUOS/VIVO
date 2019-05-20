@@ -29,7 +29,7 @@
 			</#if>
 		</#list>  -->
 		<#if (propertyGroups.all?size >= 1) >
-            <li id="viewAllTab" data-toggle="tab" groupName="viewAll" href="#viewAll"></li>
+            <li id="viewAllTab" data-toggle="tab" class="active" groupName="viewAll" href="#viewAll"></li>
 		</#if>
         </ul>
     </div>
