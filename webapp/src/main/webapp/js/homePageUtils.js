@@ -212,7 +212,7 @@ $(document).ready(function(){
             html += "</ul><ul style='list-style:none'>"
                     + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
                     + urlsBase 
-                    + "/publications#http://kerndatensatz-forschung.de/owl/Basis#Publikation' alt='" 
+                    + "/researchresults' alt='" 
                     + i18nStrings.viewAllDepartments + "'>" 
                     + i18nStrings.viewAllString + "</a></li></ul>";
         }
