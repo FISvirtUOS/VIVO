@@ -159,7 +159,7 @@
 
 <#macro researchprojectsHtmlUos>
     <section id="home-academic-depts" class="home-sections">
-        <h4>${i18n().research_capitalized}</h4>
+        <h4>${i18n().projects_capitalized}</h4>
         <div id="research-projects">
         </div>
     </section>
