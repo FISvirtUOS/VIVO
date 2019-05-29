@@ -17,8 +17,8 @@
 <nav role="navigation">
 	<ul id="header-nav" role="list">
 		<#include "languageSelector.ftl">
-		<#-- <li role="listitem"><a href="${urls.index}" title="${i18n().identity_index}">${i18n().identity_index}</a></li> -->
 		<#if user.loggedIn>
+			<li role="listitem"><a href="${urls.index}" title="${i18n().identity_index}">${i18n().identity_index}</a></li>
 			<#-- COMMENTING OUT THE EDIT PAGE LINK FOR RELEASE 1.5. WE NEED TO IMPLEMENT THIS IN A MORE 
 				 USER FRIENDLY WAY. PERHAPS INCLUDE A LINK ON THE PAGES THEMSELVES AND DISPLAY IF THE
 				 USER IS A SITE ADMIN. tlw72
