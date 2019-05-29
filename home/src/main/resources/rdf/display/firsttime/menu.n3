@@ -72,7 +72,7 @@ display:LeitlinieMenuItem
 display:PorjectsMenuItem
     a display:NavigationElement ;
     display:menuPosition 8;
-    display:linkText "Drittmittelfinanzierte Projekte";
+    display:linkText "Liste der drittmittelfinanzierten Projekte";
     display:toPage display:Projects .
 
 display:ResearchResultsMenuItem
