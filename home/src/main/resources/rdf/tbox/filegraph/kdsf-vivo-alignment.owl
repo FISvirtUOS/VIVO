@@ -189,8 +189,8 @@
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatMittelgeber -->
 
     <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatMittelgeber">
-		<rdfs:label xml:lang="de-DE">Mittelgeber</rdfs:label>
-        <rdfs:label xml:lang="en-US">External source</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Vom Mittelgeber finanzierte Projekte</rdfs:label>
+        <rdfs:label xml:lang="en-US">Projects financed by the donor</rdfs:label>
 		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
         <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
