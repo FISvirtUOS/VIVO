@@ -21,7 +21,7 @@ local:fieldDependsProjectContext a :ConfigContext ;
     :qualifiedBy      <http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> .
 
 local:fieldDependsProjectConfig a :ObjectPropertyDisplayConfig ;
-    :listViewConfigFile "listViewConfig-fauxPropertyDefault.xml"^^xsd:string ;
+    :listViewConfigFile "listViewConfig-fauxPropertyHatFachInv.xml"^^xsd:string ;
     rdfs:label "field-related projects"@en-US;
     :displayName "field-related projects" ;
     vitro:displayRankAnnot 10;
