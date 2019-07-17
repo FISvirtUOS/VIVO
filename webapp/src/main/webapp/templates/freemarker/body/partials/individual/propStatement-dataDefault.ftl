@@ -21,8 +21,8 @@
 
 
 	<#if !(datatype?contains("url")) >
-        <#assign res = theValue?matches("(https?://)?((?:[-a-zA-Z0-9]{1,63}\\.)+[-a-zA-Z0-9]{2,63}|(?:[0-9]{1,3}\\.){3}[0-9]{1,3})(:[0-9]{1,5})?(/[!$-/0-9:;=@_\\':;!a-zA-Z\\x7f-\\xff]*?)?(\\?[!$-/0-9:;=@_\\':;!a-zA-Z\\x7f-\\xff]+?)?(#[!$-/0-9:;=@_\\':;!a-zA-Z\\x7f-\\xff]+?)?")>
-        <#list res as m>
+        <#assign res = theValue?matches('(http|ftp|https|www)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?')>
+		<#list res as m>
 			<#if m?contains("http")>			
 				<#assign theValue = theValue?replace(m, "<a href='" + m + "' target='_blank'>" + m + "</a>")>
 			<#else>
