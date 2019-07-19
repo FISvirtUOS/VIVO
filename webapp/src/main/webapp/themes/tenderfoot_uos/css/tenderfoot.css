@@ -686,3 +686,28 @@ ul.individual-urls-uos > ul {
 .tab-content > .tab-pane {
     word-break: break-word;
 }
+
+#contact_form input[type="text"] {
+    width: 50%;
+}
+#contact_form textarea {
+    width: 50%;
+}
+.uos_table_div {
+    margin-top: 5px;
+}
+.uos_project_icons {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.uos-project-list-ul {
+    margin-top: 10px;
+}
+.uos-project-h2 {
+    display: inline; 
+    vertical-align: middle;
+}
+.uos-project-div {
+    margin-top: 20px;
+}

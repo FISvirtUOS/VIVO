@@ -537,16 +537,18 @@ owl:sameAs
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#nobody> ;
       vitro:hiddenFromDisplayBelowRoleLevelAnnot
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#nobody> ;
-      vitro:hiddenFromPublishBelowRoleLevelAnnot
-              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-      vitro:publicDescriptionAnnot
-              "This is the OWL property to link two indivdiuals with the same 'identity'. see http://www.w3.org/TR/owl-ref/#sameAs-def"@en-US ;
+      vitro:hiddenFromPublishBelowRoleLevelAnnotC
+              <http://vitro.mannlib.cornell.edu/Cns/vitro/role#public> ;
+      vitro:publicDescriptionAnnotC
+              "This is the OWL property to link Ctwo indivdiuals with the same 'identity'. see http://www.w3.org/TR/owl-ref/#sameAs-def"@en-US ;
       vitro:selectFromExistingAnnot
               "true"^^xsd:boolean ;
       vitro:stubObjectPropertyAnnot
               "false"^^xsd:boolean .
 
 vivo:Presentation
+      vitro:customDisplayViewAnnot
+              "individual--vivo-presentation.ftl"^^xsd:string ;
       vitro:displayLimitAnnot
               "-1"^^xsd:int ;
       vitro:displayRankAnnot

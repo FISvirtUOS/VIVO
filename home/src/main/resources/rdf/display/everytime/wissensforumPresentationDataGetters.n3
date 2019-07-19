@@ -1,0 +1,74 @@
+# $This file is distributed under the terms of the license in LICENSE$ - UOS
+
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix vivo:   <http://vivoweb.org/ontology/core#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+
+#### n3 for research areas ####
+
+## associate the classes with the datagetter ##
+
+<http://vivoweb.org/ontology/core#Presentation> display:hasDataGetter display:getAutorAndRoleDataGetter .
+<http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> display:hasDataGetter display:getProjectEndDateTime .
+<http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> display:hasDataGetter display:getProjectLeader .
+
+## define the datagetter ##
+
+display:getAutorAndRoleDataGetter
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter>;
+    display:saveToVar "AutorAndRole";
+    display:query 
+        """
+        PREFIX vivo: <http://vivoweb.org/ontology/core#>
+        PREFIX obo:  <http://purl.obolibrary.org/obo/>
+        PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT ?stafflabel ?staffuri 
+        WHERE
+        {
+        ?individualURI a vivo:Presentation .
+        ?individualURI obo:BFO_0000055 ?memberrole .
+        ?memberrole obo:RO_0000052 ?staffuri .
+        ?staffuri rdfs:label ?stafflabel
+        }
+        """ .
+
+
+        
+display:getProjectEndDateTime
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter>;
+    display:saveToVar "ProjectEndDateTime";
+    display:query 
+        """
+        PREFIX vivo: <http://vivoweb.org/ontology/core#>
+        PREFIX kdsf: <http://kerndatensatz-forschung.de/owl/Basis#>
+        SELECT ?end
+        WHERE
+        {
+          ?individualURI a kdsf:Drittmittelprojekt .
+          ?individualURI vivo:dateTimeInterval ?memberrole .
+          ?memberrole vivo:end ?enddate .
+          ?enddate vivo:dateTime ?end
+        }
+        """ .
+
+
+display:getProjectLeader
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter>;
+    display:saveToVar "ProjectLeader";
+    display:query 
+        """
+        PREFIX vivo: <http://vivoweb.org/ontology/core#>
+        PREFIX kdsf: <http://kerndatensatz-forschung.de/owl/Basis#>
+        PREFIX obo:  <http://purl.obolibrary.org/obo/>
+        PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT ?leaderlabel ?leaderrolelabel ?leaderuri
+        WHERE
+        {
+          ?individualURI a kdsf:Drittmittelprojekt .
+          ?individualURI obo:BFO_0000055 ?memberrole .
+  	      ?memberrole rdfs:label ?leaderrolelabel .
+          ?memberrole obo:RO_0000052 ?leaderuri .
+          ?leaderuri rdfs:label ?leaderlabel .
+          FILTER regex (?leaderrolelabel, "Projektverantwortliche/r")
+        }
+        """ .
