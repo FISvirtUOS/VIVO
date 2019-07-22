@@ -7,33 +7,6 @@
 <#assign tabCount = 1 >
 <#assign sectionCount = 1 >
 
-<div class="row">
-    <div class="col-md-12">
-        <ul class="nav nav-tabs">
-		<#--  <#list propertyGroups.all as groupTabs>
-			<#if ( groupTabs.properties?size > 0 ) >
-				<#assign groupName = groupTabs.getName(nameForOtherGroup)>
-				<#if groupName?has_content>
-					<#--the function replaces spaces in the name with underscores, also called for the property group menu-->
-					<#-- <#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
-				<#else>
-					<#assign groupName = "${i18n().properties_capitalized}">
-					<#assign groupNameHtmlId = "${i18n().properties}" >
-				</#if>
-				<#if tabCount = 1 >
-                    <li data-toggle="tab" groupName="${groupNameHtmlId?replace("/","-")}" class="active" href="#${groupNameHtmlId?replace("/","-")}Group"><a href="#">${groupName?capitalize}</a></li>
-					<#assign tabCount = 2>
-				<#else>
-                    <li data-toggle="tab" groupName="${groupNameHtmlId?replace("/","-")}" href="#${groupNameHtmlId?replace("/","-")}Group"><a href="#">${groupName?capitalize}</a></li>
-				</#if>
-			</#if>
-		</#list>  -->
-		<#if (propertyGroups.all?size >= 1) >
-            <li id="viewAllTab" data-toggle="tab" class="active" groupName="viewAll" href="#viewAll"></li>
-		</#if>
-        </ul>
-    </div>
-</div>
 
 <#assign externalProjectSite = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite")!>
 <#assign projectTeam = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000055")!>

@@ -704,6 +704,9 @@ ul.individual-urls-uos > ul {
 .uos-project-list-ul {
     margin-top: 10px;
 }
+.uos-project-list-ul-first > li:first-child > a:first-child {
+    font-weight: bold;
+}
 .uos-project-h2 {
     display: inline; 
     vertical-align: middle;

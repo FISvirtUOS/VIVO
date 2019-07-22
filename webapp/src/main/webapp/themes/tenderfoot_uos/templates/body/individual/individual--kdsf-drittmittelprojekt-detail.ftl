@@ -40,6 +40,9 @@
 
     </section>
 
+    <#assign projectField = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
+    <#assign projectDepartment = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
+
     <!-- start section individual-info -->
     <section id="individual-info" ${infoClass!} role="region">
 
@@ -47,8 +50,8 @@
             ${individualProductExtensionPreHeader}
         </#if>
 
-        <div class="row">
-            <div class="col-md-6 intro_text uos_style">
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-8 intro_text uos_style">
                 <header>
                     <#if relatedSubject??>
                         <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
@@ -70,9 +73,15 @@
                     </#if>
                 </header>
             </div>
-            <div class="col-md-6">
-                <span>FB08 - Humanwissenschaften</span>
-                <span>Psychologie (Fach) </span>
+            <div class="col-md-4">
+                <ul class="property-list uos-project-list-ul uos-project-list-ul-first" role="list" id="academic-departments-list" displayLimit="10">
+                    <#if projectDepartment?has_content >
+                        <@p.objectProperty projectDepartment editable /> 
+                    </#if>
+                    <#if projectField?has_content >
+                        <@p.objectProperty projectField editable /> 
+                    </#if>
+                </ul>
             </div>
                 
     <#if individualProductExtension??>
