@@ -55,10 +55,8 @@
 
         <div class="row hero">
             <div class="container" role="main" id="theme-showcase">
-                <div class="col-md-12">
-                    <div class="jumbotron">
-                        <p>${i18n().intro_para2_mini_uos}</p>
-                    </div>
+                <div class="jumbotron uos-jumbotron">
+                    <p>${i18n().intro_para2_mini_uos}</p>
                 </div>
             </div>
         </div>

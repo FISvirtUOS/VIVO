@@ -10,6 +10,12 @@
     color: #000000;
 }
 
+.uos-jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
 .hero {
     background-size: 100%;
     background-color: #f3f3f3;
