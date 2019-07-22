@@ -55,8 +55,8 @@ legend {
     padding-left: 15px;
 }
 
-#main-nav > li {
-    font-size: 102%;
+#main-nav > li > a {
+    font-size: 110%;
 }
 
 .navbar-toggle .button-label {
