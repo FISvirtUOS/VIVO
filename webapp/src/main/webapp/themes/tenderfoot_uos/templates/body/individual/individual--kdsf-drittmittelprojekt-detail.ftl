@@ -40,10 +40,6 @@
 
     </section>
 
-    <!-- Fach und Fachbereich oben wieder entfernt, erst einmal drin lassen falls noch benötigt (23.07.2019)
-    <#assign projectField = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
-    <#assign projectDepartment = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
-    -->
 
     <!-- start section individual-info -->
     <section id="individual-info" ${infoClass!} role="region">
@@ -53,40 +49,26 @@
         </#if>
 
         <div class="row uos_profile_headline uos_style" style="margin-bottom: 30px;">
-            
-                <header>
-                    <#if relatedSubject??>
-                        <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
-                        <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
-                    <#else>                
-                        <h1 class="fn uos-project-h1" itemprop="name">
-                            <#-- Label -->
-                            <@p.label individual editable labelCount localesCount languageCount/>
-                            <br/>
+            <header>
+                <#if relatedSubject??>
+                    <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
+                    <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
+                <#else>                
+                    <h1 class="fn uos-project-h1" itemprop="name">
+                        <#-- Label -->
+                        <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
 
-                            <#-- Check if project is still running or finished -->
-                            <@p.projectRuntime ProjectEndDateTime />
-                            <br/>
+                        <#-- Check if project is still running or finished -->
+                        <@p.projectRuntime ProjectEndDateTime />
+                        <br/>
 
-                            <#--  Most-specific types -->
-                            <@p.mostSpecificTypes individual />
-                            <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
-                        </h1>
-                    </#if>
-                </header>
-            </div>
-            <!-- Fach und Fachbereich, siehe oben
-            <div class="col-md-4">
-                <ul class="property-list uos-project-list-ul uos-project-list-ul-first" role="list" id="academic-departments-list" displayLimit="10">
-                    <#if projectDepartment?has_content >
-                        <@p.objectProperty projectDepartment editable /> 
-                    </#if>
-                    <#if projectField?has_content >
-                        <@p.objectProperty projectField editable /> 
-                    </#if>
-                </ul>
-            </div>
-            -->
+                        <#--  Most-specific types -->
+                        <@p.mostSpecificTypes individual />
+                        <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
+                    </h1>
+                </#if>
+            </header>
+        </div>
                 
     <#if individualProductExtension??>
         ${individualProductExtension}
