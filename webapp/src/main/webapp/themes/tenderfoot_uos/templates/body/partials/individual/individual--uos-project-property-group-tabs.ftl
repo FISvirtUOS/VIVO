@@ -15,23 +15,25 @@
 <div class="row">
     <div class="col-md-12 tab-content">
 		<#if ProjectLeader?has_content>
-			<#list ProjectLeader as leader>
+			<div class="col-md-12 uos_table_div" role="article">
 				<div class="col-md-4">
 					<h3 id="project_leader" title="Leader of the project">Projektleitung</h3>
 				</div>
 				<div class="col-md-8">
-        		    <ul class="property-list" role="list" id="projectleader-ul" displayLimit="5">
-						<li role="listitem">
-							<span>
-								<a href="${profileUrl(leader.leaderuri)}" title="Projektleiter">
-								${leader.leaderlabel}
-								</a>
-								${leader.leaderrolelabel}
-							</span>
-						</li>
+        			<ul class="property-list" role="list" id="projectleader-ul" displayLimit="5">
+						<#list ProjectLeader as leader>
+							<li role="listitem">
+								<span>
+									<a href="${profileUrl(leader.leaderuri)}" title="Projektleiter">
+									${leader.leaderlabel}
+									</a>
+									${leader.leaderrolelabel}
+								</span>
+							</li>
+						</#list>
 					</ul>
 				</div>
-			</#list>
+			</div>			
 		</#if>
 
 		<#list propertyGroups.all as group>
