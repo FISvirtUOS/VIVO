@@ -40,8 +40,10 @@
 
     </section>
 
+    <!-- Fach und Fachbereich oben wieder entfernt, erst einmal drin lassen falls noch benötigt (23.07.2019)
     <#assign projectField = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
     <#assign projectDepartment = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
+    -->
 
     <!-- start section individual-info -->
     <section id="individual-info" ${infoClass!} role="region">
@@ -50,14 +52,14 @@
             ${individualProductExtensionPreHeader}
         </#if>
 
-        <div class="row" style="margin-bottom: 30px;">
-            <div class="col-md-8 intro_text uos_style">
+        <div class="row uos_profile_headline uos_style" style="margin-bottom: 30px;">
+            
                 <header>
                     <#if relatedSubject??>
                         <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
                         <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
                     <#else>                
-                        <h1 class="fn" itemprop="name">
+                        <h1 class="fn uos-project-h1" itemprop="name">
                             <#-- Label -->
                             <@p.label individual editable labelCount localesCount languageCount/>
                             <br/>
@@ -73,6 +75,7 @@
                     </#if>
                 </header>
             </div>
+            <!-- Fach und Fachbereich, siehe oben
             <div class="col-md-4">
                 <ul class="property-list uos-project-list-ul uos-project-list-ul-first" role="list" id="academic-departments-list" displayLimit="10">
                     <#if projectDepartment?has_content >
@@ -83,6 +86,7 @@
                     </#if>
                 </ul>
             </div>
+            -->
                 
     <#if individualProductExtension??>
         ${individualProductExtension}

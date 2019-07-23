@@ -703,6 +703,15 @@ ul.individual-urls-uos > ul {
 .uos_table_div {
     margin-top: 5px;
 }
+.uos_profile_headline {
+    border-left: 15px solid rgb(251, 185, 0);
+    padding: 10px 0 0 30px;
+    color: #000000;
+}
+.uos-project-h1 > span {
+    display: inline-block;
+    padding-top: 8px;
+}
 .uos_project_icons {
     width: 40px;
     height: 40px;
