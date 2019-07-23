@@ -57,6 +57,7 @@
                     <h1 class="fn uos-project-h1" itemprop="name">
                         <#-- Label -->
                         <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
+                        <br/>
 
                         <#-- Check if project is still running or finished -->
                         <@p.projectRuntime ProjectEndDateTime />
