@@ -1,6 +1,8 @@
 #menupage-intro {
-    width: 920px;
+    width: 88%;
     background: #fff;
+    border-left: 15px solid rgb(251, 185, 0);
+    padding: 10px 0 0 30px;
 }
 #menupage-intro h2 {
     font-size: 1.375em;
@@ -22,3 +24,4 @@
     font-weight: normal;
     border-bottom: 1px solid #f3f3f4;
 }
+
