@@ -29,7 +29,7 @@
     <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#narrower")!> 
     <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#related")!> 
 </#if>
-<h3>test Ich bin das neue Haupttemplate für vivo:Presentations </h3>
+
 
 <#include "individual--vivo-presentation-detail.ftl">
 <script>

@@ -20,7 +20,7 @@
 <#-- Default individual profile page template -->
 <#--@dumpAll /-->
 <#include "individual-adminPanel.ftl">
-<h3> Hier beginnt das Detail-Template der vivo:Presentations <h3>
+
 <section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
 
     <!-- start section individual-info -->
@@ -46,7 +46,6 @@
             </#if>
         </header>
 
-                
     <#if individualProductExtension??>
         ${individualProductExtension}
     <#else>
@@ -57,14 +56,15 @@
 
 <#assign description = propertyGroups.pullProperty("http://vivoweb.org/ontology/core#description")!>
 
-    <div class="col-md-6" style="text-align: justify;">
-        <#if description?has_content>
-            <@p.dataPropertyList description editable />
-        </#if>
-    </div>
+    <div style="margin: 30px 10px 30px 10px;">
+        <div style="float: right; clear: right"><iframe width="560" height="315" src="https://www.youtube.com/embed/qas_6jEkVBQ" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-    <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qas_6jEkVBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <#if description?has_content>
+            <ul>
+                <@p.dataPropertyList description editable />
+            </ul>
+        </#if>
     </div>
 
 <#assign nameForOtherGroup = "${i18n().other}"> 
@@ -78,7 +78,10 @@
      
      <#include "individual-property-group-menus.ftl">
 -->
-<#include "individual-property-group-tabs.ftl">
+<#if editable>>
+    <#include "individual-property-group-tabs.ftl">
+</#if>
+
 <div class="col-md-6" style="text-align: justify;">
     <div class="fb-page" data-href="https://www.facebook.com/uniosnabrueck/" data-tabs="timeline" data-width="500" data-height="1000" 
         data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -88,7 +91,7 @@
     </div>
 </div>
 <div class="col-md-6" style="text-align: justify;">
-    <a class="twitter-timeline" href="https://twitter.com/UniOsnabrueck?ref_src=twsrc%5Etfw">Tweets by UniOsnabrueck</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" href="https://twitter.com/UniOsnabrueck?ref_src=twsrc%5Etfw"  data-height="1042">Tweets by Uni Osnabrueck</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
 <#assign rdfUrl = individual.rdfUrl>
