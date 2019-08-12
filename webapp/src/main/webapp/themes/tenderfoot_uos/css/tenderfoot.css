@@ -208,15 +208,14 @@ body {
     display: -ms-flexbox;
     display: flex;
 }
-.photo-wrapper {
+#photo-wrapper, .photo-wrapper {
     padding: 0 !important;
     margin: 0 !important;
     background: #f3f3f0;
     vertical-align: top;
 }
 
-.photo-wrapper img {
-//    height: 100%;
+#photo-wrapper img, .photo-wrapper img {
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;

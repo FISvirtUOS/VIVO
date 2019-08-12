@@ -23,28 +23,46 @@
 
 <section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
 
+<div class="row uos_profile_headline">
+    <section id="share-contact" role="region">
+        <#-- Image -->
+        <#assign individualImage>
+        <@p.image individual=individual
+            propertyGroups=propertyGroups
+            namespaces=namespaces
+            editable=editable
+            showPlaceholder="with_add_link" />
+        </#assign>
+
+        <#if ( individualImage?contains('<img class="individual-photo"') )>
+            <#assign infoClass = 'class="withThumb"'/>
+        </#if>
+        <div id="photo-wrapper">${individualImage}</div>
+    </section>
+
     <!-- start section individual-info -->
     <section id="individual-info" ${infoClass!} role="region">
 
         <#if individualProductExtensionPreHeader??>
             ${individualProductExtensionPreHeader}
         </#if>
+        
+            <header>
+                <#if relatedSubject??>
+                    <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
+                    <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
+                <#else>                
+                    <h1 class="fn" itemprop="name">
+                        <#-- Label -->
+                        <@p.label individual editable labelCount localesCount languageCount/>
 
-        <header>
-            <#if relatedSubject??>
-                <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
-                <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
-            <#else>                
-                <h1 class="fn" itemprop="name">
-                    <#-- Label -->
-                    <@p.label individual editable labelCount localesCount languageCount/>
-                    
-                    <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
-                    <br/>
-                </h1>
-                <@p.findautoruospresentation AutorAndRole />
-            </#if>
-        </header>
+                        <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
+                        <br/>
+                    </h1>
+                    <@p.findautoruospresentation AutorAndRole />
+                </#if>
+            </header>
+        </div>
 
     <#if individualProductExtension??>
         ${individualProductExtension}
@@ -78,7 +96,7 @@
      
      <#include "individual-property-group-menus.ftl">
 -->
-<#if editable>>
+<#if editable>
     <#include "individual-property-group-tabs.ftl">
 </#if>
 
