@@ -184,4 +184,15 @@
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupbibobscure"/>
   </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/videovortrag">
+    <rdfs:label xml:lang="de-DE">Videovortrag</rdfs:label>
+    <rdfs:label xml:lang="en-US">video lecture</rdfs:label>
+    <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Presentation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupbibobscure"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>

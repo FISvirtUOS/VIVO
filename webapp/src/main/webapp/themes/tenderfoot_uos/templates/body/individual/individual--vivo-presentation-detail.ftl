@@ -71,19 +71,24 @@
         </section> <!-- individual-intro -->
     </#if>
 
-
-<#assign description = propertyGroups.pullProperty("http://vivoweb.org/ontology/core#description")!>
+<#if !editable>
+    <#assign description = propertyGroups.pullProperty("http://vivoweb.org/ontology/core#description")!>
+    <#assign video_url = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/videovortrag")!>
+    <#assign tmp_template = "propStatement-videovortrag.ftl">
 
     <div style="margin: 30px 10px 30px 10px;">
-        <div style="float: right; clear: right"><iframe width="560" height="315" src="https://www.youtube.com/embed/qas_6jEkVBQ" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
+        <#if video_url?has_content>
+            <ul id="individual-videovortrag_iframe" class="individual-urls-uos" role="list">
+                <@p.dataPropertyList video_url editable tmp_template />
+            </ul>
+        </#if>
         <#if description?has_content>
             <ul>
                 <@p.dataPropertyList description editable />
             </ul>
         </#if>
     </div>
+</#if>
 
 <#assign nameForOtherGroup = "${i18n().other}"> 
 
