@@ -65,6 +65,7 @@
                 <#if !editable>
                     <#assign orga_units = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
                     <#assign field = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
+                    <#assign date = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/veranstaltungsdatum")!>
 
                     <#if orga_units?has_content>
                         <ul class="property-list" role="list" id="orga_units_presentation">
@@ -72,8 +73,13 @@
                         </ul>
                     </#if>
                     <#if field?has_content>
-                        <ul class="property-list" role="list" id="orga_units_presentation">
+                        <ul class="property-list" role="list" id="field_presentation">
                             <@p.objectProperty field editable />
+                        </ul>
+                    </#if>
+                    <#if date?has_content>
+                        <ul class="property-list" role="list" id="date_presentation">
+                            <@p.dataPropertyList date editable />
                         </ul>
                     </#if>
                 </#if>
