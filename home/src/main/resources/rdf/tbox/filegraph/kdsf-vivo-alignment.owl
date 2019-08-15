@@ -81,7 +81,8 @@
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter"/>
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Publikation"/>
-					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+                    <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+                    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation"/>
 				</owl:unionOf>
 			</owl:Class>
 		</rdfs:domain>
@@ -112,7 +113,8 @@
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter"/>
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Publikation"/>
-					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+                    <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+                    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation"/>
 				</owl:unionOf>
 			</owl:Class>
 		</rdfs:range>
@@ -219,6 +221,7 @@
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Publikation"/>
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
                     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+                    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation"/>
 				</owl:unionOf>
 			</owl:Class>
 		</rdfs:domain>

@@ -61,6 +61,22 @@
                     </h1>
                     <@p.findautoruospresentation AutorAndRole />
                 </#if>
+
+                <#if !editable>
+                    <#assign orga_units = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
+                    <#assign field = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
+
+                    <#if orga_units?has_content>
+                        <ul class="property-list" role="list" id="orga_units_presentation">
+                            <@p.objectProperty orga_units editable />
+                        </ul>
+                    </#if>
+                    <#if field?has_content>
+                        <ul class="property-list" role="list" id="orga_units_presentation">
+                            <@p.objectProperty field editable />
+                        </ul>
+                    </#if>
+                </#if>
             </header>
         </div>
 
