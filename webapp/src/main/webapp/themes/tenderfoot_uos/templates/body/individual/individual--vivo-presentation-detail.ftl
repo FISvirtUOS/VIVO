@@ -24,7 +24,7 @@
 <section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
 
 <div class="row uos_profile_headline">
-<div class="col-md-2"  style="padding: 0px;">
+<div class="col-md-2"  style="padding: 0 0 10px 0;">
     <section id="share-contact" role="region">
         <#-- Image -->
         <#assign individualImage>
