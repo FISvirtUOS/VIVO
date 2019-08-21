@@ -24,6 +24,7 @@
 <section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
 
 <div class="row uos_profile_headline">
+<div class="col-md-2">
     <section id="share-contact" role="region">
         <#-- Image -->
         <#assign individualImage>
@@ -39,8 +40,9 @@
         </#if>
         <div id="photo-wrapper">${individualImage}</div>
     </section>
-
+    </div>
     <!-- start section individual-info -->
+    <div class="col-xs-10" style="padding-left: 0px;">
     <section id="individual-info" ${infoClass!} role="region">
 
         <#if individualProductExtensionPreHeader??>
@@ -84,12 +86,14 @@
                     </#if>
                 </#if>
             </header>
-        </div>
+        
 
     <#if individualProductExtension??>
         ${individualProductExtension}
     <#else>
             </section> <!-- individual-info -->
+            </div>
+            </div>
         </section> <!-- individual-intro -->
     </#if>
 
