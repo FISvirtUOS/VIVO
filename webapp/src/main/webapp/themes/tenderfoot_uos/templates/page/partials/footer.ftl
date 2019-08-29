@@ -1,5 +1,6 @@
 <#-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
 <footer role="contentinfo">
+<script src="https://kit.fontawesome.com/865186bfb2.js"></script>
     <div class="row">
         <div class="col-md-12">
             <div class="container">
@@ -31,6 +32,12 @@
                     <div class="col-md-4">
                         <nav role="navigation">
                             <ul id="footer-nav" role="list">
+                                <#-- social media buttons -->
+                                <li role="listitem"><a href="https://www.youtube.com/user/uniosnabrueck1/" title="Youtube UOS"><i class="fab fa-youtube"></i></a></li>
+                                <li role="listitem"><a href="https://www.instagram.com/uniosnabrueck/" title="Instagram UOS"><i class="fab fa-instagram"></i></a></li>
+                                <li role="listitem"><a href="https://www.facebook.com/uniosnabrueck" title="Facebook UOS"><i class="fab fa-facebook-square"></i></a></li>
+                                <li role="listitem"><a href="https://twitter.com/UniOsnabrueck" title="Twitter UOS"><i class="fab fa-twitter"></i></a></li>
+
                                 <li role="listitem"><a href="${urls.about}" title="${i18n().menu_about}">${i18n().menu_about}</a></li>
                             <#if urls.contact??>
                                 <li role="listitem"><a href="${urls.contact}" title="${i18n().menu_contactus}">${i18n().menu_contactus}</a></li>
