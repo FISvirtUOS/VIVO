@@ -33,10 +33,10 @@
                         <nav role="navigation">
                             <ul id="footer-nav" role="list">
                                 <#-- social media buttons -->
-                                <li role="listitem"><a href="https://www.youtube.com/user/uniosnabrueck1/" title="Youtube UOS"><i class="fab fa-youtube"></i></a></li>
-                                <li role="listitem"><a href="https://www.instagram.com/uniosnabrueck/" title="Instagram UOS"><i class="fab fa-instagram"></i></a></li>
-                                <li role="listitem"><a href="https://www.facebook.com/uniosnabrueck" title="Facebook UOS"><i class="fab fa-facebook-square"></i></a></li>
-                                <li role="listitem"><a href="https://twitter.com/UniOsnabrueck" title="Twitter UOS"><i class="fab fa-twitter"></i></a></li>
+                                <li role="listitem"><a href="https://www.youtube.com/user/uniosnabrueck1/" title="Youtube UOS" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                <li role="listitem"><a href="https://www.instagram.com/uniosnabrueck/" title="Instagram UOS" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li role="listitem"><a href="https://www.facebook.com/uniosnabrueck" title="Facebook UOS" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                                <li role="listitem"><a href="https://twitter.com/UniOsnabrueck" title="Twitter UOS" target="_blank"><i class="fab fa-twitter"></i></a></li>
 
                                 <li role="listitem"><a href="${urls.about}" title="${i18n().menu_about}">${i18n().menu_about}</a></li>
                             <#if urls.contact??>
