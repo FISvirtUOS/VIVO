@@ -17,7 +17,7 @@
 <#macro showStatement statement property datatype>
     <#assign theValue = statement.value />
 
-		<div style="float: right; clear: right"><iframe width="560" height="315" src="${theValue}"  frameborder="0" 
+		<div style="float: right; clear: right"><iframe width="560" height="315" src="${theValue}?rel=0"  frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
