@@ -131,18 +131,6 @@
     <#include "individual-property-group-tabs.ftl">
 </#if>
 
-<div class="col-md-6" style="text-align: justify;">
-    <div class="fb-page" data-href="https://www.facebook.com/uniosnabrueck/" data-tabs="timeline" data-width="500" data-height="1000" 
-        data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/uniosnabrueck/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/uniosnabrueck/">Universität Osnabrück</a>
-            </blockquote>
-    </div>
-</div>
-<div class="col-md-6" style="text-align: justify;">
-    <a class="twitter-timeline" href="https://twitter.com/UniOsnabrueck?ref_src=twsrc%5Etfw"  data-height="1042">Tweets by Uni Osnabrueck</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
 <#assign rdfUrl = individual.rdfUrl>
 
 <#if rdfUrl??>
