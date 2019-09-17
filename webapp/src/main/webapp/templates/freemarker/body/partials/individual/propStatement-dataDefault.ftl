@@ -1,10 +1,7 @@
 <#-- $This file is distributed under the terms of the license in LICENSE$ -->
-
 <#-- VIVO-specific default data property statement template. 
-    
      This template must be self-contained and not rely on other variables set for the individual page, because it
-     is also used to generate the property statement during a deletion.  
- -->
+     is also used to generate the property statement during a deletion.  -->
 <#import "lib-datetime.ftl" as dt>
 <#import "lib-meta-tags.ftl" as lmt>
 <#if property.rangeDatatypeURI?? && property.rangeDatatypeURI?contains("#")>
@@ -13,13 +10,8 @@
 	<#assign datatype = "none" />
 </#if>
 <@showStatement statement property datatype />
-
 <#macro showStatement statement property datatype>
     <#assign theValue = statement.value />
-	
-
-
-
 	<#if !(datatype?contains("url")) >
         <#assign res = theValue?matches('(http|ftp|https|www)://([\\w_-]+(?:(?:\\.[\\w_-]+)+))([\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])?')>
 		<#list res as m>
@@ -30,7 +22,6 @@
 			</#if>
         </#list>
 	</#if>
-
     <#if theValue?contains("<ul>") >
         <#assign theValue = theValue?replace("<ul>","<ul class='tinyMCEDisc'>") />
     </#if>
@@ -119,4 +110,3 @@
 		</#switch>
 	</#if>
 </#macro>
-

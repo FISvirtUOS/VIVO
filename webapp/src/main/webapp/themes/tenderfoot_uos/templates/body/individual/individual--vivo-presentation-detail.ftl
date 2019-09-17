@@ -24,25 +24,7 @@
 <section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
 
 <div class="row uos_profile_headline">
-<div class="col-md-2"  style="padding: 0 0 10px 0;">
-    <section id="share-contact" role="region">
-        <#-- Image -->
-        <#assign individualImage>
-        <@p.image individual=individual
-            propertyGroups=propertyGroups
-            namespaces=namespaces
-            editable=editable
-            showPlaceholder="with_add_link" />
-        </#assign>
-
-        <#if ( individualImage?contains('<img class="individual-photo"') )>
-            <#assign infoClass = 'class="withThumb"'/>
-        </#if>
-        <div id="photo-wrapper">${individualImage}</div>
-    </section>
-    </div>
     <!-- start section individual-info -->
-    <div class="col-xs-10">
     <section id="individual-info" ${infoClass!} role="region">
 
         <#if individualProductExtensionPreHeader??>
@@ -53,7 +35,8 @@
                 <#if relatedSubject??>
                     <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
                     <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
-                <#else>                
+                <#else>
+                    <#assign autor = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000055")!>
                     <h1 class="fn" itemprop="name">
                         <#-- Label -->
                         <@p.label individual editable labelCount localesCount languageCount/>
@@ -61,7 +44,11 @@
                         <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
                         <br/>
                     </h1>
-                    <@p.findautoruospresentation AutorAndRole />
+                    <#if autor?has_content>
+                        <ul role="list">
+                            <@p.objectProperty autor editable />
+                        </ul>
+                    </#if>
                 </#if>
 
                 <#if !editable>
@@ -93,7 +80,6 @@
     <#else>
             </section> <!-- individual-info -->
             </div>
-            </div>
         </section> <!-- individual-intro -->
     </#if>
 
@@ -109,7 +95,7 @@
             </ul>
         </#if>
         <#if description?has_content>
-            <ul>
+            <ul class="uos-text-wrap">
                 <@p.dataPropertyList description editable />
             </ul>
         </#if>

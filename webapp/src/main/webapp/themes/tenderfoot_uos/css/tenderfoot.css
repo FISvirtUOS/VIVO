@@ -732,3 +732,7 @@ ul.individual-urls-uos > ul {
 .navbar-header {
     padding-bottom: 10px;
 }
+.uos-text-wrap > li {
+    text-align: justify;
+    white-space: pre-line;
+}

@@ -8,30 +8,10 @@
 
 ## associate the classes with the datagetter ##
 
-<http://vivoweb.org/ontology/core#Presentation> display:hasDataGetter display:getAutorAndRoleDataGetter .
 <http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> display:hasDataGetter display:getProjectEndDateTime .
 <http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> display:hasDataGetter display:getProjectLeader .
 
 ## define the datagetter ##
-
-display:getAutorAndRoleDataGetter
-    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter>;
-    display:saveToVar "AutorAndRole";
-    display:query 
-        """
-        PREFIX vivo: <http://vivoweb.org/ontology/core#>
-        PREFIX obo:  <http://purl.obolibrary.org/obo/>
-        PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT ?stafflabel ?staffuri 
-        WHERE
-        {
-        ?individualURI a vivo:Presentation .
-        ?individualURI obo:BFO_0000055 ?memberrole .
-        ?memberrole obo:RO_0000052 ?staffuri .
-        ?staffuri rdfs:label ?stafflabel
-        }
-        """ .
-
 
         
 display:getProjectEndDateTime

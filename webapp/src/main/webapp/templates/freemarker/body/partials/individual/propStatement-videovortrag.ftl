@@ -13,15 +13,9 @@
 	<#assign datatype = "none" />
 </#if>
 <@showStatement statement property datatype />
-
 <#macro showStatement statement property datatype>
     <#assign theValue = statement.value />
-
-		<div style="float: right; clear: right"><iframe width="560" height="315" src="${theValue}?rel=0"  frameborder="0" 
+		<div style="padding-left:10px; float: right; clear: right"><iframe width="560" height="315" src="${theValue}?rel=0"  frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
 	<@lmt.addCitationMetaTag uri=(property.uri!) content=(theValue!) />
 </#macro>
-
-
