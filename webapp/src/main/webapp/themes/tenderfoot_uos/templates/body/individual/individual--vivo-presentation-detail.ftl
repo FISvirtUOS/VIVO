@@ -55,6 +55,7 @@
                     <#assign orga_units = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
                     <#assign field = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
                     <#assign date = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/veranstaltungsdatum")!>
+                    <#assign knowledge_forum = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000050")!>
 
                     <#if orga_units?has_content>
                         <ul class="property-list" role="list" id="orga_units_presentation">
@@ -69,6 +70,11 @@
                     <#if date?has_content>
                         <ul class="property-list" role="list" id="date_presentation">
                             <@p.dataPropertyList date editable />
+                        </ul>
+                    </#if>
+                    <#if knowledge_forum?has_content>
+                        <ul class="property-list" role="list" id="forum_presentation">
+                            <@p.objectProperty knowledge_forum editable />
                         </ul>
                     </#if>
                 </#if>
