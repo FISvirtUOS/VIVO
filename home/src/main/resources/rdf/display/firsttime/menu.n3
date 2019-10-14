@@ -153,6 +153,12 @@ display:ResearchResults
     display:urlMapping "/researchresults" ;
     display:hasDataGetter display:ResearchResultsDataGetter .
 
+display:wissensforum
+    a display:Page ;
+    display:requiresBodyTemplate "page-classgroup-presentations.ftl" ;
+    display:title "Osnabrücker Wissensforum" ;
+    display:urlMapping "/knowledgeforum" ;
+    display:hasDataGetter display:wissensforumDataGetter .
 
 #The data getter objects used above
 display:ProjectsDataGetter
@@ -164,6 +170,11 @@ display:ResearchResultsDataGetter
     a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
     display:forClassGroup
             vivoweb:vitroClassGrouppublications .
+
+display:wissensforumDataGetter
+    a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
+    display:forClassGroup
+        vivoweb:vitroClassGroupevents .
 
 display:peopleDataGetter
       a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
