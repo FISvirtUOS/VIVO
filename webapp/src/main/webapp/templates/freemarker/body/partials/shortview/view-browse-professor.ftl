@@ -12,6 +12,7 @@
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
 <#else>
+    <img src="/vivouos/images/placeholders/person.thumbnail.jpg" title="Platzhalter" alt="${individual.name}" width="90">
     <h1>
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
