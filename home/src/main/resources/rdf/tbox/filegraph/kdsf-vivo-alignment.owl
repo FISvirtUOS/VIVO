@@ -69,8 +69,8 @@
 	
 	
 	
-	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatFach -->
-
+    <!-- http://kerndatensatz-forschung.de/owl/Basis#hatFach -->
+    
     <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatFach">
 		<rdfs:label xml:lang="de-DE">Fach</rdfs:label>
         <rdfs:label xml:lang="en-US">Field</rdfs:label>
@@ -756,6 +756,20 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     </owl:DatatypeProperty>
 
 
+    <!-- http://kerndatensatz-forschung.de/owl/Basis#abkuerzung -->
+    <owl:DatatypeProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#abkuerzung">
+		<rdfs:label xml:lang="de-DE">Abkürzung</rdfs:label>
+        <rdfs:label xml:lang="en-US">acronym</rdfs:label>
+        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <Meta:inhaltlicheDefinition>In der Forschung / Reporting häufig verwendete Abkürzung eines Mittelgebers.</Meta:inhaltlicheDefinition>
+        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    </owl:DatatypeProperty>
+
+
+
     <!-- http://kerndatensatz-forschung.de/owl/Basis#KoordinatorEinrichtung wird als Object Property erfasst -->
 
     <!--owl:DatatypeProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#KoordinatorEinrichtung">
@@ -1438,6 +1452,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
         <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:inClassGroup rdf:resource="http://vivoweb.org/ontology#vitroClassGrouporganizations"/>
     </owl:Class>
     
 
