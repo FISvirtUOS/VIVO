@@ -191,6 +191,24 @@
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatMittelgeber -->
 
     <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatMittelgeber">
+		<rdfs:label xml:lang="de-DE">Finanzierung durch</rdfs:label>
+        <rdfs:label xml:lang="en-US">Financing</rdfs:label>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt"/>
+        <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+        <Meta:inhaltlicheDefinition>Dr12</Meta:inhaltlicheDefinition>
+        <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+        <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#istMittelgeber"/>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+
+
+    <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#istMittelgeber">
 		<rdfs:label xml:lang="de-DE">Vom Mittelgeber finanzierte Projekte</rdfs:label>
         <rdfs:label xml:lang="en-US">Projects financed by the donor</rdfs:label>
 		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -201,9 +219,12 @@
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
+        <owl:inverseOf>
+            <owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatMittelgeber"/>
+        </owl:inverseOf>
     </owl:ObjectProperty>
+    
 	
 	
 	
