@@ -101,6 +101,14 @@ nav#alpha-browse-container {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+.show-filter {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
 /* Start by setting display:none to make this hidden.
    Then we position it in relation to the viewport window
    with position:fixed. Width, height, top and left speak
