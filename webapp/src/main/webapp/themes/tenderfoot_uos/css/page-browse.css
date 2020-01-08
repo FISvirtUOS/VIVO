@@ -103,7 +103,7 @@ nav#alpha-browse-container {
 }
 .show-filter {
     border-radius: 25px;
-    background: #73AD21;
+    background: #f1f2ee;
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -138,5 +138,11 @@ body.loading .modal {
    modal element will be visible */
 body.loading .modal {
     display: block;
+}
+
+.filter_button > button {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
