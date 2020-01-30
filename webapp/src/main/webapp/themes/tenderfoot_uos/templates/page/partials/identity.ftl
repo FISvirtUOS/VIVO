@@ -16,6 +16,7 @@
 
 <nav role="navigation">
 	<ul id="header-nav" role="list">
+		<li> <a href="${urls.firststepsinvivo}" title="Erste Schritte in VIVO">Erste Schritte in VIVO</a></li>
 		<#include "languageSelector.ftl">
 		<#if user.loggedIn>
 			<li role="listitem"><a href="${urls.index}" title="${i18n().identity_index}">${i18n().identity_index}</a></li>
