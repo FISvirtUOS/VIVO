@@ -31,7 +31,7 @@
         </ul>
     </#if>
     <#if keywords?has_content>
-        <h2>
+        <h2 class="profile_research_priorities">
             ${i18n().research_priorities}
         </h2>
         <ul class="property-list-uos" role="list" id="${keywords.localName}">

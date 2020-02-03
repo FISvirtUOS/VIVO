@@ -735,3 +735,7 @@ ul.individual-urls-uos > ul {
     text-align: justify;
     white-space: pre-line;
 }
+.profile_research_priorities {
+    margin-top: 10px;
+    margin-block-end: 0px;
+}
