@@ -300,6 +300,11 @@ ul#header-nav a.log-out {
     right: 10px;
     padding-top: 5px;
 }
+@media only screen and (max-width: 410px) {
+    #search {
+      width: 95%;
+    }
+  }
 #search-icon {
     fill: #FFFFFF;
     width: 14px;
