@@ -16,6 +16,7 @@
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
 <#else>
+    <img src="${urls.base}/images/uos_logo_small.jpg" width="90" height="68" alt="default-logo" />
     <h1>
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
