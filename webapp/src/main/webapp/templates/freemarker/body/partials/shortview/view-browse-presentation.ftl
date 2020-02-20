@@ -11,12 +11,14 @@
 <#assign vid = vid?replace("embed", "vi") >
 <#assign vid = vid?replace("www.", "") >
 <#assign vid = vid + "/default.jpg" >
-    <img src="${vid}" width="90" alt="${individual.name}" />
+    <img src="${vid}" class="uos-presentation-shortview-image" alt="${individual.name}" />
+    <div class="uos-presentation-shortview-text">
     <h1>
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
 <#else>
-    <img src="${urls.base}/images/uos_logo_small.jpg" width="90" height="68" alt="default-logo" />
+    <img src="${urls.base}/images/uos_logo_small.jpg" class="uos-presentation-shortview-image" alt="default-logo" />
+    <div class="uos-presentation-shortview-text">
     <h1>
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
     </h1>
@@ -46,4 +48,5 @@
     </#list>
     </span>
 </#if>
+</div>
 </li>
