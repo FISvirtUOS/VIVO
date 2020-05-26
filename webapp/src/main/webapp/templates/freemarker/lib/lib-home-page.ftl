@@ -175,7 +175,7 @@ var researchProjects = [
     <#list researchProjectDG as resultRow>
         <#assign uri = resultRow["theURI"] />
         <#assign label = resultRow["name"] />
-        {'uri': '${uri?url}', 'name': '${label?html}'}<#if (resultRow_has_next)>,</#if>
+        {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
     </#list>        
 </#if>
 ];
@@ -196,7 +196,7 @@ var academicDepartments = [
     <#list academicDeptDG as resultRow>
         <#assign uri = resultRow["theURI"] />
         <#assign label = resultRow["name"]?replace("\n", " ") />
-        {'uri': '${uri?url}', 'name': '${label?html}'}<#if (resultRow_has_next)>,</#if>
+        {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
     </#list>        
 </#if>
 ];
