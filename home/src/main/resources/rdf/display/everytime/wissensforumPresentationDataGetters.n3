@@ -21,14 +21,16 @@ display:getProjectEndDateTime
         """
         PREFIX vivo: <http://vivoweb.org/ontology/core#>
         PREFIX kdsf: <http://kerndatensatz-forschung.de/owl/Basis#>
-        SELECT ?end
+        SELECT ?start ?end
         WHERE
         {
           ?individualURI a kdsf:Drittmittelprojekt .
           ?individualURI vivo:dateTimeInterval ?memberrole .
-          ?memberrole vivo:end ?enddate .
-          ?enddate vivo:dateTime ?end
-        }
+          ?memberrole vivo:start ?startdate .
+ 		      ?startdate vivo:dateTime ?start .
+  		    OPTIONAL { ?memberrole vivo:end ?enddate .
+            ?enddate vivo:dateTime ?end }
+          }
         """ .
 
 

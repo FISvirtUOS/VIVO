@@ -61,7 +61,6 @@
 
                         <#-- Check if project is still running or finished -->
                         <@p.projectRuntime ProjectEndDateTime />
-                        <br/>
 
                         <#--  Most-specific types -->
                         <@p.mostSpecificTypes individual />
