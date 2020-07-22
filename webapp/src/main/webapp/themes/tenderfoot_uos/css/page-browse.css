@@ -100,6 +100,7 @@ nav#alpha-browse-container {
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 10px;
+    border: 1px solid #aaa;
 }
 .show-filter {
     border-radius: 25px;
@@ -108,6 +109,9 @@ nav#alpha-browse-container {
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
+}
+.select2 {
+    margin-left: 10px !important;
 }
 .select2-container {
     min-width: 400px;
@@ -142,11 +146,8 @@ nav#alpha-browse-container {
       background-color: #fff;
   }
   .select2-container--default .select2-results__option--highlighted[aria-selected] {
-      background-color: #eaeaeb;
-      color: #272727;
-  }
-  .select2-container--default .select2-selection--multiple {
-      margin-bottom: 10px;
+      background-color: #f05226 !important;
+      color: white !important
   }
   .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
       border-radius: 4px;
@@ -182,6 +183,12 @@ nav#alpha-browse-container {
   .select-icon  .select2-search--dropdown {
       display: none;
   }
+.select2-selection {
+    background-color: #f1f2ee !important;
+}
+.select2-results__option {
+background-color: #f1f2ee !important;
+}
 /* Start by setting display:none to make this hidden.
    Then we position it in relation to the viewport window
    with position:fixed. Width, height, top and left speak
