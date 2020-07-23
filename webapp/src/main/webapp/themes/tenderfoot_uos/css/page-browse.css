@@ -102,14 +102,6 @@ nav#alpha-browse-container {
     margin-top: 10px;
     border: 1px solid #aaa;
 }
-.show-filter {
-    border-radius: 25px;
-    background: #f1f2ee;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
 .select2 {
     margin-left: 10px !important;
 }
