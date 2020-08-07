@@ -110,6 +110,7 @@ nav#alpha-browse-container {
   }
   
   .select2-results__option {
+    font-size: 14px;
     padding-right: 20px;
     vertical-align: middle;
   }
