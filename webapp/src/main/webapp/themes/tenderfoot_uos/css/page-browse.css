@@ -102,6 +102,13 @@ nav#alpha-browse-container {
     margin-top: 10px;
     border: 1px solid #aaa;
 }
+#resetFilterButton::before {
+    content: url(../images/reloadArrow.svg);
+    width: 16px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px;
+}
 .select2 {
     margin-left: 10px !important;
 }
@@ -215,7 +222,10 @@ body.loading .modal {
 
 .filter_button > button {
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-top: 10px;
+    border: none;
+    background: 0 0;
+    color: #ac1035;
 }
 
