@@ -229,3 +229,11 @@ body.loading .modal {
     color: #ac1035;
 }
 
+#resetFilterButton {
+    float: right;
+}
+
+.filterDescription {
+    margin-left: 10px;
+}
+
