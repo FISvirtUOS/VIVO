@@ -123,8 +123,14 @@ a:focus {
 #research-projects ul:last-child a,
 #academic-depts ul:last-child a, 
 #viewMoreFac a {
+    background-image: url('../images/icons_link.gif');
+    background-position: -264px -307px;
+    background-repeat: no-repeat;
+    color: #ac1035;
+    display: inline-block;
     font-weight: bold;
-    color: rgb(172, 6, 52);
+    padding-left: 15px;
+    text-decoration: none;
 }
 #home-research li:last-child a:hover,
 #research-projects ul:last-child a:hover,

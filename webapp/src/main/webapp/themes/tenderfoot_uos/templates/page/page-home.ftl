@@ -111,6 +111,9 @@
             viewAllFaculty: '${i18n().view_all_faculty}',
             viewAllString: '${i18n().view_all}',
             viewAllDepartments: '${i18n().view_all_departments}',
+            viewAllPeople: '${i18n().view_all_people}',
+            viewAllProjects: '${i18n().view_all_projects}',
+            viewAllProjectPublications: '${i18n().view_all_project_publications}',
             noDepartmentsFound: '${i18n().no_departments_found}'
         };
         // set the 'limmit search' text and alignment

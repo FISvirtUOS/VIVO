@@ -89,8 +89,8 @@ $(document).ready(function(){
                     });
                     var viewMore = "<ul id='viewMoreFac'><li><a href='"
                                 + urlsBase
-                                + "/people#http://vivoweb.org/ontology/core#FacultyMember' alt='"
-                                + i18nStrings.viewAllFaculty + "'>"
+                                + "/people#http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter' alt='"
+                                + i18nStrings.viewAllPeople + "'>"
                                 + i18nStrings.viewAllString + "</a></li?</ul>";
                     $('div#research-faculty-mbrs').append(viewMore);
                 }
@@ -158,7 +158,7 @@ $(document).ready(function(){
                     + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
                     + urlsBase 
                     + "/projects#http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt' alt='" 
-                    + i18nStrings.viewAllDepartments + "'>" 
+                    + i18nStrings.viewAllProjects + "'>" 
                     + i18nStrings.viewAllString + "</a></li></ul>";
         }
         $('div#research-projects').html(html);
@@ -207,12 +207,11 @@ $(document).ready(function(){
                     + "<li style='font-size:0.9em;text-align:right;padding: 6px 16px 0 0'><a href='" 
                     + urlsBase 
                     + "/researchresults' alt='" 
-                    + i18nStrings.viewAllDepartments + "'>" 
+                    + i18nStrings.viewAllProjectPublications + "'>" 
                     + i18nStrings.viewAllString + "</a></li></ul>";
         }
         $('div#academic-depts').html(html);
     }
 
-    
     
 }); 
