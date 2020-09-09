@@ -252,6 +252,7 @@
 					<owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit"/>
 					<owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment"/>
                     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute"/>
+                    <owl:Class rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/forschungszentrum"/>
 				</owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -1530,7 +1531,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Organisationseinheit">
 		<rdfs:label xml:lang="de-DE">Organisationseinheit</rdfs:label>
         <rdfs:label xml:lang="en-US">Organizational unit</rdfs:label>
-        <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Division"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Division"/>
         <Meta:inhaltlicheDefinition>Be75</Meta:inhaltlicheDefinition>
         <Meta:inhaltlicheDefinition>Dr121</Meta:inhaltlicheDefinition>
         <Meta:inhaltlicheDefinition>Na92</Meta:inhaltlicheDefinition>
