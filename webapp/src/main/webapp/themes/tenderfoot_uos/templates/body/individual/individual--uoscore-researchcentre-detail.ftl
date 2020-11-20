@@ -18,92 +18,58 @@
 <#--@dumpAll /-->
 <#include "individual-adminPanel.ftl">
 
-<section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
+<section id="individual-intro" class="vcard" style="border-left: 15px solid rgb(251, 185, 0); padding: 10px 0 10px 30px; color: #000000; margin-bottom: 30px;" role="region" <@mf.sectionSchema individual/>>
 
-<div class="row uos_profile_headline">
+    <section id="share-contact" role="region">
+        <#-- Image -->
+        <#assign individualImage>
+        <@p.image individual=individual
+            propertyGroups=propertyGroups
+            namespaces=namespaces
+            editable=editable
+            showPlaceholder="with_add_link" />
+        </#assign>
+
+        <#if ( individualImage?contains('<img class="individual-photo"') )>
+            <#assign infoClass = 'class="withThumb"'/>
+        </#if>
+        <div id="photo-wrapper">${individualImage}</div>
+
+    </section>
+
+
     <!-- start section individual-info -->
     <section id="individual-info" ${infoClass!} role="region">
 
         <#if individualProductExtensionPreHeader??>
             ${individualProductExtensionPreHeader}
         </#if>
-        
+
+        <div class="row uos_style">
             <header>
                 <#if relatedSubject??>
                     <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
                     <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
-                <#else>
-                    <#assign autor = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000055")!>
+                <#else>                
                     <h1 class="fn" itemprop="name">
                         <#-- Label -->
-                        <@p.label individual editable labelCount localesCount languageCount/>
-
-                        <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
+                        <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
                         <br/>
+
+                        <#--  Most-specific types -->
+                        <@p.mostSpecificTypes individual />
+                        <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
                     </h1>
-                    <#if autor?has_content>
-                        <ul role="list">
-                            <@p.objectProperty autor editable />
-                        </ul>
-                    </#if>
-                </#if>
-
-                <#if !editable>
-                    <#assign orga_units = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatOrganisationseinheit")!>
-                    <#assign field = propertyGroups.pullProperty("http://kerndatensatz-forschung.de/owl/Basis#hatFach")!>
-                    <#assign date = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/veranstaltungsdatum")!>
-                    <#assign knowledge_forum = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000050")!>
-
-                    <#if orga_units?has_content>
-                        <ul class="property-list" role="list" id="orga_units_presentation">
-                            <@p.objectProperty orga_units editable />
-                        </ul>
-                    </#if>
-                    <#if field?has_content>
-                        <ul class="property-list" role="list" id="field_presentation">
-                            <@p.objectProperty field editable />
-                        </ul>
-                    </#if>
-                    <#if date?has_content>
-                        <ul class="property-list" role="list" id="date_presentation">
-                            <@p.dataPropertyList date editable />
-                        </ul>
-                    </#if>
-                    <#if knowledge_forum?has_content>
-                        <ul class="property-list" role="list" id="forum_presentation">
-                            <@p.objectProperty knowledge_forum editable />
-                        </ul>
-                    </#if>
                 </#if>
             </header>
-        
-
+        </div>
+                
     <#if individualProductExtension??>
         ${individualProductExtension}
     <#else>
             </section> <!-- individual-info -->
-            </div>
         </section> <!-- individual-intro -->
     </#if>
-
-<#if !editable>
-    <#assign description = propertyGroups.pullProperty("http://vivoweb.org/ontology/core#description")!>
-    <#assign video_url = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/videovortrag")!>
-    <#assign tmp_template = "propStatement-videovortrag.ftl">
-
-    <div style="margin: 30px 10px 30px 10px;">
-        <#if video_url?has_content>
-            <ul id="individual-videovortrag_iframe" class="individual-urls-uos" role="list">
-                <@p.dataPropertyList video_url editable tmp_template />
-            </ul>
-        </#if>
-        <#if description?has_content>
-            <ul class="uos-text-wrap">
-                <@p.dataPropertyList description editable />
-            </ul>
-        </#if>
-    </div>
-</#if>
 
 <#assign nameForOtherGroup = "${i18n().other}"> 
 
@@ -116,9 +82,7 @@
      
      <#include "individual-property-group-menus.ftl">
 -->
-<#if editable>
-    <#include "individual-property-group-tabs.ftl">
-</#if>
+<#include "individual--uos-researchcentre-property-group-tabs.ftl">
 
 <#assign rdfUrl = individual.rdfUrl>
 

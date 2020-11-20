@@ -1,9 +1,6 @@
 <#-- $This file is distributed under the terms of the license in LICENSE$ -->
 <#import "lib-microformats.ftl" as mf>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.3"></script>
-
 <#--Number of labels present-->
 <#if !labelCount??>
     <#assign labelCount = 0 >

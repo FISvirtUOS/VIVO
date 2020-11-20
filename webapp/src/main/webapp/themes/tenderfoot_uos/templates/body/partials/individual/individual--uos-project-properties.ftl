@@ -12,7 +12,7 @@
             
             <div class="col-md-12 uos_table_div" role="article">
                 <#-- Property display name -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                 <#if rangeClass == "Authorship" && individual.editable && (property.domainUri)?? && property.domainUri?contains("Person")>
                     <h3 id="${property.localName}-${rangeClass}" title="${property.publicDescription!}">${property.name} <@p.addLink property editable /> <@p.verboseDisplay property /> 
                         <a id="managePubLink" class="manageLinks" href="${urls.base}/managePublications?subjectUri=${subjectUri[1]!}" title="${i18n().manage_publications_link}" <#if verbose>style="padding-top:10px"</#if> >
@@ -48,7 +48,7 @@
 						<#assign limit = 5 />
 					</#if>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                 <ul class="property-list" role="list" id="${property.localName}-${rangeClass}-List" displayLimit="${limit}">
                     <#-- data property -->
                     <#if property.type == "data">
