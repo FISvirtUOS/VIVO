@@ -64,7 +64,7 @@
 						<img class="uos_project_icons" alt="Image Projekt-Team" src="${urls.images}/individual/user-solid.svg" >
 						<h2 class="uos-project-h2">Projektteam</h3>
 					</span>
-					<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List" displayLimit="10">
+					<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List">
 						<@p.objectProperty projectTeam editable />
 					</ul>
 				</#if>
