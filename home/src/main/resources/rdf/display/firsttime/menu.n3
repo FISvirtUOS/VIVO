@@ -245,6 +245,8 @@ soll durch Veröffentlichung von Forschungsergebnissen – soweit keine Sicherhe
 </p>
     <p><a href="http://portal.volkswagenstiftung.de/search/searchForm.do?siteLanguage=de" title="Projekt-Personen-Suche" target="_blank" class="external-link">Projekt-Personen-Suche</a> der VolkswagenStiftung (darunter auch Niedersächsisches Vorab)
 </p>
+<p><a href="https://www.dbu.de/index.php?menuecms=2406&db_suche=Universit%C3%A4t+Osnabr%C3%BCck" title="DBU - Projekt-Datenbank" target="_blank" class="external-link">DBU - Projekt-Datenbank:</a> Projekt-Datenbank der Deutschen Bundesstiftung Umwelt
+</p>
 </section>"""@de ;
     display:saveToVar "leitlinien" .
 
