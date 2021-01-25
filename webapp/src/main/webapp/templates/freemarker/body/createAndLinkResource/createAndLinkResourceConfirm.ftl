@@ -93,6 +93,9 @@
                     </div>
                 </#if>
             </#if>
+
+            <#include "autoCompleteObjectPropertyFormProjects.ftl">
+            
             <div style="clear: both;"></div>
         </div>
         <br/>
