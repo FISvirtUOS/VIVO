@@ -516,7 +516,7 @@ public class CreateAndLinkResourceController extends FreemarkerHttpServlet {
     }
 
     private void addProjectPublicationLink(VitroRequest vreq, String vivoUri, String projectUri, Model model) {
-        log.info("Adding property between '" + vivoUri + "' and '" + projectUri + "'");
+        
         if(!StringUtils.isEmpty(vivoUri)) {
             model.getResource(vivoUri).addProperty(model.createProperty("http://purl.obolibrary.org/obo/RO_0002353"), model.getResource(projectUri));
         }
