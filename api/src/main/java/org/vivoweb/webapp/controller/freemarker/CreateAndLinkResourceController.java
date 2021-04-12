@@ -379,6 +379,12 @@ public class CreateAndLinkResourceController extends FreemarkerHttpServlet {
 
                             // Process the user's chosen relationship with the resource, updating the updated model
                             processRelationships(vreq, updatedModel, vivoUri, profileUri, vreq.getParameter("contributor" + externalId));
+
+
+                            String projectUri = vreq.getParameter("objectVar" + externalId);
+                            if(!StringUtils.isEmpty(projectUri)) {
+                                addProjectPublicationLink(vreq, vivoUri, projectUri, updatedModel);
+                            }
                         }
                     }
                 }
@@ -508,6 +514,14 @@ public class CreateAndLinkResourceController extends FreemarkerHttpServlet {
         // Show the entry form for a user to enter a set of identifiers
         return new TemplateResponseValues("createAndLinkResourceEnterID.ftl", templateValues);
     }
+
+    private void addProjectPublicationLink(VitroRequest vreq, String vivoUri, String projectUri, Model model) {
+        log.info("Adding property between '" + vivoUri + "' and '" + projectUri + "'");
+        if(!StringUtils.isEmpty(vivoUri)) {
+            model.getResource(vivoUri).addProperty(model.createProperty("http://purl.obolibrary.org/obo/RO_0002353"), model.getResource(projectUri));
+        }
+    }
+
 
     private String getFormattedProfileName(VitroRequest vreq, String profileUri) {
         final Citation.Name name = new Citation.Name();
