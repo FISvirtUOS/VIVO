@@ -66,7 +66,7 @@
 						<img class="uos_project_icons" alt="Image employees" src="${urls.images}/individual/user-solid.svg" >
 						<h2 class="uos-project-h2">${i18n().employees}</h3>
 					</span>
-					<ul class="property-list uos-project-list-ul" role="list" id="${employees.localName}-List">
+					<ul class="property-list uos-project-list-ul" role="list" id="${employees.localName}-List" displayLimit="10">
 						<@p.objectProperty employees editable />
 					</ul>
 				</div>
