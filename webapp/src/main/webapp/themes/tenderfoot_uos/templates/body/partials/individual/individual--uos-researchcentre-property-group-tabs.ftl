@@ -63,11 +63,11 @@
 				<br>  -->
 				<div class="col-md-12 uos-project-div">
 					<span>
-						<img class="uos_project_icons" alt="Image Projekt-Team" src="${urls.images}/individual/user-solid.svg" >
+						<img class="uos_project_icons" alt="Image employees" src="${urls.images}/individual/user-solid.svg" >
 						<h2 class="uos-project-h2">${i18n().employees}</h3>
 					</span>
-					<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List">
-						<@p.objectProperty projectTeam editable />
+					<ul class="property-list uos-project-list-ul" role="list" id="${employees.localName}-List">
+						<@p.objectProperty employees editable />
 					</ul>
 				</div>
 			<#--  </div>  -->
