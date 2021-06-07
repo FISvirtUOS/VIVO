@@ -16,10 +16,10 @@
     <div class="col-md-12 tab-content">
 		<#if ProjectLeader?has_content>
 			<div class="col-md-12 uos_table_div" role="article">
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<h3 id="project_leader" title="Leader of the project">Projektleitung</h3>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-9">
         			<ul class="property-list" role="list" id="projectleader-ul" displayLimit="5">
 						<#list ProjectLeader as leader>
 							<li role="listitem">
