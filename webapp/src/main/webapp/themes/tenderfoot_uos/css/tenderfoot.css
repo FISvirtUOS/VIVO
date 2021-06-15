@@ -718,9 +718,8 @@ ul.individual-urls-uos > ul {
     padding: 10px 0 0 30px;
     color: #000000;
 }
-.uos-project-h1 > span {
-    display: inline-block;
-    padding-top: 8px;
+.uos-project-runtime {
+    line-height: 180%;
 }
 .uos_project_icons {
     width: 40px;

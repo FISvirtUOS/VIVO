@@ -68,33 +68,35 @@
 
 <div class="row">
 	<div class="col-md-12" >
-		<div class="col-md-6">
-			<div class="col-md-12 uos-project-div">
+		<#if externalProjectSite?has_content || projectTeam?has_content >
+			<div class="col-md-6">
 				<#if externalProjectSite?has_content >
-					<span>
-						<img class="uos_project_icons" alt="Image Projekt-Links" src="${urls.images}/individual/bookmark-solid.svg" >
-						<h2 class="uos-project-h2">Projektlinks</h3>
-					</span>
-					<ul class="property-list uos-project-list-ul" role="list" id="${externalProjectSite.localName}-List" displayLimit="5">
-						<@p.dataPropertyList externalProjectSite editable />
-					</ul>
+					<div class="col-md-12 uos-project-div">
+						<span>
+							<img class="uos_project_icons" alt="Image Projekt-Links" src="${urls.images}/individual/bookmark-solid.svg" >
+							<h2 class="uos-project-h2">Projektlinks</h3>
+						</span>
+						<ul class="property-list uos-project-list-ul" role="list" id="${externalProjectSite.localName}-List" displayLimit="5">
+							<@p.dataPropertyList externalProjectSite editable />
+						</ul>
+					</div>
 				</#if>
-			</div>
-			<br>
-			<div class="col-md-12 uos-project-div">
+				<br>
 				<#if projectTeam?has_content >
-					<span>
-						<img class="uos_project_icons" alt="Image Projekt-Team" src="${urls.images}/individual/user-solid.svg" >
-						<h2 class="uos-project-h2">Projektteam</h3>
-					</span>
-					<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List" displayLimit="10">
-						<@p.objectProperty projectTeam editable />
-					</ul>
+					<div class="col-md-12 uos-project-div">
+						<span>
+							<img class="uos_project_icons" alt="Image Projekt-Team" src="${urls.images}/individual/user-solid.svg" >
+							<h2 class="uos-project-h2">Projektteam</h3>
+						</span>
+						<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List" displayLimit="10">
+							<@p.objectProperty projectTeam editable />
+						</ul>
+					</div>
 				</#if>
 			</div>
-		</div>
-		<div class="col-md-6 uos-project-div">
-			<#if projectOutput?has_content >
+		</#if>
+		<#if projectOutput?has_content >	
+			<div class="col-md-6 uos-project-div">
 				<span>
 					<img class="uos_project_icons" alt="Image Projekt-Output" src="${urls.images}/individual/book-open-solid.svg" >
 					<h2 class="uos-project-h2">Projektergebnisse</h3>
@@ -102,8 +104,8 @@
 				<ul class="property-list uos-project-list-ul" role="list" id="${projectOutput.localName}-List" displayLimit="10">
 					<@p.objectProperty projectOutput editable /> 
 				</ul>
-			</#if>
-		</div>
+			</div>
+		</#if>
 	</div>
 </div>
 

@@ -18,7 +18,7 @@
 <#--@dumpAll /-->
 <#include "individual-adminPanel.ftl">
 
-<section id="individual-intro" class="vcard" role="region" <@mf.sectionSchema individual/>>
+<section id="individual-intro" class="vcard" style="border-left: 15px solid rgb(251, 185, 0); padding: 10px 0 10px 30px; color: #000000; margin-bottom: 30px;" role="region" <@mf.sectionSchema individual/>>
 
     <section id="share-contact" role="region">
         <#-- Image -->
@@ -45,13 +45,13 @@
             ${individualProductExtensionPreHeader}
         </#if>
 
-        <div class="row uos_profile_headline uos_style" style="margin-bottom: 30px;">
+        <div class="row uos_style">
             <header>
                 <#if relatedSubject??>
                     <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
                     <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
                 <#else>                
-                    <h1 class="fn uos-project-h1" itemprop="name">
+                    <h1 class="fn" itemprop="name">
                         <#-- Label -->
                         <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
                         <br/>
