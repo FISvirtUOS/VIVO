@@ -21,6 +21,8 @@
 
                         | <a href="${urls.imprint}" title="${i18n().menu_imprint}">${i18n().menu_imprint}</a></small> |
 
+                        <a href="https://www.ub.uni-osnabrueck.de/publizieren_archivieren/affiliationsrichtinie.html" target="_blank" title="${i18n().affiliation_policy}">${i18n().affiliation_policy}</a></small> |
+
                         ${i18n().menu_powered} <a class="powered-by-vivo" href="http://vivoweb.org" target="_blank" title="${i18n().menu_powered} VIVO"><strong>VIVO</strong></a>
                         and
                         <a class="powered-by-vivo" href="https://www.uni-osnabrueck.de" target="_blank" title="Universität Osnabrück"><strong>UOS</strong></a>
