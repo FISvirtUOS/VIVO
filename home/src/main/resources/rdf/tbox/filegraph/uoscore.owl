@@ -40,8 +40,8 @@
   </owl:Ontology>
 
   <owl:Class rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/EhemaligeBeschaeftigte">
-    <rdfs:label xml:lang="de-DE">ehemalige Beschäftigte</rdfs:label>
-    <rdfs:label xml:lang="en-US">former employees</rdfs:label>
+    <rdfs:label xml:lang="de-DE">ehemalige:r Beschäftigte:r</rdfs:label>
+    <rdfs:label xml:lang="en-US">former employee</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
     <vitro:descriptionAnnot>Nicht mehr an der Universität Osnabrück beschäftigte Professoren/Mitarbeiter (im Ruhestand, Ruf angenommen, ausgeschieden)</vitro:descriptionAnnot>
     <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</vitro:displayRankAnnot>

@@ -992,7 +992,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#AusserplanmaessigeProfessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#AusserplanmaessigeProfessoren">
-		<rdfs:label xml:lang="de-DE">Außerplanmäßiger Professor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Außerplanmäßige:r Professor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Adjunct professor</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1009,7 +1009,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#HauptberuflicheGastprofessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#HauptberuflicheGastprofessoren">
-		<rdfs:label xml:lang="de-DE">Hauptberuflicher Gastprofessor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Hauptberufliche:r Gastprofessor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Full-time visiting professor</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1026,7 +1026,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#Juniorprofessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Juniorprofessoren">
-		<rdfs:label xml:lang="de-DE">Juniorprofessor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Juniorprofessor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Junior professor</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1043,7 +1043,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#Seniorprofessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Seniorprofessoren">
-		<rdfs:label xml:lang="de-DE">Seniorprofessor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Seniorprofessor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Senior professor</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1059,7 +1059,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#Stiftungsprofessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Stiftungsprofessoren">
-		<rdfs:label xml:lang="de-DE">Stiftungsprofessor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Stiftungsprofessor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Endowed professor</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1075,7 +1075,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#Vertretungsprofessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Vertretungsprofessoren">
-		<rdfs:label xml:lang="de-DE">Vertretungsprofessor/ Lehrstuhlvertreter</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Vertretungsprofessor:in/ Lehrstuhlvertreter:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Visiting professor/ department representatives</rdfs:label>
         <!-- rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#SonstigeProfessoren"/ -->
 		<rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
@@ -1513,7 +1513,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     <!-- http://kerndatensatz-forschung.de/owl/Basis#OrdentlicheProfessoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#OrdentlicheProfessoren">
-		<rdfs:label xml:lang="de-DE">Ordentlicher Professor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Ordentliche:r Professor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Full professor</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Professoren"/>
 		<Meta:inhaltlicheDefinition>Be37</Meta:inhaltlicheDefinition>
@@ -1593,7 +1593,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     <!-- http://kerndatensatz-forschung.de/owl/Basis#Professoren -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Professoren">
-		<rdfs:label xml:lang="de-DE">Professor</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Professor:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Professor</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlichesUndKuenstlerischesPersonal"/>
 		<rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyMember"/>
@@ -1951,7 +1951,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
     <!-- http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlicheUndKuenstlerischeMitarbeiter -->
 
     <owl:Class rdf:about="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlicheUndKuenstlerischeMitarbeiter">
-		<rdfs:label xml:lang="de-DE">Wissenschaftliche und künstlerische Mitarbeiter</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Wissenschaftliche:r und künstlerische:r Mitarbeiter:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Scientific and artistic staff</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#WissenschaftlichesUndKuenstlerischesPersonal"/>
         <Meta:inhaltlicheDefinition>Be22</Meta:inhaltlicheDefinition>
