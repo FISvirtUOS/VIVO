@@ -82,7 +82,7 @@
 								</#if>
 								<span itemprop="name" class="fn"><@p.label individual editable labelCount localesCount/></span>
 						</h1>
-						<#--<section id="preferredTitle">
+						<section id="preferredTitle">
 						<#--	<#--  Display preferredTitle if it exists; otherwise mostSpecificTypes -->
 						<#--	<#assign title = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/ARG_2000028","http://www.w3.org/2006/vcard/ns#Title")!>
 						<#--	<#if title?has_content> <#-- true when the property is in the list, even if not populated (when editing) -->
@@ -98,10 +98,10 @@
 						<#--		</#list>
 						<#--	</#if>
 						<#--	<#-- If preferredTitle is unpopulated, display mostSpecificTypes -->
-						<#--	<#if ! (title.statements)?has_content>
-						<#--		<@p.mostSpecificTypes individual />
+						<#--	<#if ! (title.statements)?has_content> -->
+								<@p.mostSpecificTypes individual />
 						<#--	</#if>
-						<#--</section> -->
+						</section> -->
 					</section>
 				</div>
 				<#if user.loggedIn>
