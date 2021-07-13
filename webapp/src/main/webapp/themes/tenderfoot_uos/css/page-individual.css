@@ -60,7 +60,11 @@ article.property li h3 {
 #individual-intro h1 {
     font-size: 1.375em;
     color: #000000;
+}
+
+.individual-intro-uos-person h1 {
     float: left;
+    margin-right: 10px;
 }
 
 #individual-intro #iconControlsRightSide {
