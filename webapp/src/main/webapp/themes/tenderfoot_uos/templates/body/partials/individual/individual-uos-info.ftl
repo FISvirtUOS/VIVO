@@ -52,5 +52,8 @@
         
         <!-- Websites -->
     	<#include "individual-webpage.ftl">
+
+        <!-- ORCID -->
+		<#include "individual-orcid-vcard-uos.ftl">
     </div>
 </div>

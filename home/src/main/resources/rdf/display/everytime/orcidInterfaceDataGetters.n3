@@ -8,6 +8,7 @@
 #
 
 <freemarker:individual-orcidInterface.ftl> display:hasDataGetter display:orcidIdDataGetter .
+<freemarker:individual-orcid-vcard-uos.ftl> display:hasDataGetter display:orcidIdDataGetter .
 
 display:orcidIdDataGetter
     a <java:edu.cornell.mannlib.vivo.orcid.OrcidIdDataGetter> .
