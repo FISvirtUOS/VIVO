@@ -17,7 +17,7 @@ orcidInfo = map {
         <#--<#if !editable && individual.person() >
             <ul style="font-size:0.9em;padding-bottom:4px"><li><strong>ORCID</strong></li></ul>
         </#if> -->
-        <ul id="individual-orcid" role="list">
+        <ul id="individual-orcid" class="property-list-uos" role="list">
         <#list orcidInfo.orcids?keys as key>
             <li>    
                 <img width="17" src="${urls.images}/individual/orcid_logo.png" style="vertical-align: text-top;">

@@ -38,6 +38,8 @@
             <@p.dataPropertyList keywords editable />
         </ul>
     </#if>
+    <!-- ORCID -->
+	<#include "individual-orcid-vcard-uos.ftl">
     <!-- Positions -->
 	<#include "individual-positions.ftl">
 	<!-- Research Areas -->
@@ -53,7 +55,5 @@
         <!-- Websites -->
     	<#include "individual-webpage.ftl">
 
-        <!-- ORCID -->
-		<#include "individual-orcid-vcard-uos.ftl">
     </div>
 </div>
