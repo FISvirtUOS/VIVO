@@ -38,22 +38,22 @@
             <@p.dataPropertyList keywords editable />
         </ul>
     </#if>
-    <!-- ORCID -->
-	<#include "individual-orcid-vcard-uos.ftl">
     <!-- Positions -->
 	<#include "individual-positions.ftl">
 	<!-- Research Areas -->
 	<#include "individual-researchAreas.ftl">
 </div>
-<div class="col-md-4 uos_info_table_cell">
+<div id="uos_info_table_cell_rechts" class="col-md-4 uos_info_table_cell">
     <div>
         <!-- Contact Info -->
     	<#include "individual-contactInfo.ftl">
     </div>
-    <div id="uos_info_table_cell_links">
+    <div>
         
         <!-- Websites -->
     	<#include "individual-webpage.ftl">
 
+        <!-- ORCID -->
+	    <#include "individual-orcid-vcard-uos.ftl">
     </div>
 </div>

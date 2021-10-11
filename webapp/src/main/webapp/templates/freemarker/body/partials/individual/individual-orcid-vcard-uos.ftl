@@ -20,7 +20,7 @@ orcidInfo = map {
         <ul id="individual-orcid" class="property-list-uos" role="list">
         <#list orcidInfo.orcids?keys as key>
             <li>    
-                <img width="17" src="${urls.images}/individual/orcid_logo.png" style="vertical-align: text-top;">
+                <img width="21" src="${urls.images}/individual/orcid_logo.png" style="vertical-align: middle;">
                 <a href="${key}" target="_blank">ORCID</a>
             </li>
         </#list>
