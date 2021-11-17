@@ -31,6 +31,23 @@ local:firstSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
     :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
 
 
+local:firstSupervisorPersonContext a :ConfigContext ;
+    :hasConfiguration local:firstSupervisorPersonConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://xmlns.com/foaf/0.1/Person>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#AdvisingRelationship> .
+
+local:firstSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
+    rdfs:label "supervised"@en-US;
+    :displayName "supervised" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
 local:fieldDependsProjectContext a :ConfigContext ;
     :hasConfiguration local:fieldDependsProjectConfig ;
     :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
