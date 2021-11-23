@@ -74,9 +74,9 @@
 					<div class="col-md-12 uos-project-div">
 						<span>
 							<img class="uos_project_icons" alt="Image Projekt-Links" src="${urls.images}/individual/bookmark-solid.svg" >
-							<h2 class="uos-project-h2">Projektlinks</h3>
+							<h2 class="uos-project-h2">${i18n().project_links}</h3>
 						</span>
-						<ul class="property-list uos-project-list-ul" role="list" id="${externalProjectSite.localName}-List" displayLimit="5">
+						<ul class="property-list uos-project-list-ul individual-urls-uos" role="list" id="${externalProjectSite.localName}-List" displayLimit="5">
 							<@p.dataPropertyList externalProjectSite editable />
 						</ul>
 					</div>
@@ -86,7 +86,7 @@
 					<div class="col-md-12 uos-project-div">
 						<span>
 							<img class="uos_project_icons" alt="Image Projekt-Team" src="${urls.images}/individual/user-solid.svg" >
-							<h2 class="uos-project-h2">Projektteam</h3>
+							<h2 class="uos-project-h2">${i18n().project_team}</h3>
 						</span>
 						<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List" displayLimit="10">
 							<@p.objectProperty projectTeam editable />
@@ -99,7 +99,7 @@
 			<div class="col-md-6 uos-project-div">
 				<span>
 					<img class="uos_project_icons" alt="Image Projekt-Output" src="${urls.images}/individual/book-open-solid.svg" >
-					<h2 class="uos-project-h2">Projektergebnisse</h3>
+					<h2 class="uos-project-h2">${i18n().project_results}</h3>
 				</span>
 				<ul class="property-list uos-project-list-ul" role="list" id="${projectOutput.localName}-List" displayLimit="10">
 					<@p.objectProperty projectOutput editable /> 

@@ -131,7 +131,7 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite">
-        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-url.xml</display:listViewConfigFile>
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-uosExternalProjectSite.xml</display:listViewConfigFile>
     </rdf:Description>   
         
     <rdf:Description rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatexterneurl">
@@ -149,6 +149,5 @@
     <rdf:Description rdf:about="http://kerndatensatz-forschung.de/owl/Basis#Koordinationsrolle">
         <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-uoskoordinationsrolle.xml</display:listViewConfigFile>
     </rdf:Description>
-
 
 </rdf:RDF>
