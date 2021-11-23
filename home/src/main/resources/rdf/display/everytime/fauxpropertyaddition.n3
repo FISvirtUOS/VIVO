@@ -39,8 +39,8 @@ local:firstSupervisorPersonContext a :ConfigContext ;
 
 local:firstSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
     :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
-    rdfs:label "supervised"@en-US;
-    :displayName "supervised" ;
+    rdfs:label "Supervised doctorates"@en-US;
+    :displayName "Supervised doctorates" ;
     vitro:displayRankAnnot 10;
     vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
     vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
