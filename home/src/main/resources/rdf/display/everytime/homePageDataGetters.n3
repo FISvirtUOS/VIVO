@@ -24,7 +24,7 @@ display:academicDeptsDataGetter
     {
           ?theURI a kdsf:Publikation .
           ?theURI rdfs:label ?label 
-    }
+    } LIMIT 30
 
     """ .
 
