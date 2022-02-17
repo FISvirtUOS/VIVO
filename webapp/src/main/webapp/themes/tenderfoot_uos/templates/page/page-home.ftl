@@ -78,6 +78,14 @@
             </div>
         </div>
 
+        <div class="row uos_style">
+            <div class="container" role="main" id="theme-showcase-bottom">
+                <div class="jumbotron uos-jumbotron">
+                    <p style="font-size: 16px;">${i18n().intro_para3_mini_uos} <a href="mailto:fis@uni-osnabrueck.de" title="Send E-Mail" class="mail">fis@uni-osnabrueck.de</a></p>
+                </div>
+            </div>
+        </div>
+
         <#if geoFocusMapsEnabled >
             <div class="row geo-focus">
                 <div class="container">
