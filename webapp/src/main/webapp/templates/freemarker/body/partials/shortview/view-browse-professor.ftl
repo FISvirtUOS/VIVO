@@ -20,7 +20,7 @@
 
 <#if (denom[0].profdenom)?? >
     <#if (professur[0].bezeichnung)?? >
-        <span class="title">${professur[0].bezeichnung?trim}, ${denom[0].profdenom}</span>
+        <span class="title">${professur[0].bezeichnung?trim} ${i18n().for} ${denom[0].profdenom}</span>
     <#else>
         <span class="title">${denom[0].profdenom}</span>
     </#if>
