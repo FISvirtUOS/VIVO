@@ -20,7 +20,7 @@
 
 <section id="individual-intro" class="vcard" style="border-left: 15px solid rgb(251, 185, 0); padding: 10px 0 10px 30px; color: #000000; margin-bottom: 30px;" role="region" <@mf.sectionSchema individual/>>
 
-    <section id="share-contact" role="region">
+    <div class="row row-eq-height" style="flex-wrap: wrap">
         <#-- Image -->
         <#assign individualImage>
         <@p.image individual=individual
@@ -33,41 +33,42 @@
         <#if ( individualImage?contains('<img class="individual-photo"') )>
             <#assign infoClass = 'class="withThumb"'/>
         </#if>
-        <div id="photo-wrapper">${individualImage}</div>
+        <div class="col-md-2 photo-wrapper" id="photo-wrapper">${individualImage}</div>
+      
+        <div class="col-xs-10">
 
-    </section>
+            <!-- start section individual-info -->
+            <section id="individual-info" ${infoClass!} role="region">
 
-
-    <!-- start section individual-info -->
-    <section id="individual-info" ${infoClass!} role="region">
-
-        <#if individualProductExtensionPreHeader??>
-            ${individualProductExtensionPreHeader}
-        </#if>
-
-        <div class="row uos_style">
-            <header>
-                <#if relatedSubject??>
-                    <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
-                    <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
-                <#else>                
-                    <h1 class="fn" itemprop="name">
-                        <#-- Label -->
-                        <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
-                        <br/>
-
-                        <#--  Most-specific types -->
-                        <@p.mostSpecificTypes individual />
-                        <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
-                    </h1>
+                <#if individualProductExtensionPreHeader??>
+                    ${individualProductExtensionPreHeader}
                 </#if>
-            </header>
-        </div>
-                
+
+                <div class="row uos_style">
+                    <header>
+                        <#if relatedSubject??>
+                            <h2>${relatedSubject.relatingPredicateDomainPublic} for ${relatedSubject.name}</h2>
+                            <p><a href="${relatedSubject.url}" title="${i18n().return_to(relatedSubject.name)}">&larr; ${i18n().return_to(relatedSubject.name)}</a></p>                
+                        <#else>                
+                            <h1 class="fn" itemprop="name">
+                                <#-- Label -->
+                                <span style="color: #000000; font-size: 1.4em;"><@p.label individual editable labelCount localesCount languageCount/></span>
+                                <br/>
+
+                                <#--  Most-specific types -->
+                                <@p.mostSpecificTypes individual />
+                                <span id="iconControlsVitro"><img id="uriIcon" title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon"/></span>
+                            </h1>
+                        </#if>
+                    </header>
+                </div>
+
     <#if individualProductExtension??>
         ${individualProductExtension}
     <#else>
-            </section> <!-- individual-info -->
+                </section> <!-- individual-info -->
+            </div>
+        </div>
         </section> <!-- individual-intro -->
     </#if>
 

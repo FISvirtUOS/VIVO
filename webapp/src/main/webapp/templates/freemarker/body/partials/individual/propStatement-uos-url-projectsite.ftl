@@ -14,6 +14,8 @@
 <#macro showStatement statement property>
     <#assign url = (statement.value!)>
     <a class="uos_style" href="${url}" title="URL" target="_blank">${i18n().external_project_site}</a>
-    <a href="${urls.contact}?broken_link=${url}&profile=${individualURI}" title="${i18n().report_broken_link}" style="padding-left: 0px; margin-left: 10px; background-image: initial;"> <i class="fas fa-unlink"></i></a>
+    <#if urls.contact??>
+        <a href="${urls.contact}?broken_link=${url}&profile=${individualURI}" title="${i18n().report_broken_link}" style="padding-left: 0px; margin-left: 10px; background-image: initial;"> <i class="fas fa-unlink"></i></a>
+    </#if>
     <@lmt.addCitationMetaTag uri=(property.uri!) content=(url) />
 </#macro>
