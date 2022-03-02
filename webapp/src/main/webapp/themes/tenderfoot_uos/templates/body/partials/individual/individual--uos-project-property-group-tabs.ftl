@@ -95,7 +95,7 @@
 				</#if>
 			</div>
 		</#if>
-		<#if projectOutput?has_content >	
+		<#if projectOutput?has_content >
 			<div class="col-md-6 uos-project-div">
 				<span>
 					<img class="uos_project_icons" alt="Image Projekt-Output" src="${urls.images}/individual/book-open-solid.svg" >
