@@ -33,9 +33,14 @@
         <#if ( individualImage?contains('<img class="individual-photo"') )>
             <#assign infoClass = 'class="withThumb"'/>
         </#if>
-        <div class="col-md-2 photo-wrapper" id="photo-wrapper">${individualImage}</div>
+
+        <#if individualImage?contains('<img ') >
+            <div class="col-md-2 photo-wrapper" id="photo-wrapper">${individualImage}</div>
       
-        <div class="col-xs-10">
+            <div class="col-xs-10">
+        <#else>
+            <div class="col-xs-12">
+        </#if>
 
             <!-- start section individual-info -->
             <section id="individual-info" ${infoClass!} role="region">
