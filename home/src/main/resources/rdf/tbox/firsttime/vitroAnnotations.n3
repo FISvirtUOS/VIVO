@@ -2294,7 +2294,9 @@ vivo:description
       vitro:prohibitedFromUpdateBelowRoleLevelAnnot
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
       vitro:publicDescriptionAnnot
-              "An account of the resource."^^xsd:string .
+              "An account of the resource."^^xsd:string ;
+      vitro:editing
+              "HTML"^^xsd:string .
 
 geo:hasCode
       vitro:hiddenFromDisplayBelowRoleLevelAnnot
