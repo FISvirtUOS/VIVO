@@ -35,11 +35,9 @@
         <#include "message.ftl">
 
         
-        <div class="container">
-            <div class="col-md-12" id="frontimage">
+        <div class="row">
                 <a class="listimage" id="frontpage" title="Vivo UOS"></a>
                 <p class="citeimage">Foto: Kathrin Schnieders</p>
-            </div>
         </div>
 
         <div class="container">
