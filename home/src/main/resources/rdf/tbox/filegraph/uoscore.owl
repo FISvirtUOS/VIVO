@@ -40,7 +40,7 @@
   </owl:Ontology>
 
   <owl:Class rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/EhemaligeBeschaeftigte">
-    <rdfs:label xml:lang="de-DE">ehemalige:r Beschäftigte:r</rdfs:label>
+    <rdfs:label xml:lang="de-DE">ehemalige Beschäftigte</rdfs:label>
     <rdfs:label xml:lang="en-US">former employees</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
     <vitro:descriptionAnnot>Nicht mehr an der Universität Osnabrück beschäftigte Professoren/Mitarbeiter (im Ruhestand, Ruf angenommen, ausgeschieden)</vitro:descriptionAnnot>
@@ -249,6 +249,37 @@
     <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
   </owl:DatatypeProperty>
 
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuer">
+  <obo:IAO_0000112>Diss:A hat Erstbetreuer:in Person:B, dan hat Person:B Betreute Arbeiten Diss:A</obo:IAO_0000112>
+  <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+  <owl:inverseOf rdf:resource="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuerinv"/>
+  <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+  <vitro:publicDescriptionAnnot>Bildet die Verbindung eines Dissertation zur Erstbetreuer:in auf und zurück.</vitro:publicDescriptionAnnot>
+  <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+  >true</vitro:selectFromExistingAnnot>
+  <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+  >11</vitro:displayRankAnnot>
+  <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+  <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
+  <rdfs:label xml:lang="de-DE">Erstbetreuer:in</rdfs:label>
+  <rdfs:label xml:lang="en-US">First supervisor</rdfs:label>
+  <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+  <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+</owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuerinv">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuer"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="de-DE">Betreute Arbeiten</rdfs:label>
+    <rdfs:label xml:lang="en-US">supervised work</rdfs:label>
+    <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >-1</vitro:displayLimitAnnot>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+    <obo:IAO_0000112>Diss:A hat Erstbetreuer:in Person:B, dan hat Person:B Betreute Arbeiten Diss:A</obo:IAO_0000112>
+  </owl:ObjectProperty>
+
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/datumderdisputation">
     <rdfs:label xml:lang="de-DE">Datum der Disputation</rdfs:label>
     <rdfs:label xml:lang="en-US">Disputation date</rdfs:label>
@@ -259,4 +290,51 @@
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
   </owl:DatatypeProperty>
+
+ <!-- http://lod.tib.eu/onto/kdsf/DFG -->
+
+  <owl:NamedIndividual rdf:about="http://lod.tib.eu/onto/kdsf/UOS">
+    <rdf:type rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+    <rdfs:label xml:lang="de-DE">Universität Osnabrück</rdfs:label>
+    <rdfs:label xml:lang="en-US">Osnabrück University</rdfs:label>
+    <kdsf:abkuerzung xml:lang="de-DE">UOS</kdsf:abkuerzung>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://lod.tib.eu/onto/kdsf/RobertBoschStiftung">
+    <rdf:type rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+    <rdfs:label xml:lang="de-DE">Robert Bosch Stiftung</rdfs:label>
+    <rdfs:label xml:lang="en-US">Robert Bosch Stiftung</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatMittelgeber">
+    <rdfs:label xml:lang="de-DE">Finanzierung durch</rdfs:label>
+    <rdfs:label xml:lang="en-US">Financing</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
+    <owl:inverseOf rdf:resource="https://fis.uos.de/vivouos/ontology/uoscore/istMittelgeber"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/istMittelgeber">
+    <rdfs:label xml:lang="de-DE">Vom Mittelgeber finanziert</rdfs:label>
+    <rdfs:label xml:lang="en-US">Financed by the donor</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
+    <owl:inverseOf>
+        <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatMittelgeber"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+
 </rdf:RDF>
