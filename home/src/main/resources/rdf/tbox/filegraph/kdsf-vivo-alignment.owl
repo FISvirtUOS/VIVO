@@ -446,7 +446,7 @@
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatBetreiber -->
 	
 	<owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatBetreiber">
-		<rdfs:label xml:lang="de-DE">Betreiber</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Betreiber:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Operator</rdfs:label>
 		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Forschungsinfrastruktur"/>
@@ -502,7 +502,7 @@
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatKoordinator -->
 	
 	<owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatKoordinator">
-		<rdfs:label xml:lang="de-DE">Koordinator</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Koordinator:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Coordinator</rdfs:label>
 		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Forschungsinfrastruktur"/>
@@ -529,7 +529,7 @@
 	<!-- http://kerndatensatz-forschung.de/owl/Basis#hatSprecher -->
 	
 	<owl:ObjectProperty rdf:about="http://kerndatensatz-forschung.de/owl/Basis#hatSprecher">
-		<rdfs:label xml:lang="de-DE">Sprecher</rdfs:label>
+		<rdfs:label xml:lang="de-DE">Sprecher:in</rdfs:label>
         <rdfs:label xml:lang="en-US">Spokesperson</rdfs:label>
 		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
@@ -1869,6 +1869,7 @@ Hinweis: Es wird empfohlen, diese Angabe aus entsprechenden Zeitpunktdaten zu be
 		<vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
         <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
 		<vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+        <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--uoscore-researchcentre.ftl</vitro:customDisplayViewAnnot>
     </owl:Class>
 	
 
