@@ -8631,6 +8631,7 @@ has super-classes</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
         <rdfs:label xml:lang="en">Academic Department</rdfs:label>
+        <rdfs:label xml:lang="de-DE">Fachbereich</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Department"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinct, usually specialized educational unit within an educational organization.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endodontics (department within a College of Dentistry); English (department within a College of Liberal Arts)</obo:IAO_0000112>
@@ -9820,6 +9821,7 @@ This class allows for linking an author to a publication while indicating inform
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute">
         <rdfs:label xml:lang="en">Institute</rdfs:label>
+        <rdfs:label xml:lang="de-DE">Institut</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institute normally has a research focus but may also fulfill instructional or outreach roles</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization founded to pursue or promote certain research, educational or public policy interests or activities.</obo:IAO_0000115>
