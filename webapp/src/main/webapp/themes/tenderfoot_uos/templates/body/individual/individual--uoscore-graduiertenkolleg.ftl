@@ -31,7 +31,7 @@
     <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#related")!> 
 </#if>
 
-<#include "individual--uoscore-researchcentre-detail.ftl">
+<#include "individual--uoscore-graduiertenkolleg-detail.ftl">
 <script>
 var i18nStrings = {
     displayLess: '${i18n().display_less}',
