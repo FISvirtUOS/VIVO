@@ -91,6 +91,13 @@
 						<ul class="property-list uos-project-list-ul" role="list" id="${projectTeam.localName}-List" displayLimit="10">
 							<@p.objectProperty projectTeam editable />
 						</ul>
+						<br>
+						<span>
+							<p class="individual-urls-uos">Sie sind Teil des Projektteams und möchten Inhalte ändern oder Projektergebnisse ergänzen?
+							Kontaktieren Sie uns gerne unter 
+							<a  class="uos_style"  href="mailto:fis@uni-osnabrueck.de?subject=Test" title="${i18n().report_missing_project_info}"> fis@uni-osnabrueck.de</a>
+							</p>
+						</span>						
 					</div>
 				</#if>
 			</div>
