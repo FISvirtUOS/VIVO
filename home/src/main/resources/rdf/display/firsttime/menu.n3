@@ -22,7 +22,9 @@ display:DefaultMenu
     display:hasElement display:ResearchMenuItem ;
     display:hasElement display:CapabilityMapMenuItem ;
     display:hasElement display:LeitlinieMenuItem ;
-    display:hasElement display:PorjectsMenuItem ;
+    display:hasElement display:ProjectsMenuItem ;
+    display:hasElement display:GradkollegMenuItem ;
+    display:hasElement display:completedPromotionsMenuItem ;
     display:hasElement display:ResearchResultsMenuItem .
 
 #### Menu Items for Default Menu ####
@@ -69,15 +71,27 @@ display:LeitlinieMenuItem
     display:linkText "Leitlinien";
     display:toPage display:Leitlinien .
 
-display:PorjectsMenuItem
+display:ProjectsMenuItem
     a display:NavigationElement ;
     display:menuPosition 8;
-    display:linkText "Liste der drittmittelfinanzierten Projekte";
+    display:linkText "Drittmittelfinanzierte Projekte";
     display:toPage display:Projects .
+
+display:GradkollegMenuItem
+    a display:NavigationElement ;
+    display:menuPosition 9;
+    display:linkText "Graduiertenkollegs";
+    display:toPage display:Gradkollegs .
+
+display:completedPromotionsMenuItem
+    a display:NavigationElement ;
+    display:menuPosition 10;
+    display:linkText "Abgeschlossene Promotionen";
+    display:toPage display:completedPromotions .
 
 display:ResearchResultsMenuItem
     a display:NavigationElement ;
-    display:menuPosition 9;
+    display:menuPosition 11;
     display:linkText "Forschungsergebnisse";
     display:toPage display:ResearchResults .
 
@@ -140,6 +154,22 @@ display:Projects
     display:urlMapping "/projects" ;
     display:hasDataGetter display:ProjectsDataGetter .
 
+display:Gradkollegs
+    a display:Page ;
+    a display:ClassGroupPage;
+    display:forClassGroup vivoweb:vitroClassGrouporganizations ;
+    display:title "Graduiertenkollegs" ;
+    display:urlMapping "/gradkollegs";
+    display:hasDataGetter display:organizationsDataGetter .
+
+display:completedPromotions
+    a display:Page ;
+    a display:ClassGroupPage;
+    display:forClassGroup vivoweb:vitroClassGrouppublications ;
+    display:title "Abgeschlossene Promotionen" ;
+    display:urlMapping "/completedpromotions" ;
+    display:hasDataGetter display:researchDataGetter .
+
 display:ResearchResults
     a display:Page ;
     display:requiresBodyTemplate "page-classgroup-publications.ftl" ;
@@ -150,7 +180,7 @@ display:ResearchResults
 display:wissensforum
     a display:Page ;
     display:requiresBodyTemplate "page-classgroup-presentations.ftl" ;
-    display:title "Osnabrücker Wissensforum" ;
+    display:title "Wissensforum" ;
     display:urlMapping "/knowledgeforum" ;
     display:hasDataGetter display:wissensforumDataGetter .
 
