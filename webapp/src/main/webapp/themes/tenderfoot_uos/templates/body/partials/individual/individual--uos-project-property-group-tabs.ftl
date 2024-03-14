@@ -7,7 +7,6 @@
 <#assign tabCount = 1 >
 <#assign sectionCount = 1 >
 
-
 <#assign externalProjectSite = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite")!>
 <#assign projectTeam = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/BFO_0000055")!>
 <#assign projectOutput = propertyGroups.pullProperty("http://purl.obolibrary.org/obo/RO_0002234")!>
@@ -94,8 +93,8 @@
 						<br>
 						<span>
 							<p class="individual-urls-uos">Sie sind Teil des Projektteams und möchten Inhalte ändern oder Projektergebnisse ergänzen?
-							Kontaktieren Sie uns gerne unter 
-							<a  class="uos_style"  href="mailto:fis@uni-osnabrueck.de?subject=Test" title="${i18n().report_missing_project_info}"> fis@uni-osnabrueck.de</a>
+							Kontaktieren Sie uns gerne unter
+							<a  class="uos_style"  href='mailto:fis@uni-osnabrueck.de?subject=Anpassung für Projekt-ID ${individual.localName}  mit Titel ${individual.nameStatement.value}' title="${i18n().report_missing_project_info}"> fis@uni-osnabrueck.de</a>
 							</p>
 						</span>						
 					</div>
