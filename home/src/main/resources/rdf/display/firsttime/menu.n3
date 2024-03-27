@@ -158,6 +158,7 @@ display:Gradkollegs
     a display:Page ;
     a display:ClassGroupPage;
     display:forClassGroup vivoweb:vitroClassGrouporganizations ;
+    display:requiresBodyTemplate "page-classgroup-grakos.ftl" ;
     display:title "Graduiertenkollegs" ;
     display:urlMapping "/gradkollegs";
     display:hasDataGetter display:organizationsDataGetter .
