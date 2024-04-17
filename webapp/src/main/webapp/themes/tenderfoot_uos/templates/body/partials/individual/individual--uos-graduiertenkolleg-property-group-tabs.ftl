@@ -9,9 +9,9 @@
 
 <#-- external site über website gelöst, wenn auch eigenes Feld haben soll muss das umgebaut werden -->
 <#--  <#assign externalSite = propertyGroups.pullProperty("https://fis.uos.de/vivouos/ontology/uoscore/hatexterneprojektseite")!>  -->
-<#--  <#if !editable>
+<#if !editable>
 	<#assign employees = propertyGroups.pullProperty("http://vivoweb.org/ontology/core#contributingRole")!>
-</#if>  -->
+</#if>
 
 <div class="row">
     <div class="col-md-12 tab-content">
@@ -45,6 +45,35 @@
     </div>
 </div>
 
+<#if employees?has_content >
+	<div class="row">
+		<#--  <div class="col-md-12" >  -->
+			<div class="col-md-6">
+				<#--  <div class="col-md-12 uos-project-div">
+					<#if externalSite?has_content >
+						<span>
+							<img class="uos_project_icons" alt="Image Projekt-Links" src="${urls.images}/individual/bookmark-solid.svg" >
+							<h2 class="uos-project-h2">Projektlinks</h3>
+						</span>
+						<ul class="property-list uos-project-list-ul" role="list" id="${externalSite.localName}-List" displayLimit="5">
+							<@p.dataPropertyList externalSite editable />
+						</ul>
+					</#if>
+				</div>
+				<br>  -->
+				<div class="col-md-12 uos-project-div">
+					<span>
+						<img class="uos_project_icons" alt="Image employees" src="${urls.images}/individual/user-solid.svg" >
+						<h2 class="uos-project-h2">${i18n().employees}</h3>
+					</span>
+					<ul class="property-list uos-project-list-ul" role="list" id="${employees.localName}-List" displayLimit="10">
+						<@p.objectProperty employees editable />
+					</ul>
+				</div>
+			<#--  </div>  -->
+		</div>
+	</div>
+</#if>
 
 <script>
     var individualLocalName = "${individual.localName}";
