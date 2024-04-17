@@ -10371,6 +10371,7 @@ Contents
         <rdfs:label xml:lang="en">Research Organization</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any organization (likely also asserted as another class of Organization) with a primary, ongoing research function, not just through occasional roles</obo:IAO_0000115>
+        <vitro:customDisplayViewAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individual--uoscore-researchcentre.ftl</vitro:customDisplayViewAnnot>
     </owl:Class>
 
 
