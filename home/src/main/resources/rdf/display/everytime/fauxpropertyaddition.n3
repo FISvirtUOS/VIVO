@@ -48,6 +48,41 @@ local:firstSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
     :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
 
 
+local:secondSupervisorDisserationContext a :ConfigContext ;
+    :hasConfiguration local:secondSupervisorDisserationConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://purl.obolibrary.org/obo/IAO_0000030>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
+
+local:secondSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-informationResourceInAdviserelation.xml"^^xsd:string ;
+    rdfs:label "second supervisor"@en-US;
+    :displayName "second supervisor" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:secondSupervisorPersonContext a :ConfigContext ;
+    :hasConfiguration local:secondSupervisorPersonConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://xmlns.com/foaf/0.1/Person>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
+
+local:secondSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
+    rdfs:label "Supervised doctorates (2nd)"@en-US;
+    :displayName "Supervised doctorates (2nd)" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+
 local:fieldDependsProjectContext a :ConfigContext ;
     :hasConfiguration local:fieldDependsProjectConfig ;
     :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
