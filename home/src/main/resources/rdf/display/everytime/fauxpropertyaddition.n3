@@ -21,7 +21,7 @@ local:firstSupervisorDisserationContext a :ConfigContext ;
     :qualifiedBy      <http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship> .
 
 local:firstSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
-    :listViewConfigFile "listViewConfig-informationResourceInAdviserelation.xml"^^xsd:string ;
+    :listViewConfigFile "listViewConfig-informationResourceInPostdocAdviserelation.xml"^^xsd:string ;
     rdfs:label "first supervisor"@en-US;
     :displayName "first supervisor" ;
     vitro:displayRankAnnot 10;
@@ -55,7 +55,7 @@ local:secondSupervisorDisserationContext a :ConfigContext ;
     :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
 
 local:secondSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
-    :listViewConfigFile "listViewConfig-informationResourceInAdviserelation.xml"^^xsd:string ;
+    :listViewConfigFile "listViewConfig-informationResourceInGraduateAdviserelation.xml"^^xsd:string ;
     rdfs:label "second supervisor"@en-US;
     :displayName "second supervisor" ;
     vitro:displayRankAnnot 10;
