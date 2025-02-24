@@ -18,7 +18,7 @@ local:firstSupervisorDisserationContext a :ConfigContext ;
     :hasConfiguration local:firstSupervisorDisserationConfig ;
     :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
     :qualifiedByDomain    <http://purl.obolibrary.org/obo/IAO_0000030>;
-    :qualifiedBy      <http://vivoweb.org/ontology/core#AdvisingRelationship> .
+    :qualifiedBy      <http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship> .
 
 local:firstSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
     :listViewConfigFile "listViewConfig-informationResourceInAdviserelation.xml"^^xsd:string ;
@@ -35,7 +35,7 @@ local:firstSupervisorPersonContext a :ConfigContext ;
     :hasConfiguration local:firstSupervisorPersonConfig ;
     :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
     :qualifiedByDomain    <http://xmlns.com/foaf/0.1/Person>;
-    :qualifiedBy      <http://vivoweb.org/ontology/core#AdvisingRelationship> .
+    :qualifiedBy      <http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship> .
 
 local:firstSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
     :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
@@ -72,7 +72,7 @@ local:secondSupervisorPersonContext a :ConfigContext ;
     :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
 
 local:secondSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
-    :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
+    :listViewConfigFile "listViewConfig-advisorOfDisssecond.xml"^^xsd:string ;
     rdfs:label "Supervised doctorates (2nd)"@en-US;
     :displayName "Supervised doctorates (2nd)" ;
     vitro:displayRankAnnot 10;
