@@ -17,21 +17,21 @@
             ?author ?authorName
         WHERE {
             ?subject ?property ?authorship .
-            ?authorship a core:PostdocOrFellowAdvisingRelationship .
+            ?authorship a core:GraduateAdvisingRelationship .
             OPTIONAL {
                 <precise-subquery>?subject ?property ?authorship .
-                ?authorship a core:PostdocOrFellowAdvisingRelationship .</precise-subquery>
+                ?authorship a core:GraduateAdvisingRelationship .</precise-subquery>
                 ?authorship core:rank ?rank .
             }
             OPTIONAL {
                 <precise-subquery>?subject ?property ?authorship .
-                ?authorship a core:PostdocOrFellowAdvisingRelationship .</precise-subquery>
+                ?authorship a core:GraduateAdvisingRelationship .</precise-subquery>
                 ?authorship core:relates ?author .
                 ?author a foaf:Agent .
                 ?author rdfs:label ?authorName .
                 OPTIONAL {
                     <precise-subquery>?subject ?property ?authorship .
-                    ?authorship a core:PostdocOrFellowAdvisingRelationship .
+                    ?authorship a core:GraduateAdvisingRelationship .
                     ?authorship core:relates ?author .
                     ?author a foaf:Agent .</precise-subquery>
                     ?author vitro:mostSpecificType ?subclass .
@@ -40,14 +40,14 @@
             }
             OPTIONAL {
                 <precise-subquery>?subject ?property ?authorship .
-                ?authorship a core:PostdocOrFellowAdvisingRelationship .</precise-subquery>
+                ?authorship a core:GraduateAdvisingRelationship .</precise-subquery>
                 ?authorship core:relates ?author .
                 ?author a vcard:Kind .
                 ?author vcard:hasName ?vName .
                 ?vName vcard:familyName ?lastName .
                 OPTIONAL {
                     <precise-subquery>?subject ?property ?authorship .
-                    ?authorship a core:PostdocOrFellowAdvisingRelationship .
+                    ?authorship a core:GraduateAdvisingRelationship .
                     ?authorship core:relates ?author .
                     ?author a vcard:Kind .
                     ?author vcard:hasName ?vName .</precise-subquery>
@@ -55,7 +55,7 @@
                 }
                 OPTIONAL {
                     <precise-subquery>?subject ?property ?authorship .
-                    ?authorship a core:PostdocOrFellowAdvisingRelationship .
+                    ?authorship a core:GraduateAdvisingRelationship .
                     ?authorship core:relates ?author .
                     ?author a vcard:Kind .
                     ?author vcard:hasName ?vName .</precise-subquery>
@@ -68,7 +68,7 @@
 
                 OPTIONAL {
                     <precise-subquery>?subject ?property ?authorship .
-                    ?authorship a core:PostdocOrFellowAdvisingRelationship .
+                    ?authorship a core:GraduateAdvisingRelationship .
                     ?authorship core:relates ?author .
                     ?author a vcard:Kind .</precise-subquery>
                     ?author vitro:mostSpecificType ?subclass .
