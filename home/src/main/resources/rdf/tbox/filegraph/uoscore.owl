@@ -275,6 +275,24 @@
     <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
 </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/zweitbetreuer">
+    <obo:IAO_0000112>Diss:A hat Zweitbetreuer:in Person:B, dan hat Person:B Betreute Arbeiten Diss:A</obo:IAO_0000112>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+    <owl:inverseOf rdf:resource="https://fis.uos.de/vivouos/ontology/uoscore/zweitbetreuerinv"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:publicDescriptionAnnot>Bildet die Verbindung eines Dissertation zur Zweitbetreuer:in auf und zurück.</vitro:publicDescriptionAnnot>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</vitro:selectFromExistingAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >11</vitro:displayRankAnnot>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+    <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupoverview"/>
+    <rdfs:label xml:lang="de-DE">Zweitbetreuer:in</rdfs:label>
+    <rdfs:label xml:lang="en-US">Second supervisor</rdfs:label>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuerinv">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/erstbetreuer"/>
@@ -286,6 +304,19 @@
     <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
     <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
     <obo:IAO_0000112>Diss:A hat Erstbetreuer:in Person:B, dan hat Person:B Betreute Arbeiten Diss:A</obo:IAO_0000112>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/zweitbetreuerinv">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/zweitbetreuer"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="de-DE">Betreute Arbeiten (Zweitbetreuer:in)</rdfs:label>
+    <rdfs:label xml:lang="en-US">supervised work (second supervisor)</rdfs:label>
+    <vitro:displayLimitAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >-1</vitro:displayLimitAnnot>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Person"/>
+    <obo:IAO_0000112>Diss:A hat Zweitbetreuer:in Person:B, dan hat Person:B Betreute Arbeiten Diss:A</obo:IAO_0000112>
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/datumderdisputation">
@@ -342,6 +373,38 @@
     <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</vitro:displayRankAnnot>
     <owl:inverseOf>
         <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/hatMittelgeber"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/strukuriertespromotionsprogramm">
+    <rdfs:label xml:lang="de-DE">Strukuriertes Promotionsprogramm</rdfs:label>
+    <rdfs:label xml:lang="en-US">Research Training Groups</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</vitro:displayRankAnnot>
+    <owl:inverseOf rdf:resource="https://fis.uos.de/vivouos/ontology/uoscore/abgeschlossenepromotionen"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/abgeschlossenepromotionen">
+    <rdfs:label xml:lang="de-DE">Abgeschlossene Promotionen</rdfs:label>
+    <rdfs:label xml:lang="en-US">Completed doctorates</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm"/>
+    <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Dissertation"/>
+    <vitro:hiddenFromDisplayBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:prohibitedFromUpdateBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
+    <vitro:selectFromExistingAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:selectFromExistingAnnot>
+    <vitro:displayRankAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</vitro:displayRankAnnot>
+    <owl:inverseOf>
+        <owl:ObjectProperty rdf:about="https://fis.uos.de/vivouos/ontology/uoscore/strukuriertespromotionsprogramm"/>
     </owl:inverseOf>
   </owl:ObjectProperty>
 
