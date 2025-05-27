@@ -339,6 +339,13 @@
     <kdsf:abkuerzung xml:lang="de-DE">UOS</kdsf:abkuerzung>
   </owl:NamedIndividual>
 
+  <owl:NamedIndividual rdf:about="http://lod.tib.eu/onto/kdsf/Hans-Boeckler-Stiftung">
+    <rdf:type rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
+    <rdfs:label xml:lang="de-DE">Hans Böckler Stiftung</rdfs:label>
+    <rdfs:label xml:lang="en-US">Hans Böckler Foundation</rdfs:label>
+    <kdsf:abkuerzung xml:lang="de-DE">HBS</kdsf:abkuerzung>
+  </owl:NamedIndividual>
+
   <owl:NamedIndividual rdf:about="http://lod.tib.eu/onto/kdsf/RobertBoschStiftung">
     <rdf:type rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Mittelgeber"/>
     <rdfs:label xml:lang="de-DE">Robert Bosch Stiftung</rdfs:label>
