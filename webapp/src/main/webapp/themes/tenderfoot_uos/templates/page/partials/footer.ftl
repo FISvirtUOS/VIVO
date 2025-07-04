@@ -23,6 +23,8 @@
 
                         <a href="https://www.ub.uni-osnabrueck.de/forschen_publizieren/affiliationsrichtlinie.html" target="_blank" title="${i18n().affiliation_policy}">${i18n().affiliation_policy}</a></small> |
 
+                        | <a href="https://www.uni-osnabrueck.de/forschen/forschungsinformationssystem/frequently-asked-questions-faq" target="_blank" title="${i18n().faq}">${i18n().faq}</a></small> |
+
                         ${i18n().menu_powered} <a class="powered-by-vivo" href="http://vivoweb.org" target="_blank" title="${i18n().menu_powered} VIVO"><strong>VIVO</strong></a>
                         and
                         <a class="powered-by-vivo" href="https://www.uni-osnabrueck.de" target="_blank" title="Universität Osnabrück"><strong>UOS</strong></a>
