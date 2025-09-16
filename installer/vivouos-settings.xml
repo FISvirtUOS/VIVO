@@ -7,8 +7,8 @@
             <properties>
                 <app-name>vivouos</app-name>
 
-		<vivo-dir>/var/lib/tomcat9/webapps/vivouos_home</vivo-dir>
-                <tomcat-dir>/var/lib/tomcat9</tomcat-dir>
+		<vivo-dir>/opt/fis/vivouos_home</vivo-dir>
+		<tomcat-dir>/usr/share/tomcat</tomcat-dir>
 
                 <default-theme>tenderfoot_uos</default-theme>
             </properties>
