@@ -216,7 +216,11 @@ var academicDepartments = [
 <#if academicDeptDG?has_content>
     <#list academicDeptDG as resultRow>
         <#assign uri = resultRow["theURI"] />
-        <#assign label = resultRow["name"]?replace("\n", " ") />
+        <#if resultRow["name"]??>
+            <#assign label = resultRow["name"]?replace("\n", " ") />
+        <#else>
+            <#assign label = "unknown" />
+        </#if>
         {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
     </#list>        
 </#if>
