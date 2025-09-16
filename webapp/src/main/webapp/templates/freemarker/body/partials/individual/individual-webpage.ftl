@@ -8,7 +8,7 @@
         </#if>
         <@p.addLinkWithLabel webpage editable i18n().websites/>
         <#assign localName = webpage.localName>
-        <ul id="individual-${localName}" class="individual-urls" role="list" <#if individual.organization() && !editable>style="font-size:1.15em"</#if>>
+        <ul id="individual-${localName}" class="individual-urls-uos" role="list" <#if individual.organization() && !editable>style="font-size:1.15em"</#if>>
             <@p.objectProperty webpage editable />
         </ul>
     </#if>

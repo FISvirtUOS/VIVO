@@ -1,0 +1,151 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#> .
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix datagetter: <java:edu/cornell/mannlib/vitro/webapp/utils/datagetter/> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix role:  <http://vitro.mannlib.cornell.edu/ns/vitro/role#> .
+@prefix local: <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> . 
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+@base <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration> .
+
+
+local:firstSupervisorDisserationContext a :ConfigContext ;
+    :hasConfiguration local:firstSupervisorDisserationConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://purl.obolibrary.org/obo/IAO_0000030>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship> .
+
+local:firstSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-informationResourceInPostdocAdviserelation.xml"^^xsd:string ;
+    rdfs:label "first supervisor"@en-US;
+    :displayName "first supervisor" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:firstSupervisorPersonContext a :ConfigContext ;
+    :hasConfiguration local:firstSupervisorPersonConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://xmlns.com/foaf/0.1/Person>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship> .
+
+local:firstSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-advisorOfDiss.xml"^^xsd:string ;
+    rdfs:label "Supervised doctorates"@en-US;
+    :displayName "Supervised doctorates" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:secondSupervisorDisserationContext a :ConfigContext ;
+    :hasConfiguration local:secondSupervisorDisserationConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://purl.obolibrary.org/obo/IAO_0000030>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
+
+local:secondSupervisorDisserationConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-informationResourceInGraduateAdviserelation.xml"^^xsd:string ;
+    rdfs:label "second supervisor"@en-US;
+    :displayName "second supervisor" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:secondSupervisorPersonContext a :ConfigContext ;
+    :hasConfiguration local:secondSupervisorPersonConfig ;
+    :configContextFor <http://vivoweb.org/ontology/core#relatedBy> ;
+    :qualifiedByDomain    <http://xmlns.com/foaf/0.1/Person>;
+    :qualifiedBy      <http://vivoweb.org/ontology/core#GraduateAdvisingRelationship> .
+
+local:secondSupervisorPersonConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-advisorOfDisssecond.xml"^^xsd:string ;
+    rdfs:label "Supervised doctorates (2nd)"@en-US;
+    :displayName "Supervised doctorates (2nd)" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+
+local:fieldDependsProjectContext a :ConfigContext ;
+    :hasConfiguration local:fieldDependsProjectConfig ;
+    :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
+    :qualifiedByDomain    <http://kerndatensatz-forschung.de/owl/Basis#Fach>;
+    :qualifiedBy      <http://kerndatensatz-forschung.de/owl/Basis#Drittmittelprojekt> .
+
+local:fieldDependsProjectConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-fauxPropertyHatFachInv.xml"^^xsd:string ;
+    rdfs:label "field-related projects"@en-US;
+    :displayName "field-related projects" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:fieldDependsEmployeeContext a :ConfigContext ;
+    :hasConfiguration local:fieldDependsEmployeeConfig ;
+    :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
+    :qualifiedByDomain    <http://kerndatensatz-forschung.de/owl/Basis#Fach>;
+    :qualifiedBy      <http://kerndatensatz-forschung.de/owl/Basis#Beschaeftigter> .
+
+local:fieldDependsEmployeeConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-fauxPropertyDefault.xml"^^xsd:string ;
+    rdfs:label "Person"@en-US;
+    :displayName "Person" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:fieldDependsPublicationContext a :ConfigContext ;
+    :hasConfiguration local:fieldDependsPublicationConfig ;
+    :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
+    :qualifiedByDomain    <http://kerndatensatz-forschung.de/owl/Basis#Fach>;
+    :qualifiedBy      <http://kerndatensatz-forschung.de/owl/Basis#Publikation> .
+
+local:fieldDependsPublicationConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-fauxPropertyDefault.xml"^^xsd:string ;
+    rdfs:label "field-related publications"@en-US;
+    :displayName "field-related publications" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .
+
+
+local:fieldDependsStrukPromotionectContext a :ConfigContext ;
+    :hasConfiguration local:fieldDependsStrukPromotionConfig ;
+    :configContextFor <http://kerndatensatz-forschung.de/owl/Basis#hatFachinv> ;
+    :qualifiedByDomain    <http://kerndatensatz-forschung.de/owl/Basis#Fach>;
+    :qualifiedBy      <http://kerndatensatz-forschung.de/owl/Basis#StrukturiertesPromotionsprogramm> .
+
+local:fieldDependsStrukPromotionConfig a :ObjectPropertyDisplayConfig ;
+    :listViewConfigFile "listViewConfig-fauxPropertyDefault.xml"^^xsd:string ;
+    rdfs:label "associated doctoral programmes"@en-US;
+    :displayName "Associated doctoral programmes" ;
+    vitro:displayRankAnnot 10;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot role:public ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot role:public ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean ;
+    :propertyGroup <http://vivoweb.org/ontology#vitroPropertyGroupoverview> .

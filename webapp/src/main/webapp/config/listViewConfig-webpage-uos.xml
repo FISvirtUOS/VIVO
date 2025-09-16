@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in LICENSE$ -->
+
+<!-- Custom list view config file for core:webpage
+
+     See guidelines at https://wiki.duraspace.org/x/eYXVAw -->
+
+<list-view-config>
+    <query-select>
+
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt;
+
+        SELECT ?vcard
+               (group_concat(distinct ?linkLabel;separator="/") as ?label)
+               ?url
+        WHERE {
+            ?subject ?property ?vcard .
+            ?vcard rdfs:label ?linkLabel .
+            ?vcard vcard:url ?url .
+        } GROUP BY ?vcard ?url
+          ORDER BY ?linkLabel
+    </query-select>
+
+    <template>propStatement-webpage.ftl</template>
+</list-view-config>
