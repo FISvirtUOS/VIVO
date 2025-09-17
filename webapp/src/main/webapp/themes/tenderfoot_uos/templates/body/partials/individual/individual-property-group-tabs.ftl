@@ -15,7 +15,7 @@
 				<#assign groupName = groupTabs.getName(nameForOtherGroup)>
 				<#if groupName?has_content>
 					<#--the function replaces spaces in the name with underscores, also called for the property group menu-->
-					<#-- <#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
+					<#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
 				<#else>
 					<#assign groupName = "${i18n().properties_capitalized}">
 					<#assign groupNameHtmlId = "${i18n().properties}" >

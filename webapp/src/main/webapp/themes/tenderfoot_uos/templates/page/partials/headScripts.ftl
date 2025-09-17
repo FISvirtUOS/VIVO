@@ -3,7 +3,7 @@
 <#-- Template for scripts that must be loaded in the head -->
 <script>
 var i18nStrings = {
-    allCapitalized: '${i18n().all_capitalized}',
+    allCapitalized: '${i18n().all_capitalized?js_string}',
 };
 </script>
 <script type="text/javascript" src="${urls.base}/js/jquery-1.12.4.min.js"></script>
@@ -15,7 +15,7 @@ var i18nStrings = {
 <script type="text/javascript" src="${urls.base}/js/html5.js"></script>
 <![endif]-->
 
-<script src="${urls.theme}/bootstrap/js/bootstrap.min.js"></script>
+<script src="${urls.base}/js/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
         $('#nav-wrapper').height($("#nav").height());
@@ -33,4 +33,4 @@ var i18nStrings = {
     });
 </script>
 
-${headScripts.list()} 
+${headScripts.list()}

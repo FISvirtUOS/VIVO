@@ -32,6 +32,5 @@
     }
     .collapse.in{
         display:block !important;
-        clear: both;
     }
 }

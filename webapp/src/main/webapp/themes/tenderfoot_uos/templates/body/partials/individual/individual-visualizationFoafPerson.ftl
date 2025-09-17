@@ -9,22 +9,25 @@
 <#assign obo_RO53 = "http://purl.obolibrary.org/obo/RO_0000053">
 
 <#assign isInvestigator = ( p.hasVisualizationStatements(propertyGroups, "${obo_RO53}", "${core}InvestigatorRole") ||
-                            p.hasVisualizationStatements(propertyGroups, "${obo_RO53}", "${core}PrincipalInvestigatorRole") || 
+                            p.hasVisualizationStatements(propertyGroups, "${obo_RO53}", "${core}PrincipalInvestigatorRole") ||
                             p.hasVisualizationStatements(propertyGroups, "${obo_RO53}", "${core}CoPrincipalInvestigatorRole") ) >
 
 <#if (isAuthor || isInvestigator)>
- 
+
     ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/css/visualization/visualization.css" />')}
     <#assign standardVisualizationURLRoot ="/visualization">
-        
+
         <#if isAuthor>
             ${scripts.add('<script type="text/javascript" src="${urls.base}/js/d3.min.js"></script>')}
 
             <#assign coAuthorIcon = "${urls.images}/visualization/coauthorship/co_author_icon.png">
-            <#assign mapOfScienceIcon = "${urls.images}/visualization/mapofscience/scimap_icon.png">
             <#assign coAuthorVisUrl = individual.coAuthorVisUrl()>
-            <#assign mapOfScienceVisUrl = individual.mapOfScienceUrl()>
-            
+
+            <#if mapOfScienceVisualizationEnabled>
+                <#assign mapOfScienceIcon = "${urls.images}/visualization/mapofscience/scimap_icon.png">
+                <#assign mapOfScienceVisUrl = individual.mapOfScienceUrl()>
+            </#if>
+
             <span id="publicationsHeading">${i18n().publications_in_vivo}</span>
 
             <svg width="100%" id="publicationsChart" onload="renderPublicationsChart()" onresize="renderPublicationsChart()">
@@ -39,7 +42,7 @@
                     var chartHeight = chartWidth * (2/3);
 
                     d3.select("#publicationsChart").selectAll("*").remove();
-                    d3.select("#publicationsChart").style("height", chartHeight + "px");
+                    d3.select("#publicationsChart").style("height", chartHeight);
 
                     var svg = d3.select("#publicationsChart"),
                             margin = {top: 30, right: 20, bottom: 30, left: 40},
@@ -150,12 +153,14 @@
                     </a>
                 </div>
 
-                <#--  <div id="mapofscience_link_container" class="collaboratorship-link-container">
-                    <a href="${mapOfScienceVisUrl}" title="${i18n().map_of_science}" class="btn btn-info" role="button">
-                        <img src="${mapOfScienceIcon}" alt="${i18n().map_of_science}" width="25px" height="25px" />
-                        ${i18n().map_of_science_capitalized}
-                    </a>
-                </div>  -->
+                <#if mapOfScienceVisualizationEnabled>
+                    <div id="mapofscience_link_container" class="collaboratorship-link-container">
+                        <a href="${mapOfScienceVisUrl}" title="${i18n().map_of_science}" class="btn btn-info" role="button">
+                            <img src="${mapOfScienceIcon}" alt="${i18n().map_of_science}" width="25px" height="25px" />
+                            ${i18n().map_of_science_capitalized}
+                        </a>
+                    </div>
+                </#if>
 
                 <#if isInvestigator>
                     <#assign coInvestigatorVisUrl = individual.coInvestigatorVisUrl()>
