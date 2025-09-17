@@ -1,20 +1,34 @@
 .jumbotron {
     background-color: transparent;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 1px 1px 4px #000;
+    color: #000000;
+    text-align: left;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 
 .jumbotron p {
-    color: #dddddd;
+    color: #000000;
+    line-height: 1.5em;
+}
+
+.uos-jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
 }
 
 .hero {
-    background: #283a4b url(../images/hero-background.jpg) repeat-x 0 0;
+    background-size: 100%;
+    background-color: #f3f3f3;
+}
+
+.hero-image {
+    background: #ffffff url(../images/hero-background.jpg) no-repeat 0 0;
 }
 
 .hero form input,
 .hero form select {
+    border-radius: 0;
     margin-bottom: 0em;
     margin-top: 0em;
     margin-right: 0em;
@@ -30,22 +44,25 @@
     border-top: 1px solid rgba(220,228,227,.42); /* stroke */
     border-bottom: 1px solid rgba(220,228,227,.42); /* stroke */
     /* background-color: #395d7f; /* layer fill content */
-    background-color: #338caf;
-    border-bottom: 2px solid #62b6d7;
-    color: #fff;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    color: #000;
 }
 #home-stats {
     margin-top: 30px;
 }
 #stats li {
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px; /* border radius */
+    /* -moz-border-radius: 6px; */
+    /* -webkit-border-radius: 6px; */
+    /* border-radius: 6px; border radius */
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box; /* prevents bg color from leaking outside the border */
     background: #5e6363 url(../images/stats-bg.png) repeat-x 0 0;
     color: #fff;
+}
+li > a {
+    text-align: left;
 }
 #stats li a:hover {
     opacity: .5;
