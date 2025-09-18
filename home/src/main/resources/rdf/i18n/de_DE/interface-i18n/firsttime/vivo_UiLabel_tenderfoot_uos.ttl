@@ -867,3 +867,45 @@ uil-data:view_all_faculty.VIVO.tenderfoot_uos
         uil:hasKey      "view_all_faculty" ;
         uil:hasPackage  "VIVO-languages" ;
         uil:hasTheme    "tenderfoot_uos" .
+
+
+
+
+### UOS stuff
+
+uil-data:menu_privacy_policy.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Datenschutz"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "menu_privacy_policy" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
+
+uil-data:menu_imprint.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Impressum"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "menu_imprint" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
+
+uil-data:affiliation_policy.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Affiliationsrichtlinie"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "affiliation_policy" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
+
+uil-data:faq.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "FAQ"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "faq" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
+
