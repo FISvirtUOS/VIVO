@@ -941,24 +941,4 @@ uil-data:intro_para3_mini_uos.VIVO.tenderfoot_uos
 
 
 
-profile_capitalized = Profil
-organizer_role = Rolle des Organisators/ der Organisatorin
-faculty_memberships = ProfessorInnen
-edit_mailing_address = Postanschrift bearbeiten
-add_capitalized = Hinzufügen
-attendee_capitalized = TeilnehmerIn
-researchers_in = ForscherInnen in
-menu_powered = Powered by
-view_all_members_of_org = Alle Mitglieder dieser Organisation anzeigen.
-
-grants_text_one = Dieser Teil stammt aus der Template-Datei vivo/productMods/templates/freemarker/body/menupage/grants.ftl. In der Bildschirmanzeige hat die Seite Forschungsprojekte eine display:requiresBodyTemplate Eigenschaft, die definiert, dass die Seite Forschungsprojekte das Standard-Template aufhebt. Das Standard-Template für diese Seiten findet sich auf /vitro/webapp/web/templates/freemarker/body/menupage/menupage.ftl
-grants_two = Diese Technik könnte dazu benutzt werden, Seiten ohne Menüpunkte mit Inhalten aus einem Freemarker-Template zu definieren. Ein Beispiel hierfür wäre die Impressum-Seite.
-grants_text_three = Dadurch würde eine Seite entstehen, die about.ftl als Hauptteil benutzt. Die Seite wäre zugänglich über /about und würde alle servlet mappings in web.xml außer Kraft setzen.
-
-find_expert = Durchsuchen Sie das FIS
-explore_frontpage = Profillinien
-explore_sup_frontpage = Entdecken Sie unsere Forschungsschwerpunkte
-yes = Ja
-no = Nein
-research_priorities = Forschungsschwerpunkte
 
