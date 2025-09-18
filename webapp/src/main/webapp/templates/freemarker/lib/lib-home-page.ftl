@@ -16,7 +16,7 @@
 <#-- Works in conjunction with the homePageUtils.js file, which contains the ajax call. -->
 <#macro facultyMbrHtml>
     <section id="home-faculty-mbrs" class="home-sections"  >
-        <h4>${i18n().faculty_capitalized}</h4>
+        <h4>${i18n().researchers}</h4>
         <div id="tempSpacing">
             <span>${i18n().loading_faculty}&nbsp;&nbsp;&nbsp;
                 <img  src="${urls.images}/indicatorWhite.gif">
@@ -216,11 +216,7 @@ var academicDepartments = [
 <#if academicDeptDG?has_content>
     <#list academicDeptDG as resultRow>
         <#assign uri = resultRow["theURI"] />
-        <#if resultRow["name"]??>
-            <#assign label = resultRow["name"]?replace("\n", " ") />
-        <#else>
-            <#assign label = "unknown" />
-        </#if>
+        <#assign label = resultRow["name"]!"unknown"?replace("\n", " ") />
         {"uri": "${uri?url}", "name": "${label?html}"}<#if (resultRow_has_next)>,</#if>
     </#list>        
 </#if>
