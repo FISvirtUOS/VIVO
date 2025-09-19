@@ -937,6 +937,31 @@ uil-data:intro_para3_mini_uos.VIVO.tenderfoot_uos
         uil:hasPackage  "VIVO-languages" ;
         uil:hasTheme    "tenderfoot_uos" .
 
+uil-data:research_priorities.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Research focus"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "research_priorities" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
 
+uil-data:find_expert.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Search the FIS"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "find_expert" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
+
+uil-data:external_project_site.VIVO.tenderfoot_uos
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "external project page"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "external_project_site" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
 
 

@@ -180,7 +180,7 @@
 
 <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/organizationForTrainingConfig> ns1:displayName "Ausbildungseinrichtung"@de-DE .
 
-<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/outputOfConfig> ns1:displayName "Ergebnis eines Prozesses oder Events"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/outputOfConfig> ns1:displayName "Forschungsergebnis von"@de-DE .
 
 <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/personFaxConfig> ns1:displayName "Fax"@de-DE .
 
