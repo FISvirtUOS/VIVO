@@ -3,7 +3,7 @@
 
 @prefix about: <http://vitro.mannlib.cornell.edu/ns/default/about#> .
 
-about:privacy_policy_dg
+about:about_privacy_policy_dg
     a   <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
     <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#htmlValue>
         """
@@ -87,11 +87,11 @@ about:privacy_policy_dg
         
         """@en-US ;
         <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
-                "privacypolicypage" .
-about:privacy_policy
+                "aboutPrivacyPolicy" .
+about:about_privacy_policy
     a   <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
     <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
-        about:privacy_policy_dg ;
+        about:about_privacy_policy_dg ;
     <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
         "Privacy policy"@en-US ;
     <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
