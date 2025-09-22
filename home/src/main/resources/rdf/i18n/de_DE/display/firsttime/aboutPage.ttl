@@ -1,16 +1,43 @@
-@prefix about: <http://vitro.mannlib.cornell.edu/ns/default/about#> .
-@prefix ns1: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+# $This file is distributed under the terms of the license in /doc/license.txt$ 
 
-about:ABOUTDG a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
-    ns1:htmlValue """<h2>Über VIVO</h2>
-        <div class="pageGroupBody" id="aboutText"><p>Die Software VIVO ermöglicht das Vernetzen und Entdecken von Forschenden über Institutionsgrenzen hinaus. Am Netzwerk teilnehmen können Institutionen mit lokalen VIVO-Installationen, aber auch mit anderen Forschungsinformationssystemen, die Semantic-Web-konforme Daten bereitstellen können. Die über  VIVO für die Suche und das Browsing zugänglichen Informationen verbleiben daher unter Kontrolle und Datenhoheit der jeweiligen Institute und Forschenden.</p>
+@prefix about: <http://vitro.mannlib.cornell.edu/ns/default/about#> .
+
+about:ABOUTDG
+    a   <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
+    <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#htmlValue>
+        """
+        <section class="uos_style" role="region">
+        <h2>Über VIVO</h2>
+        <div class=\"pageGroupBody\" id=\"aboutText\"><p>Die Software VIVO ermöglicht das Vernetzen und Entdecken von Forschenden über Institutionsgrenzen hinaus. Am Netzwerk teilnehmen können Institutionen mit lokalen VIVO-Installationen, aber auch mit anderen Forschungsinformationssystemen, die Semantic-Web-konforme Daten bereitstellen können. Die über  VIVO für die Suche und das Browsing zugänglichen Informationen verbleiben daher unter Kontrolle und Datenhoheit der jeweiligen Institute und Forschenden.</p>
 
         <p>Die Open-Source-/Semantic-Web-Software VIVO wurde ursprünglich an der Cornell University entwickelt und implementiert. Installiert und mit Daten einer Institution befüllt, ermöglicht sie die Erkundung des Forschungsoutputs an dieser Institution über die Grenzen  von Institutionen und Disziplinen hinweg. VIVO bietet Browsing und facettierte Suche für gezielte Recherchen. Die Inhalte in einer lokalen VIVO-Installation können manuell gepflegt oder automatisiert von lokalen Datensystemen wie Personal-, Stipendien-, Forschungsdatenbanken oder Lernmanagementsystemen ins VIVO-System eingebracht werden.</p>
 
-        <p>Erfahren Sie mehr über das <a href="http://vivoweb.org">VIVO-Projekt</a>.</p></div>
-        """@de .
+        <p>Erfahren Sie mehr über das <a href=\"http://vivoweb.org\">VIVO-Projekt</a>.</p></div>
+        <br>
+
+        <h2>Inhaltliche Abgrenzung</h2>
+        <div class=\"pageGroupBody\">
+            <p>Das derzeitige VIVO-System dient der Recherche von Drittmittelprojekten. Es verfolgt nicht das Ziel, Forschungsoutput katalogisch nachzuweisen oder Forschende umfassend zu präsentieren. Aus diesem Grund erhebt das System keinen Anspruch auf Vollständigkeit der enthaltenen Forschungsinformationen.</p>
+        </div>
+        <br>
+        
+        <h2>Über VIVO an der Universität Osnabrück</h2>
+        <div class=\"pageGroupBody\"><p>Ziffer 12 der Zielvereinbarung 2014-2018 der niedersächsischen Hochschulen mit dem Land Niedersachsen und entsprechende landesseitige »Leitlinien zur Transparenz in der Forschung« verpflichten die Hochschulen seit 2016, die Öffentlichkeit an exponierter Stelle ihres Internetauftritts unter Beachtung etwaiger Vertraulichkeitsregelungen jährlich über die institutionelle Verortung, den Titel, die Laufzeit, die Fördersumme, die Auftraggeberin oder den Auftraggeber sowie ab Ende 2018 über die jeweils erzielten Ergebnisse drittmittelfinanzierter Projekte zu informieren. Die grundlegenden Daten zu drittmittelfinanzierten Projekten sind erstmalig mit Stichtag 1.12.2015 am 31.3.2016 veröffentlicht worden und werden seither an der Universität Osnabrück jährlich mit dem Stichtag 1.12. eines jeden Jahres im darauffolgenden Jahr excelbasiert im nicht barrierefreien pdf-Format ins Netz gestellt.
+        Seit November 2017 ist die Open Source Software VIVO an der Universität Osnabrück anforderungsorientiert weiterentwickelt worden. Zunächst um die Öffentlichkeit anforderungsentsprechend, nutzerfreundlich und barrierefrei über Forschungsergebnisse der zum Stichtag 1.12.2015 laufenden drittmittelfinanzierten und bis 1.12.2017 abgeschlossenen Projekte informieren zu können.
+        Im Laufe des akademischen Jahres 2019 werden diese Informationen sukzessive über am 1.12.2018 laufende drittmittelfinanzierte Projekte und vorliegende Forschungsergebnisse ergänzt. Letztliches Ziel ist es Forschungsaktivitäten der Universität aktuell und vollständig abzubilden und nicht nur auf drittmittelfinanzierte Forschungsprojekte zu fokussieren.</p>
+
+        <p>Mit VIVO als integriertem Informationssystem sollen Forschungsinformationen an der Universität Osnabrück somit unter Beachtung der EU-Datenschutzgrundverordnung</p>
+        <ul>
+            <li>- historisiert, z.B. um Werdegänge von Wissenschaftlerinnen und Wissenschaftlern zu dokumentieren;</li>
+            <li>- aufbereitet, z.B. durch vollständige Angabe von Projekttiteln statt Nutzung von Kurzformen;</li>
+            <li>- validiert, z.B. durch Abgleich mit DFG-GEPRIS-Angaben;</li>
+            <li>- aggregiert und logisch miteinander verknüpft, (z.B. um Personen zu Projekten und Publikationen zuzuordnen);</li>
+            <li>- in Anlehnung an den Kerndatensatz Forschung des Wissenschaftsrats standardisiert und</li>
+            <li>- barrierefrei bereitgestellt werden.</li>
+        </ul>
+
+        <p>Das Forschungsinformationssystem wird neben der internen Hochschulsteuerung vor allem der internen und externen Berichterstattung dienen. Ziel ist es die Außendarstellung und Reputation durch Sichtbarmachung und Präsentation von Forschungsaktivitäten sowie durch eine einheitliche Darstellung von Forscherinnen- und Forscherprofilen bzw. Forschungsprojekten im Rahmen des Corporate Designs verbessern zu können. Zudem wird durch die Generierung eines Expertinnen- und Expertenportals die Kontaktaufnahme, der fachliche Austausch und die Kommunikation mit der Öffentlichkeit befördert werden.</p>        
+        </div>
+        </section>
+        """@de-DE .
 

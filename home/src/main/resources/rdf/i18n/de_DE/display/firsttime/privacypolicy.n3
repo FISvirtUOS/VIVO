@@ -1,6 +1,13 @@
 <#-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+# $This file is distributed under the terms of the license in LICENSE$
 
-<section class="uos_style" role="region">
+@prefix about: <http://vitro.mannlib.cornell.edu/ns/default/about#> .
+
+about:privacy_policy_dg
+    a   <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
+    <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#htmlValue>
+        """
+        <section class="uos_style" role="region">
     <h2>Datenschutzerklärung</h2>
 <h3>1. Datenschutz auf einen Blick</h3>
 <h4>Allgemeine Hinweise</h4>
@@ -89,3 +96,17 @@
 <h3>5. Analyse-Tools und Werbung</h3>
 <p>Die durch den Cookie erzeugten Informationen über die Benutzung dieser Website werden nicht an Dritte weitergegeben. Sie können der Speicherung der Cookies durche eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können.</p>
 </section>
+        
+        """@de-DE ;
+        <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
+                "privacypolicypage" .
+about:privacy_policy
+    a   <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+    <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+        about:privacy_policy_dg ;
+    <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+        "Datenschutzerklärung"@de-DE ;
+    <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+        "/privacypolicy" .
+
+
