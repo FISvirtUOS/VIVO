@@ -251,7 +251,7 @@ uil-data:map_state_string.VIVO.tenderfoot_uos
 uil-data:menu_about.VIVO.tenderfoot_uos
         rdf:type         owl:NamedIndividual ;
         rdf:type         uil:UILabel ;
-        rdfs:label       "Impressum"@de-DE ;
+        rdfs:label       "Über VIVO"@de-DE ;
         uil:hasApp      "VIVO" ;
         uil:hasKey      "menu_about" ;
         uil:hasPackage  "VIVO-languages" ;
