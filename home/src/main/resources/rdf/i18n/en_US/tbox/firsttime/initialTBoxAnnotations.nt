@@ -463,7 +463,7 @@
 <http://xmlns.com/foaf/0.1/> <http://www.w3.org/2000/01/rdf-schema#label> "FOAF (Friend of a Friend)"@en-US .
 <http://www.w3.org/2006/vcard/ns#Note> <http://www.w3.org/2000/01/rdf-schema#label> "Note"@en-US .
 <http://aims.fao.org/aos/geopolitical.owl#hasMaxLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "has maximum latitude"@en-US .
-<http://vivoweb.org/ontology/core#DateTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Date/Time Interval"@en-US .
+<http://vivoweb.org/ontology/core#DateTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "duration"@en-US .
 <http://www.w3.org/2006/vcard/ns#photo> <http://www.w3.org/2000/01/rdf-schema#label> "photo"@en-US .
 <http://purl.org/ontology/bibo/Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@en-US .
 <http://www.w3.org/2006/vcard/ns#hasPhoto> <http://www.w3.org/2000/01/rdf-schema#label> "has photo"@en-US .
