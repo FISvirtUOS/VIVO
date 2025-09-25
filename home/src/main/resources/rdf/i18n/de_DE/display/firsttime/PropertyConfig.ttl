@@ -212,3 +212,10 @@
 
 <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/yearAwardedConfig> ns1:displayName "Jahr der Auszeichnung"@de-DE .
 
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/firstSupervisorDisserationConfig> ns1:displayName "Erstbetreuer:in"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/firstSupervisorPersonConfig>  ns1:displayName "Betreute Promotionen"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/secondSupervisorDisserationConfig> ns1:displayName "Zweitbetreuer:in"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/secondSupervisorPersonConfig>  ns1:displayName "Betreute Promotionen (Zweitbetreuer:in)"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsEmployeeConfig> ns1:displayName "Fachvertreter:in"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsPublicationConfig> ns1:displayName "Fachbezogene Publikationen"@de-DE .
+<http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsStrukPromotionConfig> ns1:displayName "Assoziierte Promotionsprogramme"@de-DE .
