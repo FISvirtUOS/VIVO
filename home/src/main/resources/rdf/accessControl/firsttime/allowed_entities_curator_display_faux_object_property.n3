@@ -116,5 +116,12 @@
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/webpagePersonConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/webpageProjectConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/webpageSoftwareConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/firstSupervisorDisserationConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/firstSupervisorPersonConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/secondSupervisorDisserationConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/secondSupervisorPersonConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsEmployeeConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsPublicationConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsStrukPromotionConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/yearAwardedConfig> .
 
