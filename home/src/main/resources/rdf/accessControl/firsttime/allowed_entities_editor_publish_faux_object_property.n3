@@ -102,7 +102,7 @@
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/personFaxConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/personInPositionConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/personTelephoneConfig> ,
-    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/preferredTitleConfig> ,field-related projects
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/preferredTitleConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/primaryEmailConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/publicationDateConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/roomWithinBuildingConfig> ,
