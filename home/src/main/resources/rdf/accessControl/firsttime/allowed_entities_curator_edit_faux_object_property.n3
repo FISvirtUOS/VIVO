@@ -119,4 +119,5 @@
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsEmployeeConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsPublicationConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsStrukPromotionConfig> ,
+    <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/fieldDependsProjectConfig> ,
     <http://vitro.mannlib.cornell.edu/ns/vitro/siteConfig/yearAwardedConfig> .
