@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    showViewAll();
+
     $("#viewAllTab").on("click",function(){
         showViewAll();
     });
