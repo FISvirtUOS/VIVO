@@ -2,20 +2,20 @@
 
 <@widget name="login" include="assets" />
 
-<#-- 
-        With release 1.6, the home page no longer uses the "browse by" class group/classes display. 
+<#--
+        With release 1.6, the home page no longer uses the "browse by" class group/classes display.
         If you prefer to use the "browse by" display, replace the import statement below with the
         following include statement:
-        
+
             <#include "browse-classgroups.ftl">
-            
+
         Also ensure that the homePage.geoFocusMaps flag in the runtime.properties file is commented
         out.
 -->
 <#import "lib-home-page.ftl" as lh>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="${country}">
     <head>
         <#include "head.ftl">
         <#if geoFocusMapsEnabled >
@@ -23,7 +23,7 @@
         </#if>
         <script async type="text/javascript" src="${urls.base}/js/homePageUtils.js?version=x"></script>
     </head>
-    
+
     <body class="${bodyClasses!}" onload="${bodyOnload!}">
         <#-- supplies the faculty count to the js function that generates a random row number for the search query -->
         <@lh.facultyMemberCount  vClassGroups! />
@@ -39,8 +39,8 @@
             <div class="col-md-12" id="frontimage">
                 <a class="listimage" id="frontpage" title="Vivo UOS"></a>
                 <p class="citeimage">Foto: Kathrin Schnieders</p>
-            </div>
-        </div>
+                                    </div>
+                                </div>
 
         <div class="container">
             <div class="jumbotron">
@@ -49,8 +49,8 @@
                     <p>${i18n().intro_para1_mini_uos}</p>
                     <a href="${urls.base}/leitlinien" title="MEHR LESEN" target="_top">MEHR LESEN</a>
                 </div>
-            </div>
-        </div>
+                        </div>
+                    </div>
 
 
         <div class="row hero">
@@ -101,33 +101,33 @@
         <#-- builds a json object that is used by js to render the academic departments section -->
         <@lh.listAcademicDepartments />
         <@lh.listResearchProjects />
-    <script>       
+    <script>
         var i18nStrings = {
-            researcherString: '${i18n().researcher}',
-            researchersString: '${i18n().researchers}',
-            currentlyNoResearchers: '${i18n().currently_no_researchers}',
-            countriesAndRegions: '${i18n().countries_and_regions}',
-            countriesString: '${i18n().countries}',
-            regionsString: '${i18n().regions}',
-            statesString: '${i18n().map_states_string}',
-            stateString: '${i18n().map_state_string}',
-            statewideLocations: '${i18n().statewide_locations}',
-            researchersInString: '${i18n().researchers_in}',
-            inString: '${i18n().in}',
-            noFacultyFound: '${i18n().no_faculty_found}',
-            placeholderImage: '${i18n().placeholder_image}',
-            viewAllFaculty: '${i18n().view_all_faculty}',
-            viewAllString: '${i18n().view_all}',
-            viewAllDepartments: '${i18n().view_all_departments}',
-            viewAllPeople: '${i18n().view_all_people}',
-            viewAllProjects: '${i18n().view_all_projects}',
-            viewAllProjectPublications: '${i18n().view_all_project_publications}',
-            noDepartmentsFound: '${i18n().no_departments_found}'
+            researcherString: '${i18n().researcher?js_string}',
+            researchersString: '${i18n().researchers?js_string}',
+            currentlyNoResearchers: '${i18n().currently_no_researchers?js_string}',
+            countriesAndRegions: '${i18n().countries_and_regions?js_string}',
+            countriesString: '${i18n().countries?js_string}',
+            regionsString: '${i18n().regions?js_string}',
+            statesString: '${i18n().map_states_string?js_string}',
+            stateString: '${i18n().map_state_string?js_string}',
+            statewideLocations: '${i18n().statewide_locations?js_string}',
+            researchersInString: '${i18n().researchers_in?js_string}',
+            inString: '${i18n().in?js_string}',
+            noFacultyFound: '${i18n().no_faculty_found?js_string}',
+            placeholderImage: '${i18n().placeholder_image?js_string}',
+            viewAllFaculty: '${i18n().view_all_faculty?js_string}',
+            viewAllString: '${i18n().view_all?js_string}',
+            viewAllDepartments: '${i18n().view_all_departments?js_string}',
+            viewAllPeople: '${i18n().view_all_people?js_string}',
+            viewAllProjects: '${i18n().view_all_projects?js_string}',
+            viewAllProjectPublications: '${i18n().view_all_project_publications?js_string}',
+            noDepartmentsFound: '${i18n().no_departments_found?js_string}'
         };
         // set the 'limmit search' text and alignment
-        if  ( $('input.search-homepage').css('text-align') == "right" ) {       
-             $('input.search-homepage').attr("value","${i18n().limit_search} \u2192");
-        }  
+        if  ( $('input.search-homepage').css('text-align') == "right" ) {
+             $('input.search-homepage').attr("placeholder","${i18n().limit_search} \u2192");
+        }
     </script>
     </body>
 </html>

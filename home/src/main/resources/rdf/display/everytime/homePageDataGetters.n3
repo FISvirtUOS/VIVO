@@ -19,7 +19,7 @@ display:academicDeptsDataGetter
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX kdsf: <http://kerndatensatz-forschung.de/owl/Basis#>
 
-    SELECT DISTINCT ?theURI ?name
+    SELECT DISTINCT ?theURI (str(?label) as ?name)
     WHERE
     {
           ?theURI a kdsf:Publikation .

@@ -6266,3 +6266,125 @@ uil-data:degree_candidacy.VIVO
         uil:hasApp      "VIVO" ;
         uil:hasKey      "degree_candidacy" ;
         uil:hasPackage  "VIVO-languages" .
+
+
+
+
+
+
+#### UOS Stuff
+
+uil-data:project_result.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "project result"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_result" ;
+        uil:hasPackage  "VIVO-languages" .
+
+
+uil-data:project_results.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Project results"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_results" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:projects_capitalized.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Projects"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "projects_capitalized" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:project_running.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "continuously"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_running" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:project_finished.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "finished"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_finished" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:project_status.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "project status"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_status" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:project_links.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Project links"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_links" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:project_team.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Project team"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "project_team" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:employees.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Employees"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "employees" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:members.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Members"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "members" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:report_broken_link.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "report broken link"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "report_broken_link" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:report_missing_project_info.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "report missing project info"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "report_missing_project_info" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:report_link_with_profile.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Hello,\nthe following link on the profile: %s \nis broken: %s \nThe correct link is: (if known, please insert)"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "report_link_with_profile" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:report_link.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Hello,\nthe following link is broken: %s \nThe correct link is: (if known, please insert)"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "report_link" ;
+        uil:hasPackage  "VIVO-languages" .
+
+
