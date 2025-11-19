@@ -964,4 +964,20 @@ uil-data:external_project_site.VIVO.tenderfoot_uos
         uil:hasPackage  "VIVO-languages" ;
         uil:hasTheme    "tenderfoot_uos" .
 
+uil-data:external_project_site.VIVO.yes
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "yes"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "yes" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
 
+uil-data:external_project_site.VIVO.no
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "no"@de-DE ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "no" ;
+        uil:hasPackage  "VIVO-languages" ;
+        uil:hasTheme    "tenderfoot_uos" .
