@@ -99,7 +99,7 @@
     <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDepartment"/>
     <rdfs:range rdf:resource="http://kerndatensatz-forschung.de/owl/Basis#Fach"/>
     <rdfs:label xml:lang="de-DE">Fach</rdfs:label>
-    <rdfs:label xml:lang="de-DE">Field</rdfs:label>
+    <rdfs:label xml:lang="en-US">Field</rdfs:label>
     <vitro:offerCreateNewOptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vitro:offerCreateNewOptionAnnot>
     <vitro:inPropertyGroupAnnot rdf:resource="http://vivoweb.org/ontology#vitroPropertyGroupidentifiers"/>
     <vitro:hiddenFromPublishBelowRoleLevelAnnot rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/role#public"/>
